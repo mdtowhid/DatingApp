@@ -1,0 +1,50 @@
+{
+  "_from": "https://www.atom.io/api/packages/tern/versions/0.8.0/tarball",
+  "_id": "Tern@0.8.0",
+  "_inBundle": false,
+  "_integrity": "sha512-YIWT8WbgaBjfRvSxb7wy5uM4iZdxPvSzX4r60VhfA/pb57uUgLb/kzwOAvxscCUdDvSWSSxZ33CsKRL5DJFbZg==",
+  "_location": "/Tern",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/tern/versions/0.8.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/tern/versions/0.8.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/tern/versions/0.8.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/tern/versions/0.8.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/tern/versions/0.8.0/tarball",
+  "_shasum": "b73ac2636b0dff079ad90e96ac1cbf116d3d8c40",
+  "_spec": "https://www.atom.io/api/packages/tern/versions/0.8.0/tarball",
+  "_where": "C:\\Users\\hp\\AppData\\Local\\Temp\\apm-install-dir-1191131-24248-u7m9jq.h1g8p",
+  "activationEvents": [
+    "tern:completion",
+    "tern:start-server"
+  ],
+  "bugs": {
+    "url": "https://github.com/artoale/atom-tern/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "tern": ">=0.5.0",
+    "underscore-plus": "*"
+  },
+  "deprecated": false,
+  "description": "Smart javascript code intelligence for Atom.io",
+  "engines": {
+    "atom": ">0.108.0"
+  },
+  "homepage": "https://github.com/artoale/atom-tern#readme",
+  "license": "MIT",
+  "main": "./lib/tern",
+  "name": "Tern",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artoale/atom-tern.git"
+  },
+  "version": "0.8.0"
+}

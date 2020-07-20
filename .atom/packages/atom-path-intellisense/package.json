@@ -1,0 +1,78 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-path-intellisense/versions/1.2.2/tarball",
+  "_id": "atom-path-intellisense@1.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-gArventsM5PevgkrYPLG4wvrczkkTjsO+IOS461M0OmdPKhRJ4AbO2GVoPuIjsH6UPus2jU7IsABFPbN2ebICw==",
+  "_location": "/atom-path-intellisense",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-path-intellisense/versions/1.2.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-path-intellisense/versions/1.2.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-path-intellisense/versions/1.2.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-path-intellisense/versions/1.2.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-path-intellisense/versions/1.2.2/tarball",
+  "_shasum": "ed41dd2433d9e99684a19da2dd6986faa815b4be",
+  "_spec": "https://www.atom.io/api/packages/atom-path-intellisense/versions/1.2.2/tarball",
+  "_where": "C:\\Users\\hp\\AppData\\Local\\Temp\\apm-install-dir-120522-7132-13yrn3m.t22m",
+  "activationCommands": {},
+  "bugs": {
+    "url": "https://github.com/apercova/atom-path-intellisense/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "atom-selectors-plus": "^0.1.1",
+    "winston": "^3.2.1"
+  },
+  "deprecated": false,
+  "description": "Path intellisense support for atom",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "eslint": "^6.5.1",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-gunzip": "^1.1.0",
+    "gulp-gzip": "^1.4.2",
+    "gulp-jsdoc3": "^2.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-prettier-eslint": "^1.1.0",
+    "gulp-tar": "^3.0.1",
+    "gulp-untar": "0.0.8",
+    "prettier": "~1.18.2"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/apercova/atom-path-intellisense#readme",
+  "keywords": [
+    "path",
+    "paths",
+    "autocomplete",
+    "suggestion",
+    "suggestions",
+    "intellisense"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-path-intellisense",
+  "name": "atom-path-intellisense",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "4.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apercova/atom-path-intellisense.git"
+  },
+  "scripts": {
+    "docs": "rm -Rf docs && mkdir docs && ./node_modules/.bin/jsdoc lib/**/*.js --destination docs"
+  },
+  "version": "1.2.2"
+}

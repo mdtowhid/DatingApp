@@ -1,0 +1,16 @@
+[5.9.26][10 10.0.18362][5964][64bit][00:05:24] DEBUG: Audio volume 0.98
+[5.9.26][10 10.0.18362][5964][64bit][00:05:24] DEBUG: Audio volume 1
+[5.9.26][10 10.0.18362][5964][64bit][00:05:24] DEBUG: New session state =inactive
+[5.9.26][10 10.0.18362][5964][64bit][00:05:24] DEBUG: New session state =inactive
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Render name:OpenGLWindow
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Render name:OpenGLWidget
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Render name:QGLWidget2
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Render name:Widget
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Render name:GDI
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Render name:Direct2D
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Render name:GraphicsItem
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Current render:Widget
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Open file:C:/Users/hp/Desktop/Final May Be.webm
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Open file [OK]
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: key:ENCODER val:Lavf57.83.100
+[5.9.26][10 10.0.18362][5964][64bit][00:05:30] DEBUG: Audio:vorbis Video:vp8 Bitrate:2006117 Duration(ms):73503 Duration:00:01:13.503 Framerate:30

@@ -1,0 +1,46 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-jshint/versions/2.0.0/tarball",
+  "_id": "atom-jshint@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-YpwiYS3Y+o/RAigZyGyEAIzm9zc511iVxRDgA6yW3rZJWxIRl4EGxFAVY+lXAr5FqxBxCM1ui4m0Mb8ilEg4VA==",
+  "_location": "/atom-jshint",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-jshint/versions/2.0.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-jshint/versions/2.0.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-jshint/versions/2.0.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-jshint/versions/2.0.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-jshint/versions/2.0.0/tarball",
+  "_shasum": "e698f7384ed742855deaf515eefd655b0072631d",
+  "_spec": "https://www.atom.io/api/packages/atom-jshint/versions/2.0.0/tarball",
+  "_where": "C:\\Users\\hp\\AppData\\Local\\Temp\\apm-install-dir-120522-17688-1gowg9.8pmwv",
+  "bugs": {
+    "url": "https://github.com/Joezo/atom-jshint/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "jquery": "^2",
+    "jshint": "^2.5.6"
+  },
+  "deprecated": false,
+  "description": "Validates your JS against JSHint as you type. The original and most used.",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/Joezo/atom-jshint#readme",
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "atom-jshint",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joezo/atom-jshint.git"
+  },
+  "version": "2.0.0"
+}

@@ -1,0 +1,1408 @@
+[5.9.26][10 10.0.18362][5168][64bit][18:08:27] DEBUG: Get serial number for win v2. Root path:'C:/Users/hp/AppData/Local/Icecream/Icecream Screen Recorder' Drive path:'\\.\C:'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:27] DEBUG: HDD OS ID V3:FJ68N492511208J0D
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] ERROR: License file not found: C:\Users\hp\AppData\Local\Icecream\Icecream Screen Recorder\license.lic
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: History file:'C:\Users\hp\AppData\Local\Icecream\Icecream Screen Recorder\history.ini'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: File not found 'C:\Users\hp\AppData\Local\Icecream\Icecream Screen Recorder\history.ini'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: [OLD ITEMS COUNT:'0' ]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Main running...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Create main window [STARTED]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Main window creation [START]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Clear cache path...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Load default settings...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Create settings view ...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Settings view [STARTED]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Setting view. Init audio input devices [STARTED]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Device name:Stereo Mix (Realtek High Definition Audio), Device Id:{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}, is default:[NO] 
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Device name:Microphone (Realtek High Definition Audio), Device Id:{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}, is default:[YES] 
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Setting view. Init audio input devices [COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:28] DEBUG: Setting view. Init audio output devices [STARTED]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Device name:Speakers/Headphones (Realtek High Definition Audio), Device Id:{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}, is default:[YES] 
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Setting view. Init audio output devices [COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Settings view. Init record [START]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Setting view. Init camera devices [STARTED]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Device name:HP HD Webcam
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Setting view. Init camera devices [COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Settings view. Init record [COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Settings view [COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Create UI controls ...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Create task viewer ...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Create history viewer ...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Create game capture settings viewer ...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Create system tray menu ...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Create camera receiver hub ...
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Main window creation [COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Create main window [COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Current version:'5.996' Product id:'3'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Get serial number for win v2. Root path:'C:/Users/hp/AppData/Local/Icecream/Icecream Screen Recorder' Drive path:'\\.\C:'
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: HDD OS ID V3:FJ68N492511208J0D
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Updater:Starting
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Updater:Running
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Run from insaller:0
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: First run:0. Virtual desktop:1
+[5.9.26][10 10.0.18362][5168][64bit][18:08:29] DEBUG: Updater:Request url:http://updates.icecreamapps.com/check.php?ver=5.996&pid=3&mh=d7cb9cbd8e9c8da11fcfd4d2ee1617c6&h=8d6b7323fa73f0cf495fe94a73bf84fb
+
+[5.9.26][10 10.0.18362][5168][64bit][18:08:30] DEBUG: Updater:Send request [OK]
+
+[5.9.26][10 10.0.18362][5168][64bit][18:08:30] DEBUG: Updater:Write response to json [OK]
+
+[5.9.26][10 10.0.18362][5168][64bit][18:08:30] DEBUG: Updater:NotRunning
+[5.9.26][10 10.0.18362][5168][64bit][18:08:31] DEBUG: Updater. exit code:'0' status:'NormalExit'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'false'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'false'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Founded default device ID:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Open audio device '{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: New session state =active
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Open audio device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Output device Id from settings file:''
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Founded default device ID:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Output device after check:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}'
+[5.9.26][10 10.0.18362][5168][64bit][18:21:55] DEBUG: Open audio device '{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:21:56] DEBUG: New session state =active
+[5.9.26][10 10.0.18362][5168][64bit][18:21:56] DEBUG: Open audio device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:21:56] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:21:56] DEBUG: Device name:HP HD Webcam
+[5.9.26][10 10.0.18362][5168][64bit][18:21:56] DEBUG: Device name:HP HD Webcam
+[5.9.26][10 10.0.18362][5168][64bit][18:21:56] DEBUG: CAMERA [AVALIBLE]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:04] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:22:04] DEBUG:  Available free disk space: '157162 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:04] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] INFO: Record [BEGIN] [Thu Jan 23 18:22:08 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:08] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-182208.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Allocate frame buffer:'0x00000249b7844060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Allocate frame buffer:'0x00000249b7dd8060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:09] DEBUG: Allocate frame buffer:'0x00000249b8395060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:10] DEBUG: Allocate frame buffer:'0x00000249b8925060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:12] DEBUG: Allocate frame buffer:'0x00000249b8ebf060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:12] DEBUG: Allocate frame buffer:'0x00000249b99d2060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:12] DEBUG: Allocate frame buffer:'0x00000249b944a060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Free mem packets count:7
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Free frame buffer:'0x00000249b7844060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Free frame buffer:'0x00000249b8ebf060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Free frame buffer:'0x00000249b99d2060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Free frame buffer:'0x00000249b7dd8060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Free frame buffer:'0x00000249b944a060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Free frame buffer:'0x00000249b8395060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Free frame buffer:'0x00000249b8925060'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Video frame added:'887' Video frame writed:'887' Audio frame added:'1234' Audio frame writed:'1234' 
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-182208.webm' Time (s):'43' File size: '12109775'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Audio analitics:lbZeroBlockCount:'252', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'1896637', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'252', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'1896637', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:22:52] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:22:55] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:22:55] DEBUG: file:'C:/Users/hp/Desktop/fff.webm' size:'11 MB' resolution:'1600x900' uptime:'00:00:43'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:40] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:23:40] DEBUG:  Available free disk space: '157148 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:40] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:23:43] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:23:43] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:23:43] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:43] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Record [BEGIN] [Thu Jan 23 18:23:44 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'false' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-182343.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Allocate frame buffer:'0x00000249adfbc060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Allocate frame buffer:'0x00000249ae54c060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:44] DEBUG: Allocate frame buffer:'0x00000249b7842060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:48] DEBUG: Allocate frame buffer:'0x00000249b7dd4060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:48] DEBUG: Allocate frame buffer:'0x00000249b8395060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:48] DEBUG: Allocate frame buffer:'0x00000249b8920060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:53] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:53] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:53] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:53] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:53] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:53] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Free mem packets count:6
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Free frame buffer:'0x00000249b7dd4060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Free frame buffer:'0x00000249adfbc060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Free frame buffer:'0x00000249ae54c060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Free frame buffer:'0x00000249b7842060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Free frame buffer:'0x00000249b8395060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Free frame buffer:'0x00000249b8920060'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Video frame added:'1078' Video frame writed:'1078' Audio frame added:'1500' Audio frame writed:'1500' 
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-182343.webm' Time (s):'9' File size: '3781846'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Audio analitics:lbZeroBlockCount:'55', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'413936', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'55', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'413936', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:23:54] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:23:57] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:23:57] DEBUG: file:'C:/Users/hp/Desktop/ffff.webm' size:'3 MB' resolution:'1600x900' uptime:'00:00:09'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:15] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:24:15] DEBUG:  Available free disk space: '157143 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:15] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: Record [BEGIN] [Thu Jan 23 18:24:19 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-182419.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:24:19] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Allocate frame buffer:'0x00000249ae147060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:24:20] DEBUG: Allocate frame buffer:'0x00000249ae6d4060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:22] DEBUG: Allocate frame buffer:'0x00000249b7847060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:22] DEBUG: Allocate frame buffer:'0x00000249b7dd9060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:23] DEBUG: Allocate frame buffer:'0x00000249b891a060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:23] DEBUG: Allocate frame buffer:'0x00000249b8ea8060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Free mem packets count:6
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Free frame buffer:'0x00000249b891a060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Free frame buffer:'0x00000249b8ea8060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Free frame buffer:'0x00000249ae6d4060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Free frame buffer:'0x00000249ae147060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Free frame buffer:'0x00000249b7847060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Free frame buffer:'0x00000249b7dd9060'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Video frame added:'1767' Video frame writed:'1767' Audio frame added:'2475' Audio frame writed:'2475' 
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-182419.webm' Time (s):'34' File size: '8847582'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Audio analitics:lbZeroBlockCount:'200', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'1505264', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'200', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'1505264', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:24:54] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:24:59] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:24:59] DEBUG: file:'C:/Users/hp/Desktop/fffff.webm' size:'8 MB' resolution:'1600x900' uptime:'00:00:34'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:15] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:25:15] DEBUG:  Available free disk space: '157135 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:15] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: Record [BEGIN] [Thu Jan 23 18:25:19 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-182519.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:19] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Allocate frame buffer:'0x00000249ae8d6060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Allocate frame buffer:'0x00000249b894e060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:20] DEBUG: Allocate frame buffer:'0x00000249b8ed9060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:30] DEBUG: Allocate frame buffer:'0x00000249b946b060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:30] DEBUG: Allocate frame buffer:'0x00000249ce0e1060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:30] DEBUG: Allocate frame buffer:'0x00000249ce678060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:30] DEBUG: Allocate frame buffer:'0x00000249cec0e060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:30] DEBUG: Allocate frame buffer:'0x00000249cf195060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:30] DEBUG: Allocate frame buffer:'0x00000249cf722060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:30] DEBUG: Allocate frame buffer:'0x00000249cfcb7060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free mem packets count:10
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249b946b060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249ae8d6060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249ce0e1060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249ce678060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249cec0e060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249b894e060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249cf195060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249cf722060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249b8ed9060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Free frame buffer:'0x00000249cfcb7060'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Video frame added:'2201' Video frame writed:'2201' Audio frame added:'3087' Audio frame writed:'3087' 
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-182519.webm' Time (s):'21' File size: '5920586'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Audio analitics:lbZeroBlockCount:'126', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'948310', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'125', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'940784', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:25:41] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:25:43] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:25:43] DEBUG: file:'C:/Users/hp/Desktop/fffffffffff.webm' size:'5 MB' resolution:'1600x900' uptime:'00:00:21'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:00] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:26:00] DEBUG:  Available free disk space: '157127 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:00] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] INFO: Record [BEGIN] [Thu Jan 23 18:26:04 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:04] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-182604.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Allocate frame buffer:'0x00000249ae995060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Allocate frame buffer:'0x00000249b8944060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:05] DEBUG: Allocate frame buffer:'0x00000249b8ed5060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:11] DEBUG: Allocate frame buffer:'0x00000249b9467060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Free mem packets count:4
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Free frame buffer:'0x00000249b9467060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Free frame buffer:'0x00000249ae995060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Free frame buffer:'0x00000249b8ed5060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Free frame buffer:'0x00000249b8944060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Video frame added:'2767' Video frame writed:'2767' Audio frame added:'3878' Audio frame writed:'3878' 
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-182604.webm' Time (s):'27' File size: '7608116'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Audio analitics:lbZeroBlockCount:'162', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'1219261', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'162', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'1219261', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:26:33] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:26:34] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:34] DEBUG: file:'C:/Users/hp/Desktop/ggtg.webm' size:'7 MB' resolution:'1600x900' uptime:'00:00:27'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:47] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:26:47] DEBUG:  Available free disk space: '157120 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:47] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] INFO: Record [BEGIN] [Thu Jan 23 18:26:51 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:26:51] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-182651.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Allocate frame buffer:'0x00000249b8949060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Allocate frame buffer:'0x00000249ae9bc060'
+[5.9.26][10 10.0.18362][5168][64bit][18:26:52] DEBUG: Allocate frame buffer:'0x00000249b8eda060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Free mem packets count:3
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Free frame buffer:'0x00000249b8949060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Free frame buffer:'0x00000249ae9bc060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Free frame buffer:'0x00000249b8eda060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Video frame added:'2983' Video frame writed:'2983' Audio frame added:'4186' Audio frame writed:'4186' 
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-182651.webm' Time (s):'10' File size: '3080423'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Audio analitics:lbZeroBlockCount:'63', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'474147', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'63', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'474147', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:27:03] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:27:06] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:06] DEBUG: file:'C:/Users/hp/Desktop/ttyty.webm' size:'2 MB' resolution:'1600x900' uptime:'00:00:10'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:45] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:27:45] DEBUG:  Available free disk space: '157123 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:45] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Record [BEGIN] [Thu Jan 23 18:27:49 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-182749.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:27:49] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Allocate frame buffer:'0x00000249ae991060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Allocate frame buffer:'0x00000249b8947060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:50] DEBUG: Allocate frame buffer:'0x00000249b8edd060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:52] DEBUG: Allocate frame buffer:'0x00000249b9465060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:52] DEBUG: Allocate frame buffer:'0x00000249d8242060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:52] DEBUG: Allocate frame buffer:'0x00000249d87d3060'
+[5.9.26][10 10.0.18362][5168][64bit][18:27:52] DEBUG: Allocate frame buffer:'0x00000249d8d6c060'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Free mem packets count:7
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Free frame buffer:'0x00000249b9465060'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Free frame buffer:'0x00000249b8947060'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Free frame buffer:'0x00000249d8242060'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Free frame buffer:'0x00000249d87d3060'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Free frame buffer:'0x00000249d8d6c060'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Free frame buffer:'0x00000249ae991060'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Free frame buffer:'0x00000249b8edd060'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Video frame added:'4104' Video frame writed:'4104' Audio frame added:'5744' Audio frame writed:'5744' 
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-182749.webm' Time (s):'54' File size: '13920563'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Audio analitics:lbZeroBlockCount:'318', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'2393379', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'318', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'2393379', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:28:44] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:28:47] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:28:47] DEBUG: file:'C:/Users/hp/Desktop/Final1.webm' size:'13 MB' resolution:'1600x900' uptime:'00:00:54'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:41] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:31:41] DEBUG:  Available free disk space: '157110 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:41] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Record [BEGIN] [Thu Jan 23 18:31:45 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-183145.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:45] DEBUG: Allocate frame buffer:'0x00000249b894e060'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:46] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:31:46] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:31:46] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:31:46] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:31:46] DEBUG: Allocate frame buffer:'0x00000249b8eda060'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:46] DEBUG: Allocate frame buffer:'0x00000249b9465060'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:47] DEBUG: Allocate frame buffer:'0x00000249d8243060'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:47] DEBUG: Allocate frame buffer:'0x00000249d87dc060'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:48] DEBUG: Allocate frame buffer:'0x00000249d8d65060'
+[5.9.26][10 10.0.18362][5168][64bit][18:31:48] DEBUG: Allocate frame buffer:'0x00000249e22ce060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:08] DEBUG: Allocate frame buffer:'0x00000249e8851060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:08] DEBUG: Allocate frame buffer:'0x00000249e8ded060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:08] DEBUG: Allocate frame buffer:'0x00000249e937a060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:08] DEBUG: Allocate frame buffer:'0x00000249e9903060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free mem packets count:11
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249b894e060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249b8eda060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249d8243060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249d87dc060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249d8d65060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249b9465060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249e8851060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249e8ded060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249e937a060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249e9903060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Free frame buffer:'0x00000249e22ce060'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Video frame added:'5472' Video frame writed:'5472' Audio frame added:'7571' Audio frame writed:'7571' 
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-183145.webm' Time (s):'63' File size: '19046310'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Audio analitics:lbZeroBlockCount:'374', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'2814858', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'374', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'2814858', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:32:49] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:32:50] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:32:50] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:32:50] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:32:53] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:32:53] DEBUG: file:'C:/Users/hp/Desktop/Final 2.webm' size:'18 MB' resolution:'1600x900' uptime:'00:01:03'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:55] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:34:55] DEBUG:  Available free disk space: '157097 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:55] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] INFO: Record [BEGIN] [Thu Jan 23 18:34:59 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:34:59] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-183459.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Allocate frame buffer:'0x00000249b96b1060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:00] DEBUG: Allocate frame buffer:'0x00000249d824c060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:04] DEBUG: Allocate frame buffer:'0x00000249d87dd060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Free mem packets count:3
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Free frame buffer:'0x00000249d87dd060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Free frame buffer:'0x00000249b96b1060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Free frame buffer:'0x00000249d824c060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Video frame added:'5696' Video frame writed:'5696' Audio frame added:'7906' Audio frame writed:'7906' 
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-183459.webm' Time (s):'11' File size: '3417781'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Audio analitics:lbZeroBlockCount:'69', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'519306', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'69', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'519306', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:35:12] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:35:14] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:14] DEBUG: file:'C:/Users/hp/Desktop/fmnfmdn.webm' size:'3 MB' resolution:'1600x900' uptime:'00:00:11'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:23] DEBUG: Start record by rec panel
+[5.9.26][10 10.0.18362][5168][64bit][18:35:23] DEBUG:  Available free disk space: '157092 (Mb)' Min disk space required (limit): '1024 (Mb)'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:23] DEBUG: Start record
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Set file size:'4294967296'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Set min free disk space size:'1073741824'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: ---------------
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: Record [BEGIN] [Thu Jan 23 18:35:27 2020]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: Capture rect:x:0 y:0 width:1600 height:900
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: Draw mouse cursor:1
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: Hightlight mouse cursor:0
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: Animate mouse clicks:1
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: Draw watermark:1
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: Watermark opacity:85
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: Watermark path::/images/mini_watermark.png
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Mode Input
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Input device count:2
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Write microphone: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Audio microphone device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Enum audio devices [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Mode Output
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Output device count:1
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Unable to get exclusive use property for device. Error: 'The operation completed successfully.'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}' exclusive use: 'true' exclusive prefer: 'true'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Enum audio devices [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Write systemsound: '[YES]'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Audio systemsound device id: ''
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: AV codec register all [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Create output video stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Video Codec ID:vp8 Name long:libvpx VP8 name short:libvpx
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: create output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Open video output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Bitrate:12096000 Threads:3
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Open video output stream [END]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] ERROR: Open output video stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Create audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Create audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Open audio output stream [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Open audio output stream [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Video encoder info:File path:C:\Users\hp\Desktop\ice_video_20200123-183527.webm
+ Video:
+Codec:vp8
+
+ Audio:
+Codec:vorbis
+
+
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Video encoder start [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] INFO: PortAudio initialize [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: PortAudio input devices::Device name:'Stereo Mix (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{d0fb52c9-433e-47eb-863e-506373b154c3}';Device name:'Microphone (Realtek High Definition Audio)' id:'{0.0.1.00000000}.{fb2589a8-7729-4d8a-a39c-d0c50f95492c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: PortAudio output devices::Device name:'Speakers/Headphones (Realtek High Definition Audio)' id:'{0.0.0.00000000}.{8a7d50de-4497-4335-8d59-cfca3bb0f77c}';
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Recorder::setState, 1
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Open audio [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Request audio input format
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Audio input format: ch_number = 2, sample_rate = 48000, bits_sample = 16
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Request audio output format
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Host Api Count:'1'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: WASAPI host found. Device count:'4'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Audio ouput format: ch_number = 2, sample_rate = 48000, bits_sample = 32
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Allocating output resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Allocating input resampler context
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Open mic device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Device name:'Microphone (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Open mic device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:27] DEBUG: Open loopback device [BEGIN]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Device name:'Speakers/Headphones (Realtek High Definition Audio)' Max channels:'2' Selected channels:'2'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Open loopback device [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Open audio [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Recorder::setState, 2
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] INFO: Find monitor for rect: (0, 0, 1599, 899)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] INFO: Starting DDA screen \\.\DISPLAY1 grab on Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] INFO: Init DDA capturing
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Intel(R) HD Graphics 5500
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: \\.\DISPLAY1
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: RECT MON: (0,1600,0,900) RECT CAP: (0,1600,0,900)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Last one was matched
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Create shared texture... w:1600 h:900
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Create shared textue [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Create render target...
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Create render target [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Allocate frame buffer:'0x00000249b96c7060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Init YUV converter: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Init YUV converter [OK]
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: source dim: (1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: YUV: (1600, 900) (0, 0, 1600, 900)
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Allocate frame buffer:'0x00000249d8243060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:28] DEBUG: Allocate frame buffer:'0x00000249d87d9060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:31] DEBUG: Allocate frame buffer:'0x00000249d8d60060'
+[5.9.26][10 10.0.18362][5168][64bit][18:35:31] DEBUG: Allocate frame buffer:'0x00000249e22c1060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:13] DEBUG: Allocate frame buffer:'0x00000249e8852060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:13] DEBUG: Allocate frame buffer:'0x00000249e8def060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:14] DEBUG: Allocate frame buffer:'0x00000249e9374060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:14] DEBUG: Allocate frame buffer:'0x00000249e990e060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:14] DEBUG: Allocate frame buffer:'0x00000249fde94060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:14] DEBUG: Allocate frame buffer:'0x00000249fe42c060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:50] DEBUG: Video capture [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:36:50] DEBUG: Video capture [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:36:50] DEBUG: Video capture [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:36:50] DEBUG: Video capture [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:36:50] DEBUG: Mix worker [STOP]
+[5.9.26][10 10.0.18362][5168][64bit][18:36:50] DEBUG: Mix worker [STOP COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:36:50] DEBUG: Mix worker [WAIT]
+[5.9.26][10 10.0.18362][5168][64bit][18:36:50] DEBUG: Mix worker [WAIT COMPLETE]
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Video packets count:0
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free mem packets count:11
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249e22c1060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249e8def060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249e9374060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249e990e060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249b96c7060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249fde94060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249fe42c060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249d8243060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249d8d60060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249d87d9060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Free frame buffer:'0x00000249e8852060'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Video frame added:'7418' Video frame writed:'7418' Audio frame added:'10282' Audio frame writed:'10282' 
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Record complete. Save to: 'C:\Users\hp\Desktop\ice_video_20200123-183527.webm' Time (s):'82' File size: '22427121'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Audio analitics:lbZeroBlockCount:'485', lbNonZeroBlockCount:'0', lbZeroBlockSamplesCount:'3650288', lbNonZeroBlockSamplesCount:'0', cpZeroBlockCount:'0', cpNonZeroBlockCount:'485', cpZeroBlockSamplesCount:'0', cpNonZeroBlockSamplesCount:'3650288', cpLoopbackBufferOverflowCount:'0' cpCaptureBufferOverflowCount:'0'
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Recorder::setState, 0
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: Record complete
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: BEGIN CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: END CREATE RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:36:51] DEBUG: SHOW RENAME
+[5.9.26][10 10.0.18362][5168][64bit][18:36:53] DEBUG: Accepted rename. Name changed:[YES]
+[5.9.26][10 10.0.18362][5168][64bit][18:36:53] DEBUG: file:'C:/Users/hp/Desktop/Final.webm' size:'21 MB' resolution:'1600x900' uptime:'00:01:22'
+[5.9.26][10 10.0.18362][5168][64bit][19:19:35] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][19:19:35] DEBUG: Audio volume 0
+[5.9.26][10 10.0.18362][5168][64bit][19:19:35] DEBUG: New session state =inactive
+[5.9.26][10 10.0.18362][5168][64bit][19:19:35] DEBUG: New session state =inactive
