@@ -1,0 +1,8 @@
+
+[
+    link: https://thecodebuzz.com/jsonexception-possible-object-cycle-detected-object-depth/
+    For serializing data.
+
+    Microsoft.AspNetCore.Mvc.NewtonsoftJson -Version 3.1.2
+],
+
