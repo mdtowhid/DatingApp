@@ -28,7 +28,7 @@ namespace DatingApp.API
                 .AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
-            
+
             services.AddDbContextPool<DataContext>(options =>
             {
                 options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
@@ -43,11 +43,13 @@ namespace DatingApp.API
                     {
                         options.TokenValidationParameters = new TokenValidationParameters
                         {
+
                             ValidateIssuerSigningKey = true,
+                            ValidateIssuer = false,
+                            ValidateAudience = false,
+
                             IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
                             .GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
-                            ValidateIssuer = false,
-                            ValidateAudience = false
                         };
                     });
         }
@@ -81,8 +83,8 @@ namespace DatingApp.API
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

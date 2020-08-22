@@ -10,7 +10,7 @@ namespace DatingApp.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    // [Authorize]
+    [Authorize]
     public class UsersController : ControllerBase
     {
         private readonly IDatingRepository _repo;
