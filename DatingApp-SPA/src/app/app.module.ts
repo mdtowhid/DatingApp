@@ -24,6 +24,9 @@ import { MemeberCardComponent } from './members/memeber-card/memeber-card.compon
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { MemberDetailsResolver } from './_resolvers/member-details.resolver';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
+import { MemberEditResolver } from './_resolvers/member-edit.resolver';
+import { MemeberEditComponent } from './members/memeber-edit/memeber-edit.component';
+import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 
 @NgModule({
   declarations: [
@@ -36,6 +39,7 @@ import { MemberListResolver } from './_resolvers/member-list.resolver';
     MessagesComponent,
     MemeberCardComponent,
     MemberDetailComponent,
+    MemeberEditComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,6 +63,8 @@ import { MemberListResolver } from './_resolvers/member-list.resolver';
     ErrorInterceptorProvider,
     MemberDetailsResolver,
     MemberListResolver,
+    MemberEditResolver,
+    PreventUnsavedChanges,
   ],
   bootstrap: [AppComponent],
 })
