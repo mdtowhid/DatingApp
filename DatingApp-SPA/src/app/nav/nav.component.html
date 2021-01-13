@@ -1,7 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-  <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="active"
-    >Dating App</a
-  >
+  <a class="navbar-brand" [routerLink]="['/home']" routerLinkActive="active">Dating App</a>
 
   <ul *ngIf="loggedin()" class="navbar-nav mr-auto">
     <li class="nav-item" routerLinkActive="active">
@@ -21,46 +19,19 @@
     </a>
 
     <div class="dropdown-menu mt-3" *dropdownMenu>
-      <a
-        class="dropdown-item"
-        [routerLink]="['/member/edit']"
-        routerLinkActive="active"
-        ><i class="fa fa-user"></i> Edit Profile</a
-      >
+      <a class="dropdown-item" [routerLink]="['/member/edit']" routerLinkActive="active"><i class="fa fa-user"></i> Edit
+        Profile</a>
       <div class="dropdown-divider"></div>
-      <a (click)="logout()" class="dropdown-item" href="#"
-        ><i class="fa fa-sign-out"></i> Logout</a
-      >
+      <a (click)="logout()" class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a>
     </div>
   </div>
 
-  <form
-    *ngIf="!loggedin()"
-    #loginform="ngForm"
-    class="form-inline my-2 my-lg-0"
-    (ngSubmit)="login()"
-  >
-    <input
-      [(ngModel)]="model.username"
-      required
-      name="username"
-      class="form-control mr-sm-2"
-      type="text"
-      placeholder="Username"
-    />
-    <input
-      [(ngModel)]="model.password"
-      required
-      name="password"
-      class="form-control mr-sm-2"
-      type="password"
-      placeholder="Password"
-    />
-    <button
-      [disabled]="!loginform.valid"
-      class="btn btn-success my-2 my-sm-0"
-      type="submit"
-    >
+  <form *ngIf="!loggedin()" #loginform="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
+    <input [(ngModel)]="model.username" required name="username" class="form-control mr-sm-2" type="text"
+      placeholder="Username" />
+    <input [(ngModel)]="model.password" required name="password" class="form-control mr-sm-2" type="password"
+      placeholder="Password" />
+    <button [disabled]="!loginform.valid" class="btn btn-success my-2 my-sm-0" type="submit">
       Login
     </button>
   </form>
