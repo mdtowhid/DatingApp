@@ -37,7 +37,7 @@ export class MemeberEditComponent implements OnInit {
       .updateUser(this.authService.decodedToken.nameid, this.user)
       .subscribe(
         (next) => {
-          this.alertify.success('jskdjksdjks');
+          this.alertify.success('Profile updated successfully');
           this.editForm.reset(this.user);
         },
         (error) => {
