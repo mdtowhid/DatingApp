@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { JwtModule } from '@auth0/angular-jwt';
+import { FileUploadModule } from 'ng2-file-upload';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -27,6 +28,7 @@ import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { MemeberEditComponent } from './members/memeber-edit/memeber-edit.component';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
     MemeberCardComponent,
     MemberDetailComponent,
     MemeberEditComponent,
+    PhotoEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +50,7 @@ import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
     HttpClientModule,
     FormsModule,
     NgxGalleryModule,
+    FileUploadModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
     RouterModule.forRoot(appRoutes),
