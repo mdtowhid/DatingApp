@@ -37,7 +37,7 @@ export class AuthService {
     this.photoUrl.next(photoUrl);
   }
 
-  register(model: any) {
+  register(model: User) {
     return this.http.post(this.url + 'register', model);
   }
 
