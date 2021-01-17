@@ -57,6 +57,7 @@ namespace DatingApp.API
                             .GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
                         };
                     });
+            services.AddScoped<LogUserActivity>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

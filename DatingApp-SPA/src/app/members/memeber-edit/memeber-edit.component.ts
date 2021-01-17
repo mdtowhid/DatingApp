@@ -30,8 +30,15 @@ export class MemeberEditComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.route.data.subscribe((d) => (this.user = d.user));
-    this.authService.currentPhotoUrl.subscribe(photoUrl=>this.photoUrl=photoUrl);
+    this.route.data.subscribe((d) => {
+      this.user = d.user;
+    });
+    this.authService.currentPhotoUrl.subscribe(
+      (photoUrl) => (this.photoUrl = photoUrl)
+    );
+
+    console.log(this.user);
+    
   }
 
   updateUser() {
@@ -48,7 +55,7 @@ export class MemeberEditComponent implements OnInit {
       );
   }
 
-  updateMainPhoto(photoUrl){
+  updateMainPhoto(photoUrl) {
     this.user.photoUrl = photoUrl;
   }
 }
