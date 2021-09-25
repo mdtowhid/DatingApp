@@ -4,7 +4,7 @@
 	process = git-lfs filter-process
 	required = true
 [user]
-	name = Md towhid
-	email = newtowhid1232@gmail.com
+	name = Md_Towhid
+	email = towhid.cse2015to@gmail.com
 [core]
 	autocrlf = false
