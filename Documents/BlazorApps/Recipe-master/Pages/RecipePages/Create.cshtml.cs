@@ -97,6 +97,7 @@ namespace RecipeMaster.Pages.RecipePages
                 AddLkpRecipeCategories(splittedRecipeCategories, lkpRecipeCategory, ref ids);
             }
 
+            Recipe.CategoryNames = Recipe.SelectedLkpRecipeCategories;
             _context.Recipe.Add(Recipe);
             await _context.SaveChangesAsync();
 
@@ -108,9 +109,9 @@ namespace RecipeMaster.Pages.RecipePages
                     CreatedBy = 1,
                     RecipeId = Recipe.Id,
                     CreatedDate = Recipe.CreatedDate
-                });
+                }); 
 
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync(); 
             }
 
             

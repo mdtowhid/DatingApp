@@ -13,4 +13,4 @@ namespace RecipeMaster.Models
         public int CreatedBy { get; set; }
         public DateTime CreatedDate { get; set; }
     }
-}
+} 

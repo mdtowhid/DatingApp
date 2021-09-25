@@ -26,6 +26,7 @@ namespace RecipeMaster.Models
         public string Cook { get; set; }
         public string Total { get; set; }
         public string Notes { get; set; }
+        public string CategoryNames { get; set; }
 
         public bool FavoriteFlag { get; set; }
 
@@ -34,4 +35,5 @@ namespace RecipeMaster.Models
         [NotMapped]
         public string SelectedLkpRecipeCategories { get; set; }
     }
-}
+}   
+ 
