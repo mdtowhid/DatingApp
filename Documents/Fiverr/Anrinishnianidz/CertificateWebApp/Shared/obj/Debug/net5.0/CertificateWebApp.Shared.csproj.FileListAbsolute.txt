@@ -1,0 +1,12 @@
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\bin\Debug\net5.0\CertificateWebApp.Shared.deps.json
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\bin\Debug\net5.0\CertificateWebApp.Shared.dll
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\bin\Debug\net5.0\ref\CertificateWebApp.Shared.dll
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\bin\Debug\net5.0\CertificateWebApp.Shared.pdb
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\obj\Debug\net5.0\CertificateWebApp.Shared.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\obj\Debug\net5.0\CertificateWebApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\obj\Debug\net5.0\CertificateWebApp.Shared.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\obj\Debug\net5.0\CertificateWebApp.Shared.AssemblyInfo.cs
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\obj\Debug\net5.0\CertificateWebApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\obj\Debug\net5.0\CertificateWebApp.Shared.dll
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\obj\Debug\net5.0\ref\CertificateWebApp.Shared.dll
+C:\Users\hp\Documents\Fiverr\Anrinishnianidz\CertificateWebApp\Shared\obj\Debug\net5.0\CertificateWebApp.Shared.pdb
