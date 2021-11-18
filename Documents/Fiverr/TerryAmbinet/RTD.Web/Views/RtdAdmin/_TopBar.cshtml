@@ -1,0 +1,21 @@
+﻿@model bool
+<!-- Top bar Start -->
+<div class="container bg-lightgrey2 mt-2 rounded">
+
+    <div class="row px-2 py-3">
+        <div class="col-lg-2 text-center pb-lg-0 pb-sm-2">
+            <a asp-controller="auth" asp-action="login"><img src="/rtwimages/ctulogonostrapline.png" alt="RTW logo"></a>
+        </div>
+        <div class="col-lg-8 text-center pb-lg-0 pb-sm-2">
+            <h3 class="color-myblue mb-0">Return to Work Interview Portal</h3>
+        </div>
+        @if (Model)
+        {
+            <div class="col-lg-2">
+                <a asp-controller="RtdAdmin" asp-action="SaveAbsenceDetail" class="btn btn-success btn-block mt-0 mr-2 px-4">New Interview</a>
+            </div>
+        }
+
+    </div>
+</div>
+<!-- Top bar end -->

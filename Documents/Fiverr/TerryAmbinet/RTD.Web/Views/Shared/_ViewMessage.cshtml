@@ -1,0 +1,9 @@
+﻿@model ViewMessage
+
+@if (Model != null)
+{
+    <div class="alertboxsmall mx-auto alert @Model.CssClasses alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Info!</strong> @Model.Message
+    </div>
+}

@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewData["Title"] = "Activity";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("~/Views/RtdAdmin/_topbar.cshtml", false)
+@Html.Partial("~/Views/RtdAdmin/_infobar.cshtml")
+<!-- Start of current projevts grid -->
+<section class="container p-2 mt-4">
+
+    <div class="float-left">
+        <h4 class="color-mygreendark pb-2">Activity Log</h4>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-light table-striped table-hover table-bordered small">
+            <thead>
+                <tr class="text-white bg-dark">
+                    <th class="gcol10">Access Date</th>
+                    <th class="gcol10">Access Time</th>
+                    <th class="gcol15">System User</th>
+                    <th class="gcol60">Update message</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>12/05/2021</td>
+                    <td>11:30:45</td>
+                    <td class="font-weight-bolder">Janet Marston</td>
+                    <td>OA Text is an independent open-access scientific publisher showcases innovative research and ideas aimed at</td>
+                </tr>
+                <tr>
+                    <td>13/05/2021</td>
+                    <td>10:30:45</td>
+                    <td class="font-weight-bolder">Helen Jameson</td>
+                    <td>Publisher showcases innovative research and ideas aimed at</td>
+
+                </tr>
+                <tr>
+                    <td>14/05/2021</td>
+                    <td>12:40:40</td>
+                    <td class="font-weight-bolder">Mina Rekovic</td>
+                    <td>OA Text is an independent open-access scientific publisher aimed at</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    <nav>
+        <ul class="pagination small justify-content-center">
+            <li class="page-item">
+                <a href="#" class="page-link px-3 py-2"><span>&laquo;</span></a>
+            </li>
+            <li class="page-item active">
+                <a href="#" class="page-link px-3 py-2">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link px-3 py-2">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link px-3 py-2">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link px-3 py-2"><span>&raquo;</span></a>
+            </li>
+        </ul>
+    </nav>
+    <!-- End of pagination -->
+

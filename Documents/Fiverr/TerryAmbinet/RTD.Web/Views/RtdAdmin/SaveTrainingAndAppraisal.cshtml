@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "SaveTrainingAndAppraisal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("~/Views/RtdAdmin/_SectionNav.cshtml")
+<!-- Start of Summary RTW form -->
+<section class="container rounded bg-forms p-2 mt-1 bt-user">
+    <div class="projdetailsform rounded mx-auto">
+        <h4 class="color-myblue py-0">
+            Section 6: <i class="far fa-arrow-alt-circle-right pl-2 pr-2 color-mygreen"></i>
+            Training and Appraisal
+        </h4>
+
+        <form action="#" method="post">
+            <hr>
+            <h6>Is the Mandatory Training up to date for the employee?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes19" name="rb19" value="2">
+                <label class="custom-control-label" for="yes19">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no19" name="rb19" value="2" data-toggle="tooltip"
+                       data-placement="top" title="If No, line manager to arrange as a priority on return">
+                <label class="custom-control-label" for="no19">No</label>
+            </div>
+            <textarea class="form-control formstextstyle" rows="2" id="description"
+                      placeholder="Additional information"></textarea>
+
+            <h6>Is the Appraisal up to date for the employee?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes20" name="rb20" value="2">
+                <label class="custom-control-label" for="yes20">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no20" name="rb20" value="2" data-toggle="tooltip"
+                       data-placement="top" title="If No, line manager to arrange as a priority on return">
+                <label class="custom-control-label" for="no20">No</label>
+            </div>
+            <textarea class="form-control formstextstyle" rows="2" id="description"
+                      placeholder="Additional information"></textarea>
+
+            <h6>Has the absence End Date been entered into ESR?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes21" name="rb21" value="2">
+                <label class="custom-control-label" for="yes21">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no21" name="rb21" value="2">
+                <label class="custom-control-label" for="no21">No</label>
+            </div>
+            <textarea class="form-control formstextstyle" rows="2" id="description"
+                      placeholder="Additional information"></textarea>
+
+            <h6>Has the Return to Work Interview been entered into ESR?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes22" name="rb22" value="2">
+                <label class="custom-control-label" for="yes22">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no22" name="rb22" value="2">
+                <label class="custom-control-label" for="no22">No</label>
+            </div>
+            <textarea class="form-control formstextstyle" rows="2" id="description"
+                      placeholder="Additional information"></textarea>
+
+
+            <div class="text-right mt-3">
+                <button class="btn btn-success" type="button">Save / Update</button>
+            </div>
+
+        </form>
+    </div>
+</section>
+<!-- End Sumamry RTW details -->

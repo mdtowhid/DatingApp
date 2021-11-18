@@ -1,0 +1,240 @@
+﻿
+@{
+    ViewData["Title"] = "SaveSummary";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("~/Views/RtdAdmin/_SectionNav.cshtml")
+
+<!-- Start of Summary form -->
+<section class="container rounded bg-forms p-2 mt-1 lm-user">
+    <div class="projdetailsform rounded mx-auto">
+        <h4 class="color-myblue py-0">
+            Section 5: <i class="far fa-arrow-alt-circle-right pl-2 pr-2 color-mygreen"></i>
+            Summary
+        </h4>
+        <hr>
+        <form action="#">
+            <h6>Are you able to carry out normal duties?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes" name="rb1" value="2">
+                <label class="custom-control-label" for="yes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle">
+                <input type="radio" class="custom-control-input" id="no" name="rb1" value="2">
+                <label class="custom-control-label" for="no">No</label>
+            </div>
+            <hr>
+
+            <h6>GP Accessed?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes2" name="rb2" value="2">
+                <label class="custom-control-label" for="yes2">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no2" name="rb2" value="2">
+                <label class="custom-control-label" for="no2">No</label>
+            </div>
+
+            <h6>Support Accessed?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes3" name="rb3" value="2">
+                <label class="custom-control-label" for="yes3">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no3" name="rb3" value="2">
+                <label class="custom-control-label" for="no3">No</label>
+            </div>
+
+            <textarea class="form-control formstextstyle" rows="2" id="description"
+                      placeholder="Additional information"></textarea>
+
+            <hr>
+            <h6>Are you on medication?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes4" name="rb4" value="2">
+                <label class="custom-control-label" for="yes4">Yes</label>
+            </div>
+
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no4" name="rb4" value="2">
+                <label class="custom-control-label" for="no4">No</label>
+            </div>
+
+            <h6>Did it help?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes5" name="rb5" value="2">
+                <label class="custom-control-label" for="yes5">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no5" name="rb5" value="2">
+                <label class="custom-control-label" for="no5">No</label>
+            </div>
+
+            <textarea class="form-control formstextstyle" rows="2" id="description"
+                      placeholder="Additional information"></textarea>
+
+            <hr>
+            <h6>Personal Stress and Anxiety?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes9" name="rb9" value="2">
+                <label class="custom-control-label" for="yes9">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no9" name="rb9" value="2">
+                <label class="custom-control-label" for="no9">No</label>
+            </div>
+
+            <h6>Personal Risk Assessment Completed?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes6" name="rb6" value="2">
+                <label class="custom-control-label" for="yes6">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no6" name="rb6" value="2">
+                <label class="custom-control-label" for="no6">No</label>
+            </div>
+
+            <h6>Support offered OH / EAP wellbeing?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes7" name="rb7" value="2">
+                <label class="custom-control-label" for="yes7">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no7" name="rb7" value="2">
+                <label class="custom-control-label" for="no7">No</label>
+            </div>
+
+            <h6>Did you access it?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes8" name="rb8" value="2">
+                <label class="custom-control-label" for="yes8">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no8" name="rb8" value="2">
+                <label class="custom-control-label" for="no8">No</label>
+            </div>
+
+            <h6>Was it useful?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes10" name="rb10" value="2">
+                <label class="custom-control-label" for="yes10">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no10" name="rb10" value="2">
+                <label class="custom-control-label" for="no10">No</label>
+            </div>
+
+            <hr>
+            <h6>Have staff been informed of health and wellbeing resources?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes11" name="rb11" value="2">
+                <label class="custom-control-label" for="yes11">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no11" name="rb11" value="2">
+                <label class="custom-control-label" for="no11">No</label>
+            </div>
+
+            <h6>Is this sickness related to a third party insurance claim?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes12" name="rb12" value="2" data-toggle="tooltip"
+                       data-placement="top" title="i.e a non-fault road traffic accindent">
+                <label class="custom-control-label" for="yes12">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no12" name="rb12" value="2">
+                <label class="custom-control-label" for="no12">No</label>
+            </div>
+
+            <h6>Was the sickness caused by a work related incident?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes13" name="rb13" value="2" data-toggle="tooltip"
+                       data-placement="top" title="For incidents causing absences over 7 days please liaise with the H & S Team">
+                <label class="custom-control-label" for="yes13">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no13" name="rb13" value="2">
+                <label class="custom-control-label" for="no13">No</label>
+            </div>
+
+            <h6>If yes, has the Trust Incidient from been completed?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes14" name="rb14" value="2">
+                <label class="custom-control-label" for="yes14">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no14" name="rb14" value="2">
+                <label class="custom-control-label" for="no14">No</label>
+            </div>
+
+            <h6>Has a risk assessment been completed or reviewed following this absence?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes15" name="rb15" value="2">
+                <label class="custom-control-label" for="yes15">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no15" name="rb15" value="2">
+                <label class="custom-control-label" for="no15">No</label>
+            </div>
+            <hr>
+
+            <!-- Editor -->
+
+            <h6 class="pb-2 color-mygreendark">Summary of Return to Work Interview - Please enter any relevant information discussed during return to work interview</h6>
+            <textarea class="form-control formstextstyle" rows="12" id="description"
+                      placeholder="Additional Notes"></textarea>
+
+            <hr>
+            <h6>Does this episode of sickness require further action under the Attendance Policy?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes16" name="rb16" value="2" data-toggle="tooltip"
+                       data-placement="top"
+                       title="If yes, please consider the following as part of the Return to Work discussion:">
+                <label class="custom-control-label" for="yes16">Yes</label>
+            </div>
+
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no16" name="rb16" value="2">
+                <label class="custom-control-label" for="no16">No</label>
+            </div>
+
+            <h6>
+                Is there any mitigation which would mean it is not appropiate tp progress to the next stage formal meeting
+                and the manager is applying discretion
+            </h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes17" name="rb17" value="2">
+                <label class="custom-control-label" for="yes17">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no17" name="rb17" value="2">
+                <label class="custom-control-label" for="no17">No</label>
+            </div>
+            <textarea class="form-control formstextstyle" rows="2" id="description"
+                      placeholder="Additional information"></textarea>
+
+            <h6>
+                Would the employee like you to seek support from a Trade Union Representative or Colleague when arranging
+                any meetings ? If so, who?
+            </h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes18" name="rb18" value="2">
+                <label class="custom-control-label" for="yes18">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no18" name="rb18" value="2">
+                <label class="custom-control-label" for="no18">No</label>
+            </div>
+            <textarea class="form-control formstextstyle" rows="2" id="description"
+                      placeholder="Additional information"></textarea>
+
+            <div class="text-right mt-3">
+                <button class="btn btn-success" type="button">Save / Update</button>
+            </div>
+
+        </form>
+    </div>
+
+</section>
+<!-- End Summary Form -->-- End Sumamry RTW details -->

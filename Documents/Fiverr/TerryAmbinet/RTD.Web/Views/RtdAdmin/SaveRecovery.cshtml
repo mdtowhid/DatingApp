@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "SaveRecovery";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("~/Views/RtdAdmin/_SectionNav.cshtml")
+<!-- Start of project detials form -->
+<section class="container rounded bg-forms p-2 mt-1 lm-user">
+    <div class="projdetailsform rounded mx-auto">
+        <h4 class="color-myblue py-0">
+            Section 4: <i class="far fa-arrow-alt-circle-right pl-2 pr-2 color-mygreen"></i>
+            Recovery
+        </h4>
+        <hr>
+
+        <form asp-action="#">
+            <h6>Is the member of staff fully recovered?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes" name="rb1" value="2">
+                <label class="custom-control-label" for="yes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle">
+                <input type="radio" class="custom-control-input" id="no" name="rb1" value="2">
+                <label class="custom-control-label" for="no">No</label>
+            </div>
+
+            <textarea class="form-control formstextstyle" rows="3" id="description"
+                      placeholder="Additional information"></textarea>
+
+            <hr>
+            <h6>Is a phased return required?</h6>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3 mr-5">
+                <input type="radio" class="custom-control-input" id="no1" name="rb2" value="1">
+                <label class="custom-control-label" for="no1">No</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no2" name="rb2" value="2">
+                <label class="custom-control-label" for="no2">1 week - 50% of shift time</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no3" name="rb2" value="3">
+                <label class="custom-control-label" for="no3">2 week - 75% of shift time</label>
+            </div>
+            <!-- <select class="form-control formstextstyle" id="Reason">
+              <option value="#" selected disabled hidden>Shift Period</option>
+              <option value="1">1 week - 50% of shift time</option>
+              <option value="1">2 week - 75% of shift time</option>
+            </select> -->
+
+            <div class="">
+                <hr>
+                <h6>Have any adjustments been made</h6>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle ml-3">
+                <input type="radio" class="custom-control-input" id="yes5" name="rb5" value="2">
+                <label class="custom-control-label" for="yes5">Yes</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline formstextstyle mr-5">
+                <input type="radio" class="custom-control-input" id="no5" name="rb5" value="2">
+                <label class="custom-control-label" for="no5">No</label>
+            </div>
+            <textarea class="form-control formstextstyle" rows="3" id="description"
+                      placeholder="Additional information"></textarea>
+
+
+
+            <div class="text-right mt-3">
+                <button class="btn btn-success" type="button">Save / Update</button>
+            </div>
+
+        </form>
+    </div>
+
+</section>
+<!-- End project details -->
