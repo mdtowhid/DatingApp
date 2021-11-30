@@ -1,0 +1,27 @@
+﻿
+<div class="row HeroBannerBottom">
+    <div class="col-md-3 justify-content-center align-items-center flex-column text-white text-center">
+        <p class="name">VALUE</p>
+        <p class="value">@ReddocoinValue.RValues</p>
+    </div>
+    <div class="col-md-3 justify-content-center align-items-center flex-column text-white text-center">
+        <p class="name">HOLDERS</p>
+        <p class="value">@ReddocoinValue.Holders</p>
+    </div>
+    <div class="col-md-3 justify-content-center align-items-center flex-column text-white text-center">
+        <p class="name">Circulating</p>
+        <p class="value">@ReddocoinValue.Circulating</p>
+    </div>
+    <div class="col-md-3 justify-content-center align-items-center flex-column text-white text-center">
+        <p class="name">Market Cap</p>
+        <p class="value">@ReddocoinValue.MarketCaps</p>
+    </div>
+</div>
+
+
+
+@code {
+    [CascadingParameter]
+    public ReddocoinValue ReddocoinValue { get; set; }
+}
+

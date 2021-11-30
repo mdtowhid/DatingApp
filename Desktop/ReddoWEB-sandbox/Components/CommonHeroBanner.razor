@@ -1,0 +1,54 @@
+﻿<style>
+    
+</style>
+
+<div class="CommonHeroBanner">
+    <MudContainer>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="banner-text @(ForToken ? FontSize : "")">
+                    @convertedMarkdown
+                </div>
+            </div>
+        </div>
+    </MudContainer>
+</div>
+
+
+@code {
+
+    [Parameter]
+    public string BannerText { get; set; } = "";
+
+    [Parameter]
+    public bool ForToken { get; set; }
+    [Parameter]
+    public bool JustReddo { get; set; }
+
+    public string Reddocoin { get; set; }
+
+    private MarkupString convertedMarkdown;
+    private string FontSize { get; set; } = "token";
+
+
+    protected override void OnParametersSet()
+    {
+        //base.OnInitialized();
+        string reddoCoin = "Reddocoin";
+        if (JustReddo)
+        {
+            reddoCoin = "Reddo";
+        }
+        Reddocoin = $"<span class=\"Reddocoin\"> {reddoCoin}</span>";
+        if (ForToken)
+        {
+            convertedMarkdown = new MarkupString(BannerText+ Reddocoin);
+        }
+        else
+        {
+
+            convertedMarkdown = new MarkupString(Reddocoin + BannerText);
+        }
+    }
+
+}

@@ -1,0 +1,20 @@
+﻿<MudContainer MaxWidth="MaxWidth.Large" Class="Navigation">
+    <MudToolBar Class="Padding0 position-relative" >
+        <MudAvatar Square="true" Variant="Variant.Outlined" Class="LogoAvatar">
+            <NavLink Match="NavLinkMatch.All" class="nav-link" href="">
+                <img src="@LogoUrl" />
+            </NavLink>
+        </MudAvatar>
+        <MudSpacer />
+        <MudNavMenu Class="@MenuClassNames">
+            <NavLink @onclick="HideMenu" Match="NavLinkMatch.All" class="nav-link" href="">Home</NavLink>
+            <NavLink @onclick="HideMenu" class="nav-link" href="ecosystem">Ecosystem</NavLink>
+            <NavLink @onclick="HideMenu" class="nav-link" href="token">Token</NavLink>
+            @*<NavLink @onclick="HideMenu" class="nav-link" href="team">Our Team</NavLink>*@
+            <NavLink @onclick="HideMenu" class="nav-link" href="wheretobuy">Where To Buy</NavLink>
+        </MudNavMenu>
+        <MudNavMenu  @onclick="MenuToggler">
+            <div class="NavToggler">&#9776;</div>
+        </MudNavMenu>
+    </MudToolBar>
+</MudContainer>

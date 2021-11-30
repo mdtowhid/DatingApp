@@ -1,0 +1,1145 @@
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../css/fonts/poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'ruda';
+    src: url('../css/fonts/Ruda-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Gilroy-SemiBold"; src: url("../css/fonts/Gilroy-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("../css/fonts/Gilroy-ExtraBold.otf") format("opentype");
+}
+
+.mud-chart-legend-marker {
+    
+}
+
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, .btn-link {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.content {
+    padding-top: 1.1rem;
+}
+
+.valid.modified:not([type=checkbox]) {
+    outline: 1px solid #26b050;
+}
+
+.invalid {
+    outline: 1px solid red;
+}
+
+.validation-message {
+    color: red;
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+/*
+    All
+*/
+
+.Margin0 {
+    margin: 0 !important
+}
+
+.Padding0 {
+    padding: 0 !important
+}
+
+.BgTransparent {
+    background-color: transparent;
+}
+.NavToggler {
+    display: none;
+}
+
+.BoxBaseShadow {
+    box-shadow: 0px 18px 48px rgb(164 36 243 / 48%) !important;
+}
+
+/*
+    MainLayout
+*/
+
+.BgBlack {
+    background-color: #000000;
+}
+
+
+/*Navigation*/
+
+.Navigation {
+    background-color: black;
+}
+
+.LogoAvatar {
+    border: none !important;
+    width: 214.41px !important;
+    height: 42px !important;
+}
+
+    .LogoAvatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.NavigationLinks {
+    display: flex !important;
+}
+
+    .NavigationLinks a {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+        .NavigationLinks a.active,
+        .NavigationLinks a:hover{
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+            background: #A424F3;
+            box-shadow: 0px 12px 26px rgba(164, 36, 243, 0.36);
+            border-radius: 4px;
+        }
+
+/*Hero Banner*/
+.HeroBanner {
+    background: url(../Images/hero-banner-bg.png), no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: left center;
+    padding-bottom: 70px;
+}
+
+.HeroBannerTop {
+}
+
+    .HeroBannerTop .text {
+        margin-top: 220px;
+        /*height: 240px;*/
+    }
+
+        .HeroBannerTop .text .heading {
+            font-family: Ruda;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 72px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: white;
+            margin: 0;
+        }
+
+            .HeroBannerTop .text .heading span.reddocoin {
+                font-family: Ruda;
+                font-size: 60px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 72px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #22A2F1;
+            }
+
+        .HeroBannerTop .text .summery {
+            margin-top: 36px;
+            height: 60px;
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 34px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .HeroBannerTop .text .buttons {
+        }
+
+            .HeroBannerTop .text .buttons a {
+                height: 72px;
+                width: 200px;
+                border-radius: 4px;
+                color: white;
+                text-transform: uppercase;
+                font-family: Poppins;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                letter-spacing: 0em;
+                margin-top: 72px;
+                -ms-transition: .5s linear;
+                -o-transition: .5s linear;
+                transition: .5s linear;
+                display: inline-block;
+                text-align: center;
+                line-height: 72px;
+                text-decoration: none;
+            }
+
+                .HeroBannerTop .text .buttons a.active, .HeroBannerTop .text .buttons button:hover {
+                    background: #A424F3;
+                    box-shadow: 0px 18px 48px rgb(164 36 243 / 48%) !important;
+                }
+
+.HeroBannerBottom {
+    height: 48px;
+    margin-top: 140px;
+}
+
+    .HeroBannerBottom .name {
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #9BA2AF;
+        height: 18px;
+    }
+
+    .HeroBannerBottom .value {
+        font-family: Poppins;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 12px;
+        height: 18px;
+    }
+
+.HeroBanner .Chart {
+    height: 400px;
+    width: 630px;
+    border-radius: 12px;
+    background: #191919;
+    margin-top: 175px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 18px 48px 0px #0000003d;
+}
+
+.Chart .coin {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    height: 102px;
+    width: 196px;
+    border-radius: 4px;
+    padding: 16px 18px;
+    position: absolute;
+    box-shadow: 0px 18px 48px 0px #0000003D;
+}
+
+    .Chart .coin.kucoin {
+        top: -80px;
+        left: 25px;
+        background-image: linear-gradient(to bottom right, #000000, #23202D);
+    }
+
+    .Chart .coin.coinbase {
+        background-image: linear-gradient(to bottom right, #000000, #23202D);
+        right: -87px;
+        top: -66px;
+    }
+
+    .Chart .coin.binance {
+        background-image: linear-gradient(to bottom right, #000000, #23202D);
+        bottom: -120px;
+    }
+.coin-top {
+    display: flex;
+}
+
+    .coin-top img {
+        margin-right: 12px;
+        width: 48px;
+        height: 48px;
+    }
+.dollar {
+    color: white;
+}
+.state {
+    color: #FF0000;
+    margin-right: 6px;
+}
+
+
+.state img {
+    height: 6.000000000000023px;
+    width: 9.000000000000034px;
+}
+
+.down {
+    color: #9BA2AF;
+}
+
+    .down .coin-name {
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+
+.chart-buttons {
+    position: absolute;
+    right: -75px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+    .chart-buttons button {
+        height: 48px;
+        width: 104px;
+        border-radius: 4px;
+        position: absolute;
+    }
+
+    .chart-buttons .buy {
+        background: #1DCF43;
+        right: 0;
+        box-shadow: 0px 12px 36px 0px #1DCF437A;
+    }
+    .chart-buttons .sell {
+        background: #FF0000;
+        right: 0;
+        top: 65px;
+        box-shadow: 0px 12px 36px 0px #FF00005C;
+    }
+
+
+
+
+
+
+
+
+
+
+.AdvantagesLayout {
+    /*height: 1008px;*/
+    background: url('../images/Advantages/bg.png');
+}
+
+.AdvantagesTop {
+    padding-top: 90px;
+}
+
+    .AdvantagesTop .Logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .AdvantagesTop .Logos img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+.AdvantagesSection {
+}
+
+    .AdvantagesSection .reddocoin-advantages {
+    }
+
+        .AdvantagesSection .reddocoin-advantages p {
+            font-family: Ruda;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: white;
+        }
+
+            .AdvantagesSection .reddocoin-advantages p span {
+                font-family: Ruda;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 48px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #A424F3;
+            }
+
+    .AdvantagesSection .reddocoin-advantages-heading {
+        margin-top: 120px;
+    }
+
+.section {
+    width: 460px !important;
+    height: 216px !important;
+}
+
+    .section .p-top, .section .p-bottom {
+        clear: both;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+
+    .section .p-top {
+        font-family: Poppins;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: white;
+        width: 400px;
+        margin-top: 30px !important;
+    }
+
+    .section .p-bottom {
+        width: 400px;
+        height: 48px;
+        padding: 0 30px;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-top: 18px !important;
+        color: #9BA2AF !important;
+    }
+
+    .section.a img {
+        width: 71px;
+        height: 90px;
+    }
+
+    .section.a .desc .p-top {
+        margin-top: 30.1px !important;
+        height: 30px;
+    }
+
+
+    .section.b img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .section.c img {
+        width: 86.9px;
+        height: 90px;
+    }
+
+.per-trans {
+    color: white;
+    font-weight: 700;
+}
+
+/*
+    ::AdoptionAndValueLayout
+*/
+
+.AdoptionAndValue {
+    /*height: 852px;*/
+    background: url('../images/AdoptionAndValue/bg.png');
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 120px;
+}
+
+.MobileMockup {
+    margin-top: 120px;
+    width: 612.38px;
+    height: 612px;
+   /* background: url('../images/AdoptionAndValue/mock-creative.png');
+    background-size: cover;
+    background-position: center center;*/
+}
+
+.ReddocoinGrowth {
+    margin-top: 175px;
+    margin-left: 119.62px;
+}
+
+    .ReddocoinGrowth .heading {
+        /*width: 708px;*/
+        height: 134px;
+    }
+
+    .ReddocoinGrowth .heading {
+        font-family: Ruda;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 55px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        clear: both;
+        /*display: inline-block;*/
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+        .ReddocoinGrowth .heading span {
+            font-family: Ruda;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 60px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #22A2F1
+        }
+
+    .ReddocoinGrowth .desc-long {
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #9BA2AF;
+    }
+
+    .ReddocoinGrowth .desc-summery {
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+        margin-top: 12px;
+    }
+
+
+
+.EasySteps {
+    background: url(../images/easy-steps-bg.png), no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+}
+
+.EasyStepsDesc {
+}
+
+    .EasyStepsDesc .title {
+        margin-top: 223px;
+    }
+
+        .EasyStepsDesc .title p.about-us {
+            font-family: Ruda;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin: 0;
+            color: white;
+        }
+
+            .EasyStepsDesc .title p.about-us span {
+                font-family: Ruda;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 48px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #22A2F1;
+            }
+
+
+        .EasyStepsDesc .title .content {
+            height: 124px;
+            /*width: 582px;*/
+        }
+
+            .EasyStepsDesc .title .content .content1 {
+                font-family: Poppins;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 32px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: white;
+            }
+
+            .EasyStepsDesc .title .content .content2 {
+                color: #9BA2AF;
+                font-family: Poppins;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+.EasyStepsIconFocus {
+    /*background: url(../images/icon-focus1.png), no-repeat;
+    background-size: cover;*/
+    height: 474px;
+    width: 516px;
+    border-radius: 0px;
+    margin-left: 204px;
+    margin-top: 90px;
+}
+
+.EasyStepsEcoSystem {
+    /*background: url(../images/ecosystem-with-text.png), no-repeat;
+    background-size: cover;*/
+    height: 395px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .EasyStepsEcoSystem img {
+        width: 100%;
+        object-fit: cover;
+    }
+    /*CommonHeroBanner*/
+    .CommonHeroBanner {
+        background: url(../Images/common-hero-banner-top-bg.png), no-repeat;
+        background-size: cover;
+        height: 310px;
+    }
+
+    .CommonHeroBanner .banner-text {
+        font-family: Ruda;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 310px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: white;
+    }
+
+        .CommonHeroBanner .banner-text .Reddocoin {
+            font-family: Ruda;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 72px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #A424F3;
+        }
+
+.TokenList {
+    background: url(../Images/Token/list-bg.png), no-repeat;
+    background-size: cover;
+    /*height: 410px;*/
+}
+
+    .TokenList .token-list-table {
+        width: 100%;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+        .TokenList .token-list-table thead tr {
+            background: url(../Images/Token/list-bg.png), no-repeat;
+            background-size: cover;
+        }
+
+            .TokenList .token-list-table thead tr th:first-child {
+                width: 60%;
+                padding-left: 48px;
+            }
+
+            .TokenList .token-list-table thead tr th {
+                padding-top: 33px;
+                padding-bottom: 33px;
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #82869D;
+            }
+
+        .TokenList .token-list-table tbody tr {
+            height: 78px;
+        }
+
+            .TokenList .token-list-table tbody tr td {
+                height: 78px;
+            }
+
+                .TokenList .token-list-table tbody tr td:first-child {
+                    padding-left: 48px;
+                }
+
+                .TokenList .token-list-table tbody tr td .chips {
+                    display: flex;
+                }
+
+                    .TokenList .token-list-table tbody tr td .chips img {
+                        width: 48px;
+                        height: 48px;
+                    }
+
+                    .TokenList .token-list-table tbody tr,
+                    .TokenList .token-list-table tbody tr td,
+                    .TokenList .token-list-table tbody tr td .chips p {
+                        font-family: Poppins;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: white;
+                        margin: 0;
+                        margin-left: 15px;
+                        margin-top: 12px;
+                    }
+
+                        .TokenList .token-list-table tbody tr:hover,
+                        .TokenList .token-list-table tbody tr:nth-child(even) {
+                            background: url(../Images/Token/odd-td-bg.png), no-repeat;
+                        }
+
+
+/*
+    .Ecosystem
+*/
+.Ecosystem {
+    background: url(../Images/Ecosystem/bg.png), no-repeat;
+    background-size: cover;
+}
+    .Ecosystem .ecosystem-section {
+        margin-bottom: 108px;
+        margin-top: 120px;
+    }
+    .Ecosystem .image, .Ecosystem .image img {
+        height: 350px;
+        width: 350px;
+        left: 295px;
+        top: 634px;
+        border-radius: 0px;
+    }
+
+    .Ecosystem .ecosystem-section-desc {
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+        .Ecosystem .ecosystem-section-desc .heading {
+            font-family: Poppins;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            height: 30px;
+            color: #22A2F1;
+        }
+            .Ecosystem .ecosystem-section-desc .heading.Decentralized {
+                clear: both;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-align: center;
+            }
+            .Ecosystem .ecosystem-section-desc .desc {
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: center;
+                height: 45px;
+                color: #9BA2AF;
+                width: 400px;
+                margin-top: 18px;
+            }
+        .Ecosystem .ecosystem-section-desc button {
+            display: inline-block;
+            height: 48px;
+            width: 150px;
+            border-radius: 4px;
+            color: white;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 14px;
+            letter-spacing: 0em;
+            text-align: center;
+            background: #A424F3;
+            margin-top: 36px;
+        }
+
+
+/*Team*/
+
+
+.Team {
+    background: url(../Images/Team/bg.png), no-repeat;
+    background-size: cover;
+}
+.Team .team-members-1 {
+        padding-top: 120px;
+        margin-bottom: 30px;
+    }
+.Team .team-members-2 {
+        padding-bottom: 120px;
+    }
+.Team .team-members {
+    display: flex;
+    justify-content: space-between;
+}
+        .Team .team-members .team-member {
+            width: 20%;
+            height: 320px;
+            margin-right: 30px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .Team .team-members .team-member {
+            height: 320px;
+        }
+            .Team .team-members .team-member:last-child {
+                margin-right: 0 !important;
+            }
+            .Team .team-members .team-member .team-member-image {
+                position: relative;
+            }
+            .Team .team-members .team-member .team-member-image img {
+                width: 100%;
+                height: 320px;
+                object-fit: contain;
+            }
+            .Team .team-members .team-member .desc {
+                height: 90px;
+                width: 100%;
+                position: absolute;
+                bottom: 18px;
+                color: white;
+                background: url(../images/Team/Rectangle.png);
+                border-bottom-right-radius: 12px;
+                padding-top: 24px;
+                padding-left: 18px;
+            }
+                .Team .team-members .team-member .desc .name {
+                    font-family: Gilroy-SemiBold;
+                    font-size: 14px;
+                    line-height: 12px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+
+                .Team .team-members .team-member .desc .designation {
+                    margin-top: 6px !important;
+                    font-family: Gilroy-Bold;
+                    font-size: 30px;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    margin-bottom: 24px !important;
+                }
+
+
+/*
+    Footer
+*/
+
+.Footer {
+    background: url(../Images/Footer/bg.png), no-repeat;
+    background-size: cover;
+    padding-bottom: 90px;
+    color: white;
+}
+.FooterTopWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+}
+.FooterBottom {
+    margin-top: 120px;
+}
+    .FooterBottom .LogoMail {
+        height: 90px;
+        width: 333px;
+        border-radius: 0px;
+    }
+    .FooterBottom .reddocoin-footer-logo, 
+    .FooterBottom .reddocoin-footer-logo img {
+        height: 42px;
+        width: 214.41355895996094px;
+        left: 240px;
+        top: 1356px;
+        border-radius: 0px;
+    }
+    .FooterBottom .copyright {
+        margin-top: 30px;
+        color: #FFFFFF;
+    }
+        .FooterBottom .copyright span {
+            color: #1F94DC;
+        }
+
+
+
+
+
+    .FooterBottom .footer-menu {
+    }
+        .FooterBottom .footer-menu ul {
+            margin-top: 60px;
+            height: 144px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+.FooterBottom .footer-menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.FooterBottom .footer-menu .heading {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+    .FooterBottom .hr-social-menu {
+        display: flex;
+        margin-top: 56px;
+        justify-content: space-between;
+    }
+
+        .FooterBottom .hr-social-menu div {
+            width: 36px;
+            height: 36px;
+            border: 2px solid white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 36px;
+            transition: .4s linear;
+        }
+.FooterBottom .hr-social-menu div a {
+    color: white;
+    transition: .4s linear;
+}
+
+    .FooterBottom .hr-social-menu div:hover,
+    .FooterBottom .hr-social-menu div a:hover {
+        background: #A424F3;
+    }
+
+    .FooterBottom .hr-social-menu div:last-child {
+        margin-right: 0;
+    }
+
+            .FooterBottom .hr-social-menu div.fb a {
+                width: 10px;
+                height: 16px;
+                text-align: center;
+            }
+            .FooterBottom .hr-social-menu div.twitter a {
+                width: 16px;
+                height: 13px;
+                text-align: center;
+            }
+            .FooterBottom .hr-social-menu div.telegram a {
+                width: 19.14px;
+                height: 16.03px;
+                text-align: center;
+            }
+            .FooterBottom .hr-social-menu div.reddit a {
+                width: 19.15px;
+                height: 15.86px;
+                text-align: center;
+            }
+            .FooterBottom .hr-social-menu div.youtube a {
+                width: 17.93px;
+                height: 12.58px;
+                text-align: center;
+            }
+            .FooterBottom .hr-social-menu div.linkedin a {
+                width: 16.7px;
+                height: 16px;
+                text-align: center;
+            }
+            .FooterBottom .hr-social-menu div.medium a {
+                width: 16px;
+                height: 13px;
+                text-align: center;
+            }
+
+
+.reddocoin-token{
+    margin-top: 120px !important;
+}
+
+
+.reddocoin-token p {
+    font-family: Ruda;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+.reddocoin-token p span {
+    font-family: Ruda;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #A424F3;
+}
+
+.reddocoin-token-heading {
+    margin-top: 120px;
+}
+
+.ReddoToken .addres-box .address {
+    position: relative;
+    margin-top: 48px;
+}
+
+.address p {
+    position: absolute;
+    top: 23px;
+    color: white;
+    font-size: 22px;
+    padding-left: 25px;
+}
+
+.copy-png {
+    position: absolute;
+    right: 15px;
+    top: 19px;
+}
+
+.bep{
+    font-family: poppins;
+    font-size: 22px;
+    margin-top: 60px;
+}
+
+.token-desc{
+    margin-top: 90px;
+    padding-bottom: 120px;
+}
+
+.token-desc h5 {
+    color: #A424F3;
+}
+
+.token-desc p{
+    color: #9BA2AF;
+}
+
+
+.FooterBotomPages {
+    background: url(../images/easy-steps-bg.png), no-repeat;
+    background-size: cover;
+}
+
+    .FooterBotomPages h3 {
+        color: #B6509E;
+    }
+.FooterBotomPages section p{
+    font-size: 16px;
+}
+
+.ol-list li{
+    font-size: 17px;
+    margin-bottom: 9px;
+}
+
+.cookies-reddocoin {
+    list-style: disc;
+    margin-left: 50px;
+}
+    .cookies-reddocoin li {
+        font-size: 17px;
+        margin-bottom: 9px;
+    }
