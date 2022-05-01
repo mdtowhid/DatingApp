@@ -14,11 +14,10 @@ namespace Cleansiness.Shared.Interfaces
         AuditMaster GetAuditMasterById(int pAuditId);
         AuditMaster AddOrUpdateAuditMaster(AuditMasterCreationDto pAuditMasterCreationDto);
 
-        List<AuditDetail> GetAuditDetails();
         AuditDetail GetAuditDetailById(int pAuditId);
         AuditDetailCreationDto AddOrUpdateAuditDetail(AuditDetailCreationDto pAuditDetailCreationDto);
 
-        List<SectionTrack> GetSectionTracks(int pMasterId);
-        SectionTrack GetSectionTrack(int pSectionId);
+        List<AuditDetail> GetAuditDetails(int pMasterId, int pSectionId);
+        SectionTrack GetSectionTrack(int pMasterId, int pSectionId);
     }
 }

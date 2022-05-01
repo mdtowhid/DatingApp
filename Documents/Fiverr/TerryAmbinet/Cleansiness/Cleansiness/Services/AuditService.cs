@@ -24,6 +24,10 @@ namespace Cleansiness.Services
         {
             AuditDetailCreationDto vModel = new();
             vModel.ResponseType = ResponseType.Error;
+            var vSectionTracked = _context.SectionTracks
+                .FirstOrDefault(x => x.AuditMasterID == pAuditDetailCreationDto.MasterId
+                && x.SectionID == pAuditDetailCreationDto.SectionId);
+
             try
             {
                 bool vIsSaved=false;
@@ -53,24 +57,54 @@ namespace Cleansiness.Services
                     }
                 }
 
-                vModel.ResponseType = vIsSaved ? ResponseType.Add : ResponseType.Error;
-                vModel.Message = vIsSaved ? "" : "Error occured while saving";
+                //vModel.ResponseType = vIsSaved ? ResponseType.Add : ResponseType.Error;
+                //vModel.Message = vIsSaved ? "" : "Error occured while saving";
 
                 decimal y = Decimal.Divide(vAudutQuestionCount, vTotalQuestions - vNotApplicableCount);
                 decimal z = Math.Ceiling(y * 100);
 
                 //Save SectionTrack info here
-                SectionTrack vSectionTrack = new SectionTrack()
-                {
-                    AuditMasterID = pAuditDetailCreationDto.MasterId,
-                    SectionID = pAuditDetailCreationDto.SectionId,
-                    SectionScore = z,
-                    SectionStatus = pAuditDetailCreationDto.SectionStatus,
-                    UpdateDate = DateTime.Now
-                };
 
-                _context.SectionTracks.Add(vSectionTrack);
-                vIsSaved = _context.SaveChanges() > 0;
+                if(vIsSaved)
+                {
+                    SectionTrack vSectionTrack = new SectionTrack()
+                    {
+                        AuditMasterID = pAuditDetailCreationDto.MasterId,
+                        SectionID = pAuditDetailCreationDto.SectionId,
+                        SectionScore = z,
+                        SectionStatus = pAuditDetailCreationDto.SectionStatus,
+                        UpdateDate = DateTime.Now
+                    };
+
+                    _context.SectionTracks.Add(vSectionTrack);
+                    vIsSaved = _context.SaveChanges() > 0;
+
+                    //UPDATE AUDIT MASTER SCORE/STATUS
+                    var vAuditMaster
+                        = _context.AuditMasters.FirstOrDefault(x => x.AuditMasterID == pAuditDetailCreationDto.MasterId);
+                    if (vAuditMaster != null)
+                    {
+                        var vSections = _context.Sections.Select(x => x.SectionID).ToList();
+                        bool vIsAllsectionCompleted = false;
+                        foreach (var sectionId in vSections)
+                        {
+                            var vSectionTrackInfo = _context.Sections.FirstOrDefault(x => x.SectionID == sectionId);
+                            if (vSectionTrackInfo != null)
+                            {
+                                vIsAllsectionCompleted = true;
+                            }
+                            else
+                            {
+                                vIsAllsectionCompleted = false;
+                            }
+                        }
+                        vAuditMaster.AuditStatus = vIsAllsectionCompleted ? 1 : 0;
+                        vAuditMaster.UpdateDt = DateTime.Now;
+                        vAuditMaster.AuditScore = z;
+                        _context.AuditMasters.Update(vAuditMaster);
+                        vIsSaved = _context.SaveChanges() > 0;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -118,11 +152,6 @@ namespace Cleansiness.Services
             throw new NotImplementedException();
         }
 
-        public List<AuditDetail> GetAuditDetails()
-        {
-            throw new NotImplementedException();
-        }
-
         public AuditMaster GetAuditMasterById(int pAuditId)
         {
             throw new NotImplementedException();
@@ -143,14 +172,41 @@ namespace Cleansiness.Services
             return vModelList;
         }
 
-        public SectionTrack GetSectionTrack(int pSectionId)
+        public SectionTrack GetSectionTrack(int pMasterId, int pSectionId)
         {
-            throw new NotImplementedException();
+            SectionTrack vModel = new();
+
+            if(pMasterId!=0 && pSectionId != 0)
+            {
+                vModel = _context.SectionTracks.FirstOrDefault(x => x.AuditMasterID == pMasterId && x.SectionID == pSectionId);
+                return vModel;
+            }
+            if (pMasterId != 0)
+            {
+                vModel = _context.SectionTracks.FirstOrDefault(x => x.AuditMasterID == pMasterId);
+                return vModel;
+            }
+                
+            if (pMasterId != 0)
+            {
+                vModel = _context.SectionTracks.FirstOrDefault(x => x.SectionTrackID == pSectionId);
+                return vModel;
+            }
+                
+            return vModel;
         }
 
-        public List<SectionTrack> GetSectionTracks(int pMasterId)
+        public List<AuditDetail> GetAuditDetails(int pMasterId, int pSectionId)
         {
-            throw new NotImplementedException();
+            List<AuditDetail> vModel = new();
+
+            if (pMasterId != 0)
+            {
+                vModel = _context.AuditDetails.Where(x => x.AuditMasterID == pMasterId).ToList();
+                return vModel;
+            }
+
+            return vModel;
         }
     }
 }

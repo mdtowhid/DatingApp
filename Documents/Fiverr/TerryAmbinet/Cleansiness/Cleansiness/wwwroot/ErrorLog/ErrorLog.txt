@@ -50,3 +50,27 @@ Error: Object reference not set to an instance of an object.
 =================Error At: 01/05/2022 01:37:18 +06:00=================
 
 
+=================Error At: 02/05/2022 00:09:54 +06:00=================
+Error Occured In AdminController, Action: AuditQuestions
+Error: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+=================Error At: 02/05/2022 00:09:54 +06:00=================
+
+
+=================Error At: 02/05/2022 00:13:53 +06:00=================
+Error Occured In AdminController, Action: AuditQuestions
+Error: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+=================Error At: 02/05/2022 00:13:53 +06:00=================
+
+
+=================Error At: 02/05/2022 00:27:28 +06:00=================
+Error Occured In AdminController, Action: AuditQuestions
+Error: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+=================Error At: 02/05/2022 00:27:28 +06:00=================
+
+
+=================Error At: 02/05/2022 00:50:23 +06:00=================
+Error Occured In AdminController, Action: AuditQuestions
+Error: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+=================Error At: 02/05/2022 00:50:23 +06:00=================
+
+

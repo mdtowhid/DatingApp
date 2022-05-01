@@ -52,7 +52,8 @@ namespace Cleansiness.Controllers
                         new { pResp = (int) vAuditMaster.ResponseType, pMesg= vAuditMaster.Message});
                 }
             }
-            return RedirectToAction("AuditSections", "Admin", new { pAuditMasterId = 0});
+            return RedirectToAction("AuditSections", "Admin"
+                , new { pAuditMasterId = vAuditMaster.AuditMasterID});
         }
         
         [HttpGet("AuditSections/{pAuditMasterId}")]
@@ -66,19 +67,45 @@ namespace Cleansiness.Controllers
         
         public IActionResult AuditQuestions(int pSectionId)
         {
+            
             HttpContext.Session.SetString(SessionHelper.AuditSectionId, pSectionId.ToString());
             AuditDetailCreationDto vAuditQuestionDto = new();
             vAuditQuestionDto.QuestionList = _common.GetQuestionsBySectionId(pSectionId);
             vAuditQuestionDto.SectionName = _common.GetSectionNameById(pSectionId).SectionName;
             vAuditQuestionDto.MasterId = SessionHelper.GetCurrentAuditMasterId(HttpContext);
             vAuditQuestionDto.SectionId = pSectionId;
+
+            var vSectionTrack = _repo.GetSectionTrack(vAuditQuestionDto.MasterId, pSectionId);
+            if (vSectionTrack != null)
+            {
+                vAuditQuestionDto.IsCreateForm = false;
+                var vSavedAuditQuestions = _repo.GetAuditDetails(vAuditQuestionDto.MasterId, pSectionId);
+                for (int i = 0; i < vSavedAuditQuestions.Count; i++)
+                {
+                    vAuditQuestionDto.QuestionList[i].Comment = vSavedAuditQuestions[i].Comment;
+                    vAuditQuestionDto.QuestionList[i].ResultDropdownId = vSavedAuditQuestions[i].Result;
+                }
+            }
+
+
             return View(vAuditQuestionDto);
         }
         
         [HttpPost]
         public IActionResult SaveAuditing(AuditDetailCreationDto pAuditQuestionDto)
         {
-            pAuditQuestionDto.IsCreateForm = true;
+            var vSectionTrack = _repo.GetSectionTrack(pAuditQuestionDto.MasterId, pAuditQuestionDto.SectionId);
+            if(vSectionTrack != null)
+            {
+                pAuditQuestionDto.IsCreateForm = false;
+            }
+            else
+            {
+                pAuditQuestionDto.IsCreateForm = true;
+            }
+            pAuditQuestionDto.SectionStatus = 1;
+
+
             AuditDetailCreationDto vAuditDetailCreationDto =_repo.AddOrUpdateAuditDetail(pAuditQuestionDto);
             return RedirectToAction("AuditQuestions", "Admin"
                 , new { pSectionId = SessionHelper.GetCurrentSectionId(HttpContext) });
