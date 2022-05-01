@@ -1,0 +1,61 @@
+﻿@model RecoverAccountDto
+
+@{
+    ViewData["Title"] = "Recover Account";
+}
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card mt-5">
+            <h4 class="card-header">Check account</h4>
+            <div class="card-body">
+                <form enctype="multipart/form-data"
+                      asp-controller="Auth"
+                      asp-action="RecoverAccount"
+                      method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <!--=================RESPONSE MANAGEMENT==================-->
+                    @if (ViewBag.AuthResponseDto != null)
+                    {
+                        if (ViewBag.AuthResponseDto.ResponseType == ResponseType.Failed)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @ViewBag.AuthResponseDto.Message
+                            </div>
+                        }
+
+                        if (ViewBag.AuthResponseDto.ResponseType == ResponseType.Update)
+                        {
+                            <div class="alert alert-success" role="alert">
+                                @ViewBag.AuthResponseDto.Message
+                            </div>
+                        }
+                    }
+                    <!--=================RESPONSE MANAGEMENT END==================-->
+                    @if(ViewBag.AuthResponseDto == null)
+                    {
+                        <input asp-for="Id" type="hidden" />
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label"></label>
+                            <input asp-for="Password" value="temp" placeholder="Password" class="form-control" type="password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="ConfirmPassword" class="form-label"></label>
+                            <input asp-for="ConfirmPassword" value="temp" placeholder="Password" class="form-control" type="password" />
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <input class="btn btn-sm btn-success"
+                                   type="submit" value="Submit" />
+                        </div>
+                    }
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>

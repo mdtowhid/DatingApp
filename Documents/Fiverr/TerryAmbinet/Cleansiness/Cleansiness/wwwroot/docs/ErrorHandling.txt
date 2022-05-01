@@ -1,0 +1,7 @@
+﻿
+https://stackoverflow.com/questions/28967183/global-error-logging-in-asp-net-mvc-6
+
+https://stackoverflow.com/questions/569252/logging-errors-in-asp-net-mvc
+
+
+https://stackoverflow.com/questions/31237613/how-to-register-a-global-filter-with-mvc-6-asp-net-5

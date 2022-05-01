@@ -1,0 +1,71 @@
+﻿@model UserForCreationDto
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <h5 class="card-header">Sign Up</h5>
+            <div class="card-body">
+                <form enctype="multipart/form-data"
+                      asp-controller="Auth"
+                      asp-action="Register"
+                      method="post">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <!--=================RESPONSE MANAGEMENT==================-->
+                    @if (ViewBag.AuthResponseDto != null)
+                    {
+                        if (ViewBag.AuthResponseDto.HasError)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @ViewBag.AuthResponseDto.Message
+                            </div>
+                        }
+
+                        if (!ViewBag.AuthResponseDto.HasError)
+                        {
+                            <div class="alert alert-success" role="alert">
+                                @ViewBag.AuthResponseDto.Message
+                            </div>
+                        }
+                    }
+                    <!--=================RESPONSE MANAGEMENT END==================-->
+
+                    <div class="mb-3">
+                        <label asp-for="CompanyName" class="form-label"></label>
+                        <input asp-for="CompanyName" class="form-control" />
+                        <span asp-validation-for="CompanyName" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="FirstName" class="form-label"></label>
+                        <input asp-for="FirstName" class="form-control" />
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="LastName" class="form-label"></label>
+                        <input asp-for="LastName" class="form-control" />
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Password" class="form-label"></label>
+                        <input asp-for="Password" placeholder="Password" class="form-control" type="password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <input class="btn btn-sm btn-success"
+                               type="submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>

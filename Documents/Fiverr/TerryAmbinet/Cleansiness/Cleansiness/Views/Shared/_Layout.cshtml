@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="NHS Hospital Cleansiness Monitor" name="description">
+    <meta content="NHS, Hospital, Cleansiness Monitor" name="keywords">
+    <!-- Favicons -->
+    <link href="~/images/favicon.png" rel="icon">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/cssjs/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/cssjs/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/cssjs/ctuadim.css" rel="stylesheet">
+
+    <link href="~/cssjs/dp-main.css" rel="stylesheet">
+    <link href="~/cssjs/dp-datepicker.css" rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet">
+
+    <title>@ViewData["Title"] - Cleansiness</title>
+</head>
+<body class="bg-white">
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <div class="footertopmargin">
+    <!--Footer-->
+    <footer id="footer" class="container-fluid fixed-bottom">
+        <div class="container p-0">
+            <div class="row py-0">
+                <div class="col-md-6 text-left">
+                    <i class="fas fa-user color-mygreen pr-2"></i> All Users
+                    <i class="fas fa-hospital-alt color-mygreen pl-4 pr-2"></i>The Wirral Teaching Hospital
+                </div>
+                <div class="col-md-6 text-lg-right">
+                    <a href="auditactivity.html"><i class="fas fa-user color-mygreen pl-4 pr-2"></i>Activity Log</a>
+                    <a href="login.html"><i class="fas fa-sign-out-alt color-mygreen pl-4 pr-2"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+</div>
+
+    <!-- Vendor JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+    <script src="~/cssjs/dp-datepicker.js"></script>
+    <script src="~/cssjs/dp-main.js"></script>
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

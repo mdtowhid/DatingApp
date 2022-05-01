@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "22e9c6de-8816-4044-99dc-59814aabdcc9": {
+      "ProjectGuid": "22e9c6de-8816-4044-99dc-59814aabdcc9",
+      "DisplayName": "JobPortal",
+      "ColorIndex": 0
+    },
+    "1666dfbd-ca59-4635-a3d7-5e0134ba4ada": {
+      "ProjectGuid": "1666dfbd-ca59-4635-a3d7-5e0134ba4ada",
+      "DisplayName": "Shared",
+      "ColorIndex": 1
+    },
+    "57e859b6-4b1e-42ea-b417-0b98b323bd40": {
+      "ProjectGuid": "57e859b6-4b1e-42ea-b417-0b98b323bd40",
+      "DisplayName": "JobPortal.Shared",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

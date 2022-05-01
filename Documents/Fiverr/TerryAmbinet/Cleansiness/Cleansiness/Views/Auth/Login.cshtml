@@ -1,0 +1,50 @@
+﻿@model UserForLoginDto
+@{
+    Layout="~/Views/Shared/_Home.cshtml";
+    ViewData["Title"] = "Login";
+}
+
+
+<div class="row p-0 m-0 bg-light vh-100 align-items-center">
+    <div class="col-sm-12">
+        <div class="p-1 text-center mb-4">
+            <img src="~/images/AmbinetSoftwareLogo170px.png" alt="Ambinet Software">
+        </div>
+        <div class="loginbox text-center mx-auto rounded">
+            <div class="text-center p-4">
+                <a href="../admin/login.html"><img src="~/images/logowt.png" alt="Cleansiness Monitor"></a>
+            </div>
+            <form enctype="multipart/form-data"
+                  asp-controller="Auth"
+                  asp-action="Login"
+                  method="post">
+                <div class="form-group">
+                    <input asp-for="Email" type="text" class="form-control mb-3" placeholder="Username">
+                    <span asp-validation-for="Email" class="text-danger Email_"></span>
+                    <input asp-for="Password" type="password" class="form-control mb-2" placeholder="Password">
+                    <span asp-validation-for="Password" class="text-danger Password_"></span>
+
+                    <input type="submit" value="Login" class="btn btn-block btn-dark text-white mt-4 py-2" />
+
+                    <!-- <div class="d-flex justify-content-between px-2">
+                      <p><a href="forgotpw.html" class="text-primary small">Forgot Password</a></p>
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" unchecked id="rem">
+                        <label for="rem" id="rem" class="form-check-label text-dark small">Remember
+                          me</label>
+                      </div>
+                    </div> -->
+
+                    @*<a asp-controller="admin" asp-action="dashboard" 
+                        class="btn btn-block btn-dark text-white mt-4 py-2" role="button">Login</a>*@
+                </div>
+            </form>
+        </div>
+        <!--
+              <div class="alertboxsmall mx-auto alert alert-danger alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Info!</strong> Incorrect credentials provided
+              </div> -->
+
+    </div>
+</div>

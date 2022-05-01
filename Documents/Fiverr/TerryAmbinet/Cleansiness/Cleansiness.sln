@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cleansiness", "Cleansiness\Cleansiness.csproj", "{274614E5-EFE5-4993-857E-7E5DC67C8D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cleansiness.Shared", "Cleansiness.Shared\Cleansiness.Shared.csproj", "{896B521F-3FF8-44CB-BD14-DE019C3DA109}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{274614E5-EFE5-4993-857E-7E5DC67C8D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274614E5-EFE5-4993-857E-7E5DC67C8D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274614E5-EFE5-4993-857E-7E5DC67C8D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274614E5-EFE5-4993-857E-7E5DC67C8D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896B521F-3FF8-44CB-BD14-DE019C3DA109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896B521F-3FF8-44CB-BD14-DE019C3DA109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896B521F-3FF8-44CB-BD14-DE019C3DA109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896B521F-3FF8-44CB-BD14-DE019C3DA109}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B68A43D9-B6CD-4D64-B08D-E7C1BFB16130}
+	EndGlobalSection
+EndGlobal

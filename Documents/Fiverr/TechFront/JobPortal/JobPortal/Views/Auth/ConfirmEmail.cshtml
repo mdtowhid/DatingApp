@@ -1,0 +1,33 @@
+﻿@model int
+@{
+    ViewData["Title"] = "Confirm Email";
+}
+
+<div class="jumbotron mt-3 mb-5">
+    <!--=================RESPONSE MANAGEMENT==================-->
+    @if (ViewBag.AuthResponseDto != null)
+    {
+        ApiResponseDto<User> vApiResponse = ViewBag.AuthResponseDto;
+        if (ViewBag.AuthResponseDto.HasError)
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.AuthResponseDto.Message with <b>User Id @Model</b>
+            </div>
+        }
+
+        if (!ViewBag.AuthResponseDto.HasError)
+        {
+            <div class="alert alert-success" role="alert">
+                @ViewBag.AuthResponseDto.Message 
+                <a asp-action="Login" asp-controller="Auth" class="text-success"><b>Login</b></a>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="alert alert-danger" role="alert">
+            No Account found with @Model
+        </div>
+    }
+    <!--=================RESPONSE MANAGEMENT END==================-->
+</div>

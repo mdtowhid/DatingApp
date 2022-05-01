@@ -1,0 +1,52 @@
+﻿=================Error At: 26/04/2022 12:18:57 +06:00=================
+Error Occured In AuthController, Action: Login
+Error: Unable to cast object of type 'System.Int16' to type 'System.Int32'.
+=================Error At: 26/04/2022 12:18:57 +06:00=================
+
+
+=================Error At: 26/04/2022 12:49:13 +06:00=================
+Error Occured In AuthController, Action: Login
+Error: The model item passed into the ViewDataDictionary is of type 'Cleansiness.Shared.Models.AppUser', but this ViewDataDictionary instance requires a model item of type 'Cleansiness.Shared.DTO.UserForLoginDto'.
+=================Error At: 26/04/2022 12:49:13 +06:00=================
+
+
+=================Error At: 26/04/2022 12:55:46 +06:00=================
+Error Occured In AuthController, Action: Login
+Error: The model item passed into the ViewDataDictionary is of type 'Cleansiness.Shared.Models.AppUser', but this ViewDataDictionary instance requires a model item of type 'Cleansiness.Shared.DTO.UserForLoginDto'.
+=================Error At: 26/04/2022 12:55:46 +06:00=================
+
+
+=================Error At: 26/04/2022 13:02:40 +06:00=================
+Error Occured In AuthController, Action: Login
+Error: The model item passed into the ViewDataDictionary is of type 'Cleansiness.Shared.Models.AppUser', but this ViewDataDictionary instance requires a model item of type 'Cleansiness.Shared.DTO.UserForLoginDto'.
+=================Error At: 26/04/2022 13:02:40 +06:00=================
+
+
+=================Error At: 30/04/2022 11:47:33 +06:00=================
+Error Occured In AdminController, Action: StartAudit
+Error: The method or operation is not implemented.
+=================Error At: 30/04/2022 11:47:33 +06:00=================
+
+
+=================Error At: 30/04/2022 12:19:16 +06:00=================
+Error Occured In AdminController, Action: StartAudit
+Error: The view 'StartAudit' was not found. The following locations were searched:
+/Views/Admin/StartAudit.cshtml
+/Views/Shared/StartAudit.cshtml
+=================Error At: 30/04/2022 12:19:16 +06:00=================
+
+
+=================Error At: 30/04/2022 12:23:09 +06:00=================
+Error Occured In AdminController, Action: StartAudit
+Error: The view 'StartAudit' was not found. The following locations were searched:
+/Views/Admin/StartAudit.cshtml
+/Views/Shared/StartAudit.cshtml
+=================Error At: 30/04/2022 12:23:09 +06:00=================
+
+
+=================Error At: 01/05/2022 01:37:18 +06:00=================
+Error Occured In AdminController, Action: AuditQuestions
+Error: Object reference not set to an instance of an object.
+=================Error At: 01/05/2022 01:37:18 +06:00=================
+
+

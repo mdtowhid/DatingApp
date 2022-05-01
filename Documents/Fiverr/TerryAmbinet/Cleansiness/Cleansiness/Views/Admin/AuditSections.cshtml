@@ -1,0 +1,68 @@
+﻿@model AuditSectionDto
+@{
+    ViewData["Title"] = "Audit Sections";
+}
+
+@await Html.PartialAsync("~/Views/Shared/_topbar.cshtml")
+
+<!-- Start new checklist -->
+<section class="container bg-lightgrey rounded mb-2 border-bottom">
+    <div class="row p-2 color-myblue text-center">
+        <div class="col-md-6 border-right">
+            <h6 class="mt-2 font-weight-bold">WARD 30/HAEMATOLOGY DAY WARD</h6>
+        </div>
+
+        <div class="col-md-4 border-right">
+            <h6 class="mt-2 font-weight-bold">COMPLETED: 2 OF 7</h6>
+        </div>
+
+        <div class="col-md-2">
+            <h6 class="mt-2 font-weight-bold">SCR: 87%</h6>
+        </div>
+    </div>
+</section>
+
+<!-- Start new checklist -->
+<section class="container p-4 bg-lightgrey rounded">
+    <div class="text-center">
+        <h4 class="color-myblue mb-2">SECTIONS FOR AUDIT</h4>
+    </div>
+
+    <form action="#">
+        <div class="row p-2 mb-4">
+            <div class="col-sm-12">
+                @foreach (var sec in Model.SectionList)
+                {
+                    <a asp-controller="admin" asp-action="AuditQuestions"
+                        asp-route-pSectionId="@sec.SectionID"
+                       class="btn btn-lg btn-block bg-mygreen p-3 border-bottom text-uppercase">
+                        @sec.SectionName
+                    </a>
+                }
+
+
+                @*<a asp-controller="admin" asp-action="AuditQuestions"
+                   class="btn btn-lg btn-block bg-mygreen p-3 border-bottom">
+                    CLEANSINESS ASSURANCE - QUALITY
+                </a>
+                <a href="#" class="btn btn-lg btn-block bg-lightgrey2 p-3 border-bottom" role="button">INFECTION PREVENTION AND CONTROL ASSURANCE</a>
+                <a href="#" class="btn btn-lg btn-block bg-lightgrey2 p-3 border-bottom" role="button">WASTE SEGREGATION AND MANAGEMENT</a>
+                <a href="#" class="btn btn-lg btn-block bg-lightgrey2 p-3 border-bottom" role="button">CONSUMABLES AND DISPENSERS</a>
+                <a href="#" class="btn btn-lg btn-block bg-lightgrey2 p-3 border-bottom" role="button">ENVIRONMENT</a>
+                <a href="#" class="btn btn-lg btn-block bg-lightgrey2 p-3 border-bottom" role="button">STAFF APPEARANCE AND BEHAVIOUR</a>
+                <a href="#" class="btn btn-lg btn-block bg-lightgrey2 p-3 border-bottom" role="button">DAILY CLEANLINESS MONITORING ASSURANCE</a>*@
+
+            </div>
+        </div>
+        <div class="row p-2">
+            <div class="col-md-4 mb-sm-2">
+                <a asp-controller="admin" asp-action="dashboard" class="btn btn-block btn-lg btn-dark">CANCEL</a>
+
+            </div>
+            <div class="col-md-8">
+                <a asp-controller="admin" asp-action="dashboard" class="btn btn-block btn-lg btn-success">SAVE AND EXIT</a>
+            </div>
+        </div>
+
+    </form>
+</section>

@@ -1,0 +1,159 @@
+﻿@model DashboardDto
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Mvc.Common;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+@{
+    ViewData["Title"] = "Dashboard";
+    IPagedList<AuditMaster>? vAuditMasterList = ViewBag.AuditMasterList as IPagedList<AuditMaster>;
+}
+
+
+@await Html.PartialAsync("~/Views/Shared/_topbar.cshtml")
+<!-- Start new checklist -->
+<section class="container p-4 bg-lightgrey1 rounded">
+    <div class="text-center">
+        <h4 class="color-myblue mb-2">NEW AUDIT</h4>
+    </div>
+
+    <form asp-controller="Admin" asp-action="StartAudit">
+        <input asp-for="AuditMasterCreationDto.AppUserID" type="hidden"/>
+        <div class="row p-2">
+            <div class="col-sm-12">
+                <select asp-for="AuditMasterCreationDto.SiteId" class="form-control formstextstyle-lg" id="area">
+                    <option value="#" selected disabled hidden>Select Site</option>
+                    @foreach (var site in Model.AuditMasterCreationDto.Sites)
+                    {
+                        <option value="@site.SiteID">@site.SiteName</option>
+                    }
+                </select>
+                <span asp-validation-for="AuditMasterCreationDto.SiteId" class="text-danger Email_"></span>
+            </div>
+
+            <div class="col-sm-12">
+                <select asp-for="AuditMasterCreationDto.AreaID" class="form-control formstextstyle-lg" id="area">
+                    <option value="#" selected disabled hidden>Select Area</option>
+                    @foreach (var area in Model.AuditMasterCreationDto.Areas)
+                    {
+                        <option value="@area.AreaID">@area.AreaName</option>
+                    }
+                </select>
+                <span asp-validation-for="AuditMasterCreationDto.AreaID" class="text-danger Email_"></span>
+            </div>
+            <div class="col-sm-12">
+                <select asp-for="AuditMasterCreationDto.SuperVisorId" class="form-control formstextstyle-lg" id="auditor">
+                    <option value="#" selected disabled hidden>Select Supervisor</option>
+                   @foreach (var supervisor in Model.AuditMasterCreationDto.Supervisors)
+                    {
+                        <option value="@supervisor.Id">@supervisor.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="AuditMasterCreationDto.SuperVisorId" class="text-danger Email_"></span>
+            </div>
+            <div class="col-sm-12">
+                <button type="submit" class="btn btn-lg btn-block btn-secondary text-white text-center p-3">START AUDIT</button>
+            </div>
+            
+            @if(Model.ResponseType == ResponseType.Error)
+            {
+                <div class="col-sm-12">
+                     <div class="mx-auto alert alert-danger alert-dismissible fade show">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Info!</strong> @Model.Message
+                      </div>
+                </div>
+            }
+            
+        </div>
+
+    </form>
+</section>
+
+
+<!-- Main Navigation -->
+<section class="container bg-lightgrey1 p-3 mt-3 rounded">
+    <form action="#">
+        <div class="row p-2">
+            <div class="col-sm-12">
+                <a asp-controller="Admin" asp-action="AuditList" 
+                    class="btn btn-lg btn-block btn-info text-white text-center p-3">VIEW AND VERIFY AUDITS</a>
+            </div>
+        </div>
+    </form>
+</section>
+
+
+<!-- Start of  grid -->
+<section class="container p-0 mt-4">
+
+    <div class="text-center">
+        <h4 class="color-myblue mb-3">INCOMPLETE AUDITS</h4>
+    </div>
+
+    <!-- Search form 
+    <form enctype="multipart/form-data"
+          asp-controller="Admin"
+          asp-action="Dashboard"
+          method="post">
+        <div class="input-group mb-4">
+            <input type="text" class="form-control formstextstyle" name="pSearchKey" data-toggle="tooltip"
+                    data-placement="Bottom" title="Search audits by area name" id="searchname"
+                    placeholder="Search Audits">
+
+            <div class="input-group-append">
+                <button id="btn-search" type="submit" 
+                class="input-group-text px-2">
+                <i class="fa fa-search" aria-hidden="true"></i></button>
+                
+            </div>
+        </div>
+    </form>-->
+
+    <div class="table-responsive">
+        <table class="table table-light table-striped table-hover table-bordered small">
+            <thead>
+                <tr class="text-white bg-lightgrey2">
+                    <th class="gcol25">Date</th>
+                    <th class="gcol40">Area</th>
+                    <th class="gcol5">FR</th>
+                    <th class="gcol20">Supervisor</th>
+                    <th class="gcol5">Score</th>
+                    <th class="gcol5">Status</th>
+                    <th class="gcol5">View</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var auditMaster in vAuditMasterList)
+                {
+                    <tr>
+                        <td>@auditMaster.AuditDate</td>
+                        @*<td><a href="auditsections.html" class="text-primary">ED EDRU</a></td>*@
+                        <td>@auditMaster.Area.AreaName</td>
+                        <td>FR1</td>
+                        <td>Dorcas Ogundeji</td>
+                        <td>92%</td>
+                        <td class="text-center"><i class="fas fa-check fa-lg text-success"></i></td>
+                        <td class="text-center">
+                            <a asp-controller="admin" 
+                                asp-action="AuditSections"
+                                asp-route-pAuditMasterId="@auditMaster.AuditMasterID">
+                                <i class="fas fa-info-circle fa-lg text-info"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    @if (vAuditMasterList != null && vAuditMasterList.Count > 0)
+    {
+        @Html.PagedListPager(vAuditMasterList,
+                page => Url.Action("Dashboard", "Admin", new { pPage = page })
+            )
+    }
+    <!-- End of pagination -->
+
+</section>
+<!-- End of rooms grid -->

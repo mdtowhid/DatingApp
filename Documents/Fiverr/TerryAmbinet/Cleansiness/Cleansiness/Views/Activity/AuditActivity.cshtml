@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Activity";
+}
+
+@await Html.PartialAsync("~/Views/Shared/_topbar.cshtml")
+<!-- Start new table -->
+
+<section class="container p-0 rounded mb-2">
+    <h5 class="color-myblue text-center p-2 ">ACTIVITY</h5>
+    <div class="table-responsive">
+        <table class="table table-light table-striped table-hover table-bordered small">
+            <thead>
+                <tr class="text-white bg-lightgrey2">
+                    <th class="gcol5">No</th>
+                    <th class="gcol10">Date</th>
+                    <th class="gcol10">Time</th>
+                    <th class="gcol15">User</th>
+                    <th class="gcol60">Action</th>
+
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>27/04/2022</td>
+                    <td>11:23:45</td>
+                    <td>James Maybury</td>
+                    <td>This is a comment to describe what action the user has completed and the description can be x words</td>
+                </tr>
+
+                <tr>
+                    <td>02</td>
+                    <td>27/04/2022</td>
+                    <td>11:23:45</td>
+                    <td>Mina Esvastas</td>
+                    <td>This is a comment to describe what action the user has completed and the description can be x words</td>
+                </tr>
+
+                <tr>
+                    <td>02</td>
+                    <td>27/04/2022</td>
+                    <td>11:23:45</td>
+                    <td>Mina Esvastas</td>
+                    <td>This is a comment to describe what action the user has completed and the description can be x words</td>
+                </tr>
+
+                <tr>
+                    <td>02</td>
+                    <td>27/04/2022</td>
+                    <td>11:23:45</td>
+                    <td>Mina Esvastas</td>
+                    <td>This is a comment to describe what action the user has completed and the description can be x words</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row p-2 d-print-none">
+        <div class="col-md-4 mb-sm-2">
+            <a asp-controller="admin" asp-action="dashboard" class="btn btn-block btn-lg btn-dark">BACK</a>
+
+        </div>
+        <div class="col-md-8">
+            <button class="btn btn-block btn-lg btn-success" onclick="window.print()">PRINT</button>
+        </div>
+    </div>
+
+</section>

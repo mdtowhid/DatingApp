@@ -1,0 +1,12 @@
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\bin\Debug\net6.0\JobPortal.Shared.deps.json
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\bin\Debug\net6.0\JobPortal.Shared.dll
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\bin\Debug\net6.0\ref\JobPortal.Shared.dll
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\bin\Debug\net6.0\JobPortal.Shared.pdb
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\obj\Debug\net6.0\JobPortal.Shared.csproj.AssemblyReference.cache
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\obj\Debug\net6.0\JobPortal.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\obj\Debug\net6.0\JobPortal.Shared.AssemblyInfoInputs.cache
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\obj\Debug\net6.0\JobPortal.Shared.AssemblyInfo.cs
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\obj\Debug\net6.0\JobPortal.Shared.csproj.CoreCompileInputs.cache
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\obj\Debug\net6.0\JobPortal.Shared.dll
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\obj\Debug\net6.0\ref\JobPortal.Shared.dll
+C:\Users\hp\Documents\Fiverr\TechFront\JobPortal\JobPortal.Shared\obj\Debug\net6.0\JobPortal.Shared.pdb
