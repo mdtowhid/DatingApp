@@ -20,5 +20,6 @@ namespace Cleansiness.Models
         public DbSet<Risk> Risks { get; set; }
         public DbSet<Section> Sections { get; set; }
         public DbSet<Site> Sites { get; set; }
+        public DbSet<SectionTrack> SectionTracks { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace Cleansiness.Shared.Interfaces
 {
     public interface IAuthRepository
     {
-        AppUser Login(string pEmail, string pPassword);
+        AppUser Login(string pUserName, string pPassword);
         AppUser Register(AppUser pAppUser);
     }
 }

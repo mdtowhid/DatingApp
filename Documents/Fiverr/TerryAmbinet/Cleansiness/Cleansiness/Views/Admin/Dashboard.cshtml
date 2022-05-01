@@ -20,14 +20,13 @@
         <input asp-for="AuditMasterCreationDto.AppUserID" type="hidden"/>
         <div class="row p-2">
             <div class="col-sm-12">
-                <select asp-for="AuditMasterCreationDto.SiteId" class="form-control formstextstyle-lg" id="area">
+                <select class="form-control formstextstyle-lg" id="area">
                     <option value="#" selected disabled hidden>Select Site</option>
                     @foreach (var site in Model.AuditMasterCreationDto.Sites)
                     {
                         <option value="@site.SiteID">@site.SiteName</option>
                     }
                 </select>
-                <span asp-validation-for="AuditMasterCreationDto.SiteId" class="text-danger Email_"></span>
             </div>
 
             <div class="col-sm-12">
@@ -41,14 +40,9 @@
                 <span asp-validation-for="AuditMasterCreationDto.AreaID" class="text-danger Email_"></span>
             </div>
             <div class="col-sm-12">
-                <select asp-for="AuditMasterCreationDto.SuperVisorId" class="form-control formstextstyle-lg" id="auditor">
-                    <option value="#" selected disabled hidden>Select Supervisor</option>
-                   @foreach (var supervisor in Model.AuditMasterCreationDto.Supervisors)
-                    {
-                        <option value="@supervisor.Id">@supervisor.Name</option>
-                    }
+                <select class="form-control formstextstyle-lg" id="area">
+                    <option selected disabled>@Model.UserName</option>
                 </select>
-                <span asp-validation-for="AuditMasterCreationDto.SuperVisorId" class="text-danger Email_"></span>
             </div>
             <div class="col-sm-12">
                 <button type="submit" class="btn btn-lg btn-block btn-secondary text-white text-center p-3">START AUDIT</button>

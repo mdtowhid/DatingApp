@@ -7,15 +7,13 @@ using System.Threading.Tasks;
 
 namespace Cleansiness.Shared.DTO
 {
-    public class AuditQuestionDto
+    public class AuditDetailCreationDto : ModelBase
     {
         public List<Question> QuestionList { get; set; }
         public string SectionName { get; set; }
-        public int AuditMasterId { get; set; }
-        //public List<ResultDto> ResultDtoList { get; set; } = new();
-        //public AuditQuestionDto()
-        //{
-        //    ResultDtoList.Add(new ResultDto() { Id = 1, Text = "", Value = 1 });
-        //}
+        public int MasterId { get; set; }
+        public int SectionId { get; set; }
+        public int SectionStatus { get; set; }
+        public bool IsCreateForm { get; set; }
     }
 }

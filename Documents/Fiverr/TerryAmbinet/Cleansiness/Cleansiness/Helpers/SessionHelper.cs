@@ -9,6 +9,7 @@ namespace Cleansiness.Helpers
     public static class SessionHelper
     {
         public static string UserId { get; } = "UserId";
+        public static string UserName { get; } = "UserName";
         public static string UserEmail { get; } = "UserEmail";
         public static string UserType { get; } = "UserType";
         public static string AppUser { get; } = "AppUser";

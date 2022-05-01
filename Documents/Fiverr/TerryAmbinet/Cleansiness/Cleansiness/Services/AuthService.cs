@@ -12,9 +12,9 @@ namespace Cleansiness.Services
         {
             _context = context;
         }
-        public AppUser Login(string pEmail, string pPassword)
+        public AppUser Login(string pUserName, string pPassword)
         {
-            AppUser vAppUser = _context.AppUsers.FirstOrDefault(x => x.Email == pEmail && x.Password == pPassword);
+            AppUser vAppUser = _context.AppUsers.FirstOrDefault(x => x.UserName == pUserName && x.Password == pPassword);
 
             if (vAppUser != null)
             {

@@ -16,6 +16,9 @@ namespace Cleansiness.Shared.Interfaces
 
         List<AuditDetail> GetAuditDetails();
         AuditDetail GetAuditDetailById(int pAuditId);
-        AuditDetail AddOrUpdateAuditDetail(AuditDetail pAuditDetail);
+        AuditDetailCreationDto AddOrUpdateAuditDetail(AuditDetailCreationDto pAuditDetailCreationDto);
+
+        List<SectionTrack> GetSectionTracks(int pMasterId);
+        SectionTrack GetSectionTrack(int pSectionId);
     }
 }

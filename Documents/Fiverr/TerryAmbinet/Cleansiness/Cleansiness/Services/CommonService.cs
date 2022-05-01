@@ -1,4 +1,5 @@
 ﻿using Cleansiness.Models;
+using Cleansiness.Shared.DTO;
 using Cleansiness.Shared.Interfaces;
 using Cleansiness.Shared.Models;
 
@@ -15,6 +16,11 @@ namespace Cleansiness.Services
         public List<ActivityLog> GetActivityLogs()
         {
             return _context.ActivityLogs.OrderByDescending(x => x.ActDate).ToList();
+        }
+
+        public List<AppUser> GetAppUsers()
+        {
+            return _context.AppUsers.OrderByDescending(x => x.UserName).ToList();
         }
 
         public List<Area> GetAreas()
@@ -40,6 +46,16 @@ namespace Cleansiness.Services
         public List<Question> GetQuestionsBySectionId(int pSectionId)
         {
             return _context.Questions.Where(x=>x.SectionID == pSectionId).ToList();
+        }
+
+        public List<ResultDto> GetResultDtos()
+        {
+            return new List<ResultDto>()
+            {
+                new ResultDto{Id=1, Text="YES", Value=1},
+                new ResultDto{Id=1, Text="NO", Value=2},
+                new ResultDto{Id=1, Text="NA", Value=3},
+            };
         }
 
         public List<Risk> GetRisks()

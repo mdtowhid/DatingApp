@@ -1,4 +1,4 @@
-﻿@model AuditQuestionDto
+﻿@model AuditDetailCreationDto
 @{
     ViewData["Title"] = "Audit Questions";
 }
@@ -17,13 +17,15 @@
 <section class="container p-1 bg-lightgrey rounded">
     <form enctype="multipart/form-data"
           asp-controller="Admin"
-          asp-action="AddAuditQuestions"
+          asp-action="SaveAuditing"
           method="post">
+        <input asp-for="SectionId" type="hidden" />
+        <input asp-for="MasterId" type="hidden" />
         @for (var i = 0; i < Model.QuestionList.Count; i++)
         {
-            <input asp-for="QuestionList[i].AspectID" type="hidden"/>
-            <input asp-for="QuestionList[i].SectionID" type="hidden"/>
-            <input asp-for="QuestionList[i].QuestNo" type="hidden"/>
+            <input asp-for="QuestionList[i].AspectID" type="hidden" />
+            <input asp-for="QuestionList[i].SectionID" type="hidden" />
+            <input asp-for="QuestionList[i].QuestsID" type="hidden" />
 
             <div class="row border-bottom m-2">
                 <div class="col-md-10 bg-white px-4 py-3 rounded">
@@ -43,15 +45,18 @@
                 <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
                     <div>
                         <kbd>01</kbd>
-                        <select asp-for="QuestionList[i].Answere" class="form-control formstextstyle mt-2"
+                        <select asp-for="QuestionList[i].ResultDropdownId" 
+                            asp-items="@(new SelectList(Model.QuestionList[i].ResultDropdowns, nameof(ResultDropdown.Value),
+                                        nameof(ResultDropdown.Text)))"
+                            class="form-control formstextstyle mt-2"
                             id="answere__@Model.QuestionList[i].QuestsID">
                             <option value="#" selected disabled hidden></option>
-                            <option value="1">YES</option>
+                            @*<option value="1">YES</option>
                             <option value="2">NO</option>
-                            <option value="3">NA</option>
+                            <option value="3">NA</option>*@
                         </select>
                     </div>
-                    <span asp-validation-for="QuestionList[i].Answere" class="text-danger"></span>
+                    <span asp-validation-for="QuestionList[i].ResultDropdownId" class="text-danger"></span>
                 </div>
             </div>
         }
@@ -60,241 +65,11 @@
         <div class="row border-bottom p-2">
             <div class="col-md-4 mb-sm-2">
                 <a asp-controller="Admin" asp-action="AuditSections"
-                asp-route-pAuditMasterId="@Model.AuditMasterId" class="btn btn-block btn-lg btn-dark">CANCEL</a>
+                   asp-route-pAuditMasterId="@Model.MasterId" class="btn btn-block btn-lg btn-dark">CANCEL</a>
             </div>
             <div class="col-md-8">
                 <button type="submit" class="btn btn-block btn-lg btn-success">SAVE AND EXIT</button>
-                @*<a href="auditsections.html" class="btn btn-block btn-lg btn-success">SAVE AND EXIT</a>*@
             </div>
         </div>
-
-        @*<div class="row border-bottom m-2">
-            <div class="col-md-10 bg-white px-4 py-3 rounded">
-            <div class="mb-3">
-            <h6>
-            Is the cleaning poster an the star rating for the area on public display and available to view in an area visible to patients and visitors?
-            Check that the star rating is in date?
-            </h6>
-            </div>
-
-            <div>
-            <input type="text" class="form-control formstextstyle" id="comment" placeholder="Comments">
-            </div>
-
-            </div>
-
-            <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
-            <div>
-            <kbd>01</kbd>
-            <select class="form-control formstextstyle mt-2" id="Response">
-            <option value="#" selected disabled hidden></option>
-            <option value="1">YES</option>
-            <option value="1">NO</option>
-            <option value="1">NA</option>
-            </select>
-            </div>
-
-            </div>
-            </div>
-
-            <div class="row  border-bottom m-2">
-            <div class="col-md-10 bg-white px-4 py-3 rounded">
-            <div class="mb-3">
-            <h6>
-            Is rectification being completed in a timely manner and are records being retained as per guidance / local policy?
-            </h6>
-            </div>
-
-            <div>
-            <input type="text" class="form-control formstextstyle" id="comment" placeholder="Comments">
-            </div>
-
-            </div>
-
-            <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
-            <div>
-            <kbd>02</kbd>
-            <select class="form-control formstextstyle mt-2" id="Response">
-            <option value="#" selected disabled hidden></option>
-            <option value="1">YES</option>
-            <option value="1">NO</option>
-            <option value="1">NA</option>
-            </select>
-            </div>
-
-            </div>
-            </div>
-
-            <div class="row border-bottom m-2">
-            <div class="col-md-10 bg-white px-4 py-3 rounded">
-            <div class="mb-3">
-            <h6>
-            Are all work routine up to date and in sufficient detail to guide the cleaning teams to the routine required to clean the area?
-            </h6>
-            </div>
-
-            <div>
-            <input type="text" class="form-control formstextstyle" id="comment" placeholder="Comments">
-            </div>
-
-            </div>
-
-            <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
-            <div>
-            <kbd>03</kbd>
-            <select class="form-control formstextstyle mt-2" id="Response">
-            <option value="#" selected disabled hidden></option>
-            <option value="1">YES</option>
-            <option value="1">NO</option>
-            <option value="1">NA</option>
-            </select>
-            </div>
-
-            </div>
-            </div>
-
-
-            <div class="row border-bottom m-2">
-            <div class="col-md-10 bg-white px-4 py-3 rounded">
-            <div class="mb-3">
-            <h6>
-            Are the charters in use and is there evidence that cleaning teams are following the correct frequencies?
-            </h6>
-            </div>
-
-            <div>
-            <input type="text" class="form-control formstextstyle" id="comment" placeholder="Comments">
-            </div>
-
-            </div>
-
-            <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
-            <div>
-            <kbd>04</kbd>
-            <select class="form-control formstextstyle mt-2" id="Response">
-            <option value="#" selected disabled hidden></option>
-            <option value="1">YES</option>
-            <option value="1">NO</option>
-            <option value="1">NA</option>
-            </select>
-            </div>
-
-            </div>
-            </div>
-
-
-            <div class="row  border-bottom m-2">
-            <div class="col-md-10 bg-white px-4 py-3 rounded">
-            <div class="mb-3">
-            <h6>
-            Is there evidence that daily, weekly, monthly task routines are being followed?
-            </h6>
-            </div>
-
-            <div>
-            <input type="text" class="form-control formstextstyle" id="comment" placeholder="Comments">
-            </div>
-
-            </div>
-
-            <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
-            <div>
-            <kbd>05</kbd>
-            <select class="form-control formstextstyle mt-2" id="Response">
-            <option value="#" selected disabled hidden></option>
-            <option value="1">YES</option>
-            <option value="1">NO</option>
-            <option value="1">NA</option>
-            </select>
-            </div>
-
-            </div>
-            </div>
-
-
-            <div class="row border-bottom m-2">
-            <div class="col-md-10 bg-white px-4 py-3 rounded">
-            <div class="mb-3">
-            <h6>
-            Is colour coding being correctly adhered to by all team members?
-            </h6>
-            </div>
-
-            <div>
-            <input type="text" class="form-control formstextstyle" id="comment" placeholder="Comments">
-            </div>
-
-            </div>
-
-            <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
-            <div>
-            <kbd>06</kbd>
-            <select class="form-control formstextstyle mt-2" id="Response">
-            <option value="#" selected disabled hidden></option>
-            <option value="1">YES</option>
-            <option value="1">NO</option>
-            <option value="1">NA</option>
-            </select>
-            </div>
-
-            </div>
-            </div>
-
-
-            <div class="row border-bottom m-2">
-            <div class="col-md-10 bg-white px-4 py-3 rounded">
-            <div class="mb-3">
-            <h6>
-            Are correct procedures in place and observed in practice by all teams carrying out cleaning i.e. clean to dirty, high to low, one cloth per patient bed-space and correct pseudomonas guidelines being followed?
-            </h6>
-            </div>
-
-            <div>
-            <input type="text" class="form-control formstextstyle" id="comment" placeholder="Comments">
-            </div>
-
-            </div>
-
-            <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
-            <div>
-            <kbd>07</kbd>
-            <select class="form-control formstextstyle mt-2" id="Response">
-            <option value="#" selected disabled hidden></option>
-            <option value="1">YES</option>
-            <option value="1">NO</option>
-            <option value="1">NA</option>
-            </select>
-            </div>
-
-            </div>
-            </div>
-
-            <div class="row border-bottom m-2">
-            <div class="col-md-10 bg-white px-4 py-3 rounded">
-            <div class="mb-3">
-            <h6>
-            Are mops/cloths being used correctly i.e. frequency of change and disposal in accordance with infection control and training?
-            </h6>
-            </div>
-
-            <div>
-            <input type="text" class="form-control formstextstyle" id="comment" placeholder="Comments">
-            </div>
-
-            </div>
-
-            <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
-            <div>
-            <kbd>08</kbd>
-            <select class="form-control formstextstyle mt-2" id="Response">
-            <option value="#" selected disabled hidden></option>
-            <option value="1">YES</option>
-            <option value="1">NO</option>
-            <option value="1">NA</option>
-            </select>
-            </div>
-
-            </div>
-            </div>*@
     </form>
 </section>

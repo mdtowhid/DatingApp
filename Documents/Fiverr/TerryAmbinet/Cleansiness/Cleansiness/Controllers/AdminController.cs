@@ -27,6 +27,8 @@ namespace Cleansiness.Controllers
             };
             vDto.AppUserID = SessionHelper.GetUserId(HttpContext);
             DashboardDto vDashboardDto = new();
+            vDashboardDto.UserName = HttpContext.Session.GetString(SessionHelper.UserName);
+            vDashboardDto.AppUserList = _common.GetAppUsers();
             ViewBag.AuditMasterList = _repo.GetAuditMasters().ToPagedList(pPage ?? 1, 3);
             vDashboardDto.AuditMasterCreationDto = vDto;
             if(pResp!=null && pMesg!=null)
@@ -65,33 +67,19 @@ namespace Cleansiness.Controllers
         public IActionResult AuditQuestions(int pSectionId)
         {
             HttpContext.Session.SetString(SessionHelper.AuditSectionId, pSectionId.ToString());
-            AuditQuestionDto vAuditQuestionDto = new();
+            AuditDetailCreationDto vAuditQuestionDto = new();
             vAuditQuestionDto.QuestionList = _common.GetQuestionsBySectionId(pSectionId);
             vAuditQuestionDto.SectionName = _common.GetSectionNameById(pSectionId).SectionName;
-            vAuditQuestionDto.AuditMasterId = SessionHelper.GetCurrentAuditMasterId(HttpContext);
+            vAuditQuestionDto.MasterId = SessionHelper.GetCurrentAuditMasterId(HttpContext);
+            vAuditQuestionDto.SectionId = pSectionId;
             return View(vAuditQuestionDto);
         }
         
         [HttpPost]
-        public IActionResult AddAuditQuestions(AuditQuestionDto auditQuestionDto)
+        public IActionResult SaveAuditing(AuditDetailCreationDto pAuditQuestionDto)
         {
-            float vAuditScore = 0;
-            int vNotApplicableCount = 0;
-            int vAudutQuestionCount = auditQuestionDto.QuestionList.Count;
-            int vTotalQuestions = _common.GetQuestions().Count;
-            foreach (var question in auditQuestionDto.QuestionList)
-            {
-                if(question.Answere == 3)
-                {
-                    vNotApplicableCount += 1;
-                }
-            }
-
-            //double x = (vTotalQuestions / (auditQuestionDto.QuestionList.Count - vNotApplicableCount));
-
-            var c = vTotalQuestions - vNotApplicableCount;
-            decimal y = Decimal.Divide(vAudutQuestionCount, c) ;
-            decimal z = y * 100;
+            pAuditQuestionDto.IsCreateForm = true;
+            AuditDetailCreationDto vAuditDetailCreationDto =_repo.AddOrUpdateAuditDetail(pAuditQuestionDto);
             return RedirectToAction("AuditQuestions", "Admin"
                 , new { pSectionId = SessionHelper.GetCurrentSectionId(HttpContext) });
         }

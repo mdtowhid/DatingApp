@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cleansiness.Shared.Models
+namespace Cleansiness.Shared.DTO
 {
     public class ResultDto
     {

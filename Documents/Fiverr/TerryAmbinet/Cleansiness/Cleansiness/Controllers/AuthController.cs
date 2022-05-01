@@ -25,13 +25,15 @@ namespace Cleansiness.Controllers
         }
         public IActionResult Login()
         {
+            ViewBag.Users = _common.GetAppUsers();
             return View();
         }
 
         [HttpPost]
         public IActionResult Login(UserForLoginDto pUserForLoginDto)
         {
-            AppUser vAppUser = _repo.Login(pUserForLoginDto.Email, pUserForLoginDto.Password);
+            ViewBag.Users = _common.GetAppUsers();
+            AppUser vAppUser = _repo.Login(pUserForLoginDto.UserName, pUserForLoginDto.Password);
             if (vAppUser != null)
             {
                 if (vAppUser.UserStatus)
@@ -42,6 +44,7 @@ namespace Cleansiness.Controllers
                     HttpContext.Session.SetString(SessionHelper.UserEmail, vAppUser.Email.ToString());
                     HttpContext.Session.SetString(SessionHelper.AppUser, vAppUserContent);
                     HttpContext.Session.SetString(SessionHelper.UserType, vAppUser.UserType.ToString());
+                    HttpContext.Session.SetString(SessionHelper.UserName, vAppUser.UserName);
                     _common.LogUserActivity(vAppUser, 1);
                     return RedirectToAction("Dashboard", "Admin");
                 }

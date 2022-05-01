@@ -1,4 +1,5 @@
-﻿using Cleansiness.Shared.Models;
+﻿using Cleansiness.Shared.DTO;
+using Cleansiness.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,10 @@ namespace Cleansiness.Shared.Interfaces
         List<Section> GetSections();
         Section GetSectionNameById(int pSectionId);
         List<Site> GetSites();
+        List<AppUser> GetAppUsers();
         List<Area> GetAreas();
         List<ActivityLog> GetActivityLogs();
+        List<ResultDto> GetResultDtos();
         void LogUserActivity(AppUser pAppUser, int pActivityType);
     }
 }

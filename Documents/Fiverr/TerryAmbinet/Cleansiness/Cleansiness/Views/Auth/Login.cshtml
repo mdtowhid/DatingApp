@@ -19,8 +19,14 @@
                   asp-action="Login"
                   method="post">
                 <div class="form-group">
-                    <input asp-for="Email" type="text" class="form-control mb-3" placeholder="Username">
-                    <span asp-validation-for="Email" class="text-danger Email_"></span>
+                    <select asp-for="UserName"  class="form-control formstextstyle-lg" id="area">
+                        <option value="#" selected disabled hidden>Select User Name</option>
+                        @foreach (AppUser appUser in ViewBag.Users)
+                        {
+                            <option value="@appUser.UserName">@appUser.UserName</option>
+                        }
+                    </select>
+                    <span asp-validation-for="UserName" class="text-danger Email_"></span>
                     <input asp-for="Password" type="password" class="form-control mb-2" placeholder="Password">
                     <span asp-validation-for="Password" class="text-danger Password_"></span>
 

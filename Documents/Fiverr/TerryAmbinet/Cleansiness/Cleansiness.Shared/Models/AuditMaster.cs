@@ -22,13 +22,11 @@ namespace Cleansiness.Shared.Models
         public DateTime AuditDate { get; set; }
         public decimal AuditScore { get; set; }
         public DateTime UpdateDt { get; set; }
-        [Required(ErrorMessage = "Please select site"), Display(Name = "Site")]
-        public int SiteId { get; set; }
-        public virtual Site? Site { get; set; }
-        [Required(ErrorMessage = "Please select supervisor"), Display(Name = "Site")]
-        public int SuperVisorId { get; set; }
+        //[Required(ErrorMessage = "Please select site"), Display(Name = "Site")]
 
-        [NotMapped]
-        public bool IsCreated { get; set; }
+        public int AuditStatus { get; set; }
+        public string? VerifiedBy { get; set; }
+        public string? VerifyComments { get; set; }
+        public DateTime VerifyDate{ get; set; }
     }
 }
