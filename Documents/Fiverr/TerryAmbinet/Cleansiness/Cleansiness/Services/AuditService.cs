@@ -49,7 +49,8 @@ namespace Cleansiness.Services
                             Comment = question.Comment,
                             QuestID = question.QuestsID,
                             Result = question.ResultDropdownId,
-                            UpdateDt = DateTime.Now
+                            UpdateDt = DateTime.Now,
+                            SectionID = pAuditDetailCreationDto.SectionId,
                         };
 
                         _context.AuditDetails.Add(vAuditDetail);
@@ -199,11 +200,36 @@ namespace Cleansiness.Services
         public List<AuditDetail> GetAuditDetails(int pMasterId, int pSectionId)
         {
             List<AuditDetail> vModel = new();
+            List<int> vAuditDetailIds = new();
 
-            if (pMasterId != 0)
+            if (pMasterId != 0 && pSectionId != 0)
             {
-                vModel = _context.AuditDetails.Where(x => x.AuditMasterID == pMasterId).ToList();
-                return vModel;
+                vModel = _context.AuditDetails.Where(x => x.AuditMasterID == pMasterId && x.SectionID == pSectionId).ToList();
+
+                //foreach (var model in vModel)
+                //{
+                //    var vQuestion = _context.Questions.FirstOrDefault(x => x.SectionID == pSectionId && x.QuestsID == model.QuestID);
+                //    if(vQuestion!=null)
+                //    {
+                //        if(vQuestion.QuestsID == model.QuestID)
+                //            vAuditDetailIds.Add(model.AuditDetailsID);
+                //    }
+                //}
+
+                //if(vAuditDetailIds.Count > 0)
+                //{
+                //    vModel = new();
+
+                //    foreach (var id in vAuditDetailIds)
+                //    {
+                //        var vAuditetail = _context.AuditDetails.FirstOrDefault(x => x.AuditDetailsID == id);
+                //        if(vAuditetail!=null)
+                //        {
+                //            vModel.Add(vAuditetail);
+                //        }
+                //    }
+                //}
+
             }
 
             return vModel;

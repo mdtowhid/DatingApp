@@ -14,9 +14,10 @@ namespace Cleansiness.Shared.Models
         [Key]
         public int AuditDetailsID { get; set; }
         public int AuditMasterID { get; set; }
+        public int SectionID { get; set; }
         public int QuestID { get; set; }
         public int Result { get; set; }
-        public string Comment { get; set; }
+        public string? Comment { get; set; }
         public DateTime UpdateDt { get; set; }
     }
 }
