@@ -1,17 +1,48 @@
-﻿
+﻿@model DashboardDto
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Mvc.Common;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
 @{
     ViewData["Title"] = "Audit List";
+    IPagedList<AuditMaster>? vAuditMasterList = ViewBag.AuditMasterList as IPagedList<AuditMaster>;
 }
 @await Html.PartialAsync("~/Views/Shared/_topbar.cshtml")
 
-<!-- Start of  grid -->
-    <section class="container p-0 mt-4">
-        <h4 class="color-myblue mb-3 text-center">VIEW AND VERIFY AUDITS</h4>
-        <div class="row">
+@if (Model.IsSearched)
+{
+    <!-- Modal -->
+    <div class="modal fade show" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: block; padding-right: 17px; background: rgba(0,0,0,0.5);" aria-modal="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    No Audit Found.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
-            <!-- Search form -->
+<!-- Start of  grid -->
+<section class="container p-0 mt-4">
+    <h4 class="color-myblue mb-3 text-center">VIEW AND VERIFY AUDITS</h4>
+    <!-- Search form -->
+        <form enctype="multipart/form-data"
+              asp-controller="Admin"
+              asp-action="AuditList"
+              method="post">
+        <div class="row">
             <div class="col-md-3 input-group mb-3 d-print-none">
-                <input type="text" class="form-control formstextstyle docs-date" name="datefrom"
+                <input name="fromDate" class="form-control formstextstyle docs-date"
                        placeholder="From" autocomplete="off" data-toggle="tooltip" data-placement="top"
                        title="From Date">
                 <div class="input-group-append">
@@ -22,7 +53,7 @@
             </div>
 
             <div class="col-md-3 input-group mb-3 d-print-none">
-                <input type="text" class="form-control formstextstyle docs-date" name="dateto"
+                <input name="toDate" class="form-control formstextstyle docs-date"
                        placeholder="To" autocomplete="off" data-toggle="tooltip" data-placement="top"
                        title="To Date">
                 <div class="input-group-append">
@@ -33,156 +64,99 @@
             </div>
 
             <div class="col-md-6 input-group mb-3 d-print-none">
-                <input type="text" class="form-control formstextstyle" name="searchemployee" data-toggle="tooltip"
+                <input name="pSearchKey" class="form-control formstextstyle"
+                       data-toggle="tooltip"
                        data-placement="top" title="Search audits by area name" id="searchname"
                        placeholder="Search Audits">
                 <div class="input-group-append">
-                    <a href="#" class="input-group-text px-2">
+                    <button type="submit" class="input-group-text px-2">
                         <i class="fa fa-search" aria-hidden="true"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
-
         </div>
-        <div class="table-responsive">
-            <table class="table table-light table-striped table-hover table-bordered small">
-                <thead>
-                    <tr class="text-white bg-lightgrey2">
-                        <th class="gcol25">Date</th>
-                        <th class="gcol40">Area</th>
-                        <th class="gcol5">FR</th>
-                        <th class="gcol20">Supervisor</th>
-                        <th class="gcol5">Score</th>
-                        <th class="gcol5">Status</th>
-                        <th class="gcol5">View</th>
-                    </tr>
-                </thead>
+     </form>
+    <div class="table-responsive">
+        <table class="table table-light table-striped table-hover table-bordered small">
+            <thead>
+                <tr class="text-white bg-lightgrey2">
+                    <th class="gcol25">Date</th>
+                    <th class="gcol40">Area</th>
+                    <th class="gcol5">FR</th>
+                    <th class="gcol20">Supervisor</th>
+                    <th class="gcol5">Score</th>
+                    <th class="gcol5">Status</th>
+                    <th class="gcol5">View</th>
+                </tr>
+            </thead>
 
-                <tbody>
+            <tbody>
+                @foreach (var auditMaster in vAuditMasterList)
+                {
                     <tr>
-                        <td>12/02/2022 12:30:45</td>
-                        <td><a href="#" class="text-primary">ED EDRU</a></td>
+                        <td>@auditMaster.AuditDate</td>
+                        <td>@auditMaster.Area.AreaName</td>
                         <td>FR1</td>
-                        <td>Dorcas Ogundeji</td>
-                        <td>92%</td>
+                        <td>@auditMaster.AppUser.Name</td>
+                        <td>@auditMaster.AuditScore%</td>
+                        @if (auditMaster.AuditStatus == 1)
+                        {
+                            <td class="text-center">
+                                <i class="fas fa-check fa-lg text-success"
+                                   data-toggle="tooltip" data-placement="right"
+                                   title="Audit Complete">
+                                </i>
+                            </td>
+                        }
+                        else
+                        {
+                            <td class="text-center">
+                                <i class="fas fa-check-double fa-lg text-success"
+                                   data-toggle="tooltip" data-placement="right"
+                                   title="Audit Completed and Verified"></i>
+                            </td>
+                        }
+
                         <td class="text-center">
-                            <i class="fas fa-check-double fa-lg text-success" data-toggle="tooltip" data-placement="right"
-                               title="Audit Completed and Verified"></i>
-                        </td>
-                        <td class="text-center">
-                            <a href="auditreport.html">
-                                <i class="fas fa-info-circle fa-lg text-info" data-toggle="tooltip" data-placement="right"
-                                   title="View Report"></i>
+                            <a asp-controller="admin"
+                               asp-action="AuditReport"
+                               asp-route-pAuditMasterID="@auditMaster.AuditMasterID">
+                                <i class="fas fa-info-circle fa-lg text-info"
+                                   data-toggle="tooltip" data-placement="right"
+                                   title="View Report">
+                                </i>
                             </a>
                         </td>
                     </tr>
+                }
 
-                    <tr>
-                        <td>12/02/2022 12:30:45</td>
-                        <td><a href="#" class="text-primary">Ground Floor Toilet Run</a></td>
-                        <td>FR1</td>
-                        <td>Gail Francis</td>
-                        <td>92%</td>
-                        <td class="text-center">
-                            <i class="fas fa-check fa-lg text-success" data-toggle="tooltip" data-placement="right"
-                               title="Audit Complete"></i>
-                        </td>
-                        <td class="text-center">
-                            <a href="#">
-                                <i class="fas fa-info-circle fa-lg text-info" data-toggle="tooltip" data-placement="right"
-                                   title="View Report"></i>
-                            </a>
-                        </td>
-                    </tr>
+            </tbody>
+        </table>
+    </div>
 
-                    <tr>
-                        <td>12/02/2022 12:30:45</td>
-                        <td><a href="#" class="text-primary">Main Theatre 1,2,3</a></td>
-                        <td>FR2</td>
-                        <td>Nikkita Hammett</td>
-                        <td>92%</td>
-                        <td class="text-center">
-                            <i class="far fa-pause-circle fa-lg text-danger" data-toggle="tooltip" data-placement="right"
-                               title="Audit Paused"></i>
-                        </td>
-                        <td class="text-center">
-                            <a href="auditreport.html">
-                                <i class="fas fa-info-circle fa-lg text-info" data-toggle="tooltip" data-placement="right"
-                                   title="View Report"></i>
-                            </a>
-                        </td>
-                    </tr>
+    <!-- Pagination -->
+    @if (vAuditMasterList != null && vAuditMasterList.Count > 0)
+    {
+        @Html.PagedListPager(vAuditMasterList,
+        page => Url.Action("Dashboard", "Admin", new { pPage = page }))
+    }
+    <!-- End of pagination -->
 
-                    <tr>
-                        <td>12/02/2022 12:30:45</td>
-                        <td><a href="#" class="text-primary">Ward 25 Isolation Unit</a></td>
-                        <td>FR3</td>
-                        <td>Julia Mannion</td>
-                        <td>92%</td>
-                        <td class="text-center"><i class="fas fa-check fa-lg text-success"></i></td>
-                        <td class="text-center">
-                            <a href="auditreport.html"><i class="fas fa-info-circle fa-lg text-info"></i></a>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td>12/02/2022 12:30:45</td>
-                        <td><a href="#" class="text-primary">Gynae Treatment (GAU)</a></td>
-                        <td>FR4</td>
-                        <td>Lisa Richards</td>
-                        <td>92%</td>
-                        <td class="text-center"><i class="fas fa-check fa-lg text-success"></i></td>
-                        <td class="text-center">
-                            <a href="auditreport.html"><i class="fas fa-info-circle fa-lg text-info"></i></a>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>12/02/2022 12:30:45</td>
-                        <td><a href="#" class="text-primary">Sterile Services</a></td>
-                        <td>FR5</td>
-                        <td>David Hannaford</td>
-                        <td>92%</td>
-                        <td class="text-center"><i class="far fa-pause-circle fa-lg text-danger"></i></td>
-                        <td class="text-center">
-                            <a href="auditreport.html"><i class="fas fa-info-circle fa-lg text-info"></i></a>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
+    <div class="row p-2 d-print-none">
+        <div class="col-md-4 mb-sm-2">
+            <a asp-controller="admin" asp-action="dashboard" class="btn btn-block btn-lg btn-dark">BACK</a>
         </div>
-        <!-- Pagination -->
-        <nav class="d-print-none">
-            <ul class="pagination small justify-content-center">
-                <li class="page-item">
-                    <a href="#" class="page-link px-3 py-2"><span>&laquo;</span></a>
-                </li>
-                <li class="page-item active">
-                    <a href="#" class="page-link px-3 py-2">1</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link px-3 py-2">2</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link px-3 py-2">3</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link px-3 py-2"><span>&raquo;</span></a>
-                </li>
-            </ul>
-        </nav>
-        <!-- End of pagination -->
-
-        <div class="row p-2 d-print-none">
-            <div class="col-md-4 mb-sm-2">
-                <a href="dashboard.html" class="btn btn-block btn-lg btn-dark">BACK</a>
-
-            </div>
-            <div class="col-md-8">
-                <button class="btn btn-block btn-lg btn-success" onclick="window.print()">PRINT</button>
-            </div>
+        <div class="col-md-8">
+            <button class="btn btn-block btn-lg btn-success" onclick="window.print()">PRINT</button>
         </div>
+    </div>
 
-    </section>
-    <!-- End of rooms grid -->
+</section>
+<!-- End of rooms grid -->
+
+<script>
+   $(document).ready(() => {
+        $('#exampleModal').modal('toggle');
+    });
+</script>

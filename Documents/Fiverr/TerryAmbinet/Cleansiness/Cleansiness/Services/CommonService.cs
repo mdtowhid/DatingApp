@@ -2,6 +2,7 @@
 using Cleansiness.Shared.DTO;
 using Cleansiness.Shared.Interfaces;
 using Cleansiness.Shared.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Cleansiness.Services
 {
@@ -15,7 +16,7 @@ namespace Cleansiness.Services
         }
         public List<ActivityLog> GetActivityLogs()
         {
-            return _context.ActivityLogs.OrderByDescending(x => x.ActDate).ToList();
+            return _context.ActivityLogs.Include(x => x.AppUser).OrderByDescending(x => x.ActDate).ToList();
         }
 
         public List<AppUser> GetAppUsers()

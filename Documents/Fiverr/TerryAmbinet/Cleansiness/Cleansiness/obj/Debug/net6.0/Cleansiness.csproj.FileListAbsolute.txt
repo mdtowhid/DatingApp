@@ -85,3 +85,5 @@ C:\Users\hp\Documents\Fiverr\TerryAmbinet\Cleansiness\Cleansiness\obj\Debug\net6
 C:\Users\hp\Documents\Fiverr\TerryAmbinet\Cleansiness\Cleansiness\obj\Debug\net6.0\ref\Cleansiness.dll
 C:\Users\hp\Documents\Fiverr\TerryAmbinet\Cleansiness\Cleansiness\obj\Debug\net6.0\Cleansiness.pdb
 C:\Users\hp\Documents\Fiverr\TerryAmbinet\Cleansiness\Cleansiness\obj\Debug\net6.0\Cleansiness.genruntimeconfig.cache
+C:\Users\hp\Documents\Fiverr\TerryAmbinet\Cleansiness\Cleansiness\obj\Debug\net6.0\Cleansiness.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hp\Documents\Fiverr\TerryAmbinet\Cleansiness\Cleansiness\bin\Debug\net6.0\libman.json

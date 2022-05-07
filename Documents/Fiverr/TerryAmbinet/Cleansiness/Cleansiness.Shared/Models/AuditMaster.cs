@@ -14,6 +14,7 @@ namespace Cleansiness.Shared.Models
         [Key]
         public int AuditMasterID { get; set; }
         [Required]
+        [ForeignKey("AppUser")]
         public int AppUserID { get; set; }
         public virtual AppUser? AppUser { get; set; }
         [Required(ErrorMessage = "Please select area"), Display(Name = "Area")]

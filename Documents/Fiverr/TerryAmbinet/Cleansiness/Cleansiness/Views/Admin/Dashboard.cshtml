@@ -111,9 +111,7 @@
                     <th class="gcol40">Area</th>
                     <th class="gcol5">FR</th>
                     <th class="gcol20">Supervisor</th>
-                    <th class="gcol5">Score</th>
-                    <th class="gcol5">Status</th>
-                    <th class="gcol5">View</th>
+                    <th class="gcol5">Resume</th>
                 </tr>
             </thead>
 
@@ -125,9 +123,7 @@
                         @*<td><a href="auditsections.html" class="text-primary">ED EDRU</a></td>*@
                         <td>@auditMaster.Area.AreaName</td>
                         <td>FR1</td>
-                        <td>Dorcas Ogundeji</td>
-                        <td>92%</td>
-                        <td class="text-center"><i class="fas fa-check fa-lg text-success"></i></td>
+                        <td>@auditMaster.AppUser.Name</td>
                         <td class="text-center">
                             <a asp-controller="admin" 
                                 asp-action="AuditSections"

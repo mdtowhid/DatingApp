@@ -16,5 +16,6 @@ namespace Cleansiness.Shared.DTO
         public AppUser AppUser { get; set; }
         public string UserName { get; set; }
         public bool IsSearched { get; set; }
+        public AuditMasterSearchDto AuditMasterSearchDto { get; set; }
     }
 }

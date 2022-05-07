@@ -12,11 +12,13 @@ namespace Cleansiness.Controllers
     {
         private readonly ICommonRepository _common;
         private readonly IAuditRepository _repo;
+        private readonly IConfiguration _config;
 
-        public AdminController(ICommonRepository common, IAuditRepository repo)
+        public AdminController(ICommonRepository common, IAuditRepository repo, IConfiguration config)
         {
             _common = common;
             _repo = repo;
+            _config = config;
         }
         public IActionResult Dashboard(int? pResp, string? pMesg, int? pPage)
         {
@@ -27,9 +29,13 @@ namespace Cleansiness.Controllers
             };
             vDto.AppUserID = SessionHelper.GetUserId(HttpContext);
             DashboardDto vDashboardDto = new();
-            vDashboardDto.UserName = HttpContext.Session.GetString(SessionHelper.UserName);
             vDashboardDto.AppUserList = _common.GetAppUsers();
-            ViewBag.AuditMasterList = _repo.GetAuditMasters().ToPagedList(pPage ?? 1, 3);
+            vDashboardDto.UserName = HttpContext.Session.GetString(SessionHelper.UserName);
+            int vPageCount = Convert.ToInt32(_config.GetSection("AuditPageCount").Value);
+            ViewBag.AuditMasterList = _repo.GetAuditMasters(new AuditMasterSearchDto()
+            {
+                IsCompleted=false
+            }).ToPagedList(pPage ?? 1, vPageCount);
             vDashboardDto.AuditMasterCreationDto = vDto;
             if(pResp!=null && pMesg!=null)
             {
@@ -62,12 +68,13 @@ namespace Cleansiness.Controllers
             HttpContext.Session.SetString(SessionHelper.AuditMasterId, pAuditMasterId.ToString());
             AuditSectionDto vAuditSectionDto = new();
             vAuditSectionDto.SectionList = _common.GetSections(pAuditMasterId);
+            vAuditSectionDto.SectionCompletedCount = vAuditSectionDto.SectionList.Count(x => x.IsCompleted);
+            vAuditSectionDto.TotalScore = _repo.GetSectionTracks(pAuditMasterId).Sum(x => x.SectionScore);
             return View(vAuditSectionDto);
         }
         
         public IActionResult AuditQuestions(int pSectionId)
         {
-            
             HttpContext.Session.SetString(SessionHelper.AuditSectionId, pSectionId.ToString());
             AuditDetailCreationDto vAuditQuestionDto = new();
             vAuditQuestionDto.QuestionList = _common.GetQuestionsBySectionId(pSectionId);
@@ -104,17 +111,82 @@ namespace Cleansiness.Controllers
             {
                 pAuditQuestionDto.IsCreateForm = true;
             }
-            pAuditQuestionDto.SectionStatus = 1;
-
 
             AuditDetailCreationDto vAuditDetailCreationDto =_repo.AddOrUpdateAuditDetail(pAuditQuestionDto);
             return RedirectToAction("AuditQuestions", "Admin"
                 , new { pSectionId = SessionHelper.GetCurrentSectionId(HttpContext) });
         }
         
-        public IActionResult AuditList()
+        public IActionResult AuditList(DateTime fromDate, DateTime toDate, string pSearchKey, int? pPage)
         {
-            return View();
+            int vPageCount = Convert.ToInt32(_config.GetSection("AuditPageCount").Value);
+            var vAuditMasterList = _repo.GetAuditMasters(new AuditMasterSearchDto()
+            {
+                IsCompleted = true,
+                FromDate=fromDate,
+                ToDate=toDate,
+                SearchText=pSearchKey
+            });
+            
+            DashboardDto vDashboardDto = new DashboardDto();
+            vDashboardDto.IsSearched = vAuditMasterList.Count == 0;
+            if(vDashboardDto.IsSearched)
+            {
+                vAuditMasterList = _repo.GetAuditMasters(new AuditMasterSearchDto()
+                {
+                    IsCompleted = true
+                });
+            }
+
+            ViewBag.AuditMasterList = vAuditMasterList.ToPagedList(pPage ?? 1, vPageCount);
+            return View(vDashboardDto);
         }
+
+        [HttpGet]
+        public IActionResult ActivityLogs(int? pPage)
+        {
+            //if (!SessionHelper.IsLoggedIn(HttpContext))
+            //    return RedirectToAction("login", "auth");
+            DashboardDto vDashboardDto = new();
+            ViewBag.Activities = _common.GetActivityLogs().ToPagedList(pPage ?? 1, 100);
+            return View(vDashboardDto);
+        }
+
+        public IActionResult AuditReport(int pAuditMasterID)
+        {
+            ViewBag.AssuranceQuality = _repo.GetAuditDetailsReport(pAuditMasterID, 1);
+            ViewBag.ControlAssurance = _repo.GetAuditDetailsReport(pAuditMasterID, 2);
+            ViewBag.Consumables = _repo.GetAuditDetailsReport(pAuditMasterID, 3);
+            ViewBag.Environment = _repo.GetAuditDetailsReport(pAuditMasterID, 4);
+            ViewBag.Behaviour = _repo.GetAuditDetailsReport(pAuditMasterID, 5);
+            ViewBag.MonitoringAssurance = _repo.GetAuditDetailsReport(pAuditMasterID, 6);
+            ViewBag.WasteSegregation = _repo.GetAuditDetailsReport(pAuditMasterID, 7);
+            AuditReportDto vAuditReportDto = new();
+            vAuditReportDto.AuditMaster = _repo.GetAuditMasterById(pAuditMasterID);
+            vAuditReportDto.IsVerified = vAuditReportDto.AuditMaster.VerifiedBy == null ? false : true;
+            return View(vAuditReportDto);
+        }
+
+        public JsonResult VerifyAudit(VerifyAuditDto pVerifyAuditDto)
+        {
+            if(string.IsNullOrEmpty(pVerifyAuditDto.VerifyComments))
+            {
+                return Json(new { Message = "Verification Comment is required", HasError = true });
+            }
+            else if (string.IsNullOrEmpty(pVerifyAuditDto.VerifiedBy))
+            {
+                return Json(new { Message = "Name is required", HasError = true });
+            }
+            else
+            {
+                bool vIsSaved = _repo.VerifyAudit(pVerifyAuditDto);
+                return Json(new
+                {
+                    Message = vIsSaved ? "Audit successfully verified" : "Error occurs while audit verifying",
+                    HasError = false
+                });
+            }
+        }
+
     }
 }

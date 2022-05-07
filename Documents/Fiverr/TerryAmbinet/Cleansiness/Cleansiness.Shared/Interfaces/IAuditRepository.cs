@@ -10,7 +10,7 @@ namespace Cleansiness.Shared.Interfaces
 {
     public interface IAuditRepository
     {
-        List<AuditMaster> GetAuditMasters();
+        List<AuditMaster> GetAuditMasters(AuditMasterSearchDto pAuditMasterSearchDto);
         AuditMaster GetAuditMasterById(int pAuditId);
         AuditMaster AddOrUpdateAuditMaster(AuditMasterCreationDto pAuditMasterCreationDto);
 
@@ -19,5 +19,9 @@ namespace Cleansiness.Shared.Interfaces
 
         List<AuditDetail> GetAuditDetails(int pMasterId, int pSectionId);
         SectionTrack GetSectionTrack(int pMasterId, int pSectionId);
+        List<SectionTrack> GetSectionTracks(int pMasterId);
+
+        List<AuditDetail> GetAuditDetailsReport(int pMasterId, int pSectionId);
+        bool VerifyAudit(VerifyAuditDto pVerifyAuditDto);
     }
 }

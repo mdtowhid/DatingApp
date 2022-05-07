@@ -27,7 +27,7 @@ namespace Cleansiness.Services
 
             try
             {
-                bool vIsSaved=false;
+                bool vIsSaved = false;
                 int vNotApplicableCount = 0;
                 int vAudutQuestionCount = pAuditDetailCreationDto.QuestionList.Count;
                 int vTotalQuestions = _common.GetQuestions().Count;
@@ -38,7 +38,7 @@ namespace Cleansiness.Services
                         vNotApplicableCount += 1;
                     }
 
-                    if(pAuditDetailCreationDto.IsCreateForm)
+                    if (pAuditDetailCreationDto.IsCreateForm)
                     {
                         AuditDetail vAuditDetail = new AuditDetail
                         {
@@ -74,15 +74,14 @@ namespace Cleansiness.Services
                 if (vIsSaved)
                 {
                     decimal y = Decimal.Divide(vAudutQuestionCount, vTotalQuestions - vNotApplicableCount);
-                    decimal z = Math.Ceiling(y * 100);
+                    decimal z = y * 100;
                     SectionTrack vSectionTrack = new SectionTrack();
                     var vSec = _context.SectionTracks.FirstOrDefault(x => x.AuditMasterID == pAuditDetailCreationDto.MasterId
                             && x.SectionID == pAuditDetailCreationDto.SectionId);
 
-                    if(vSec != null)
+                    if (vSec != null)
                     {
                         vSec.UpdateDate = DateTime.Now;
-                        vSec.SectionStatus = pAuditDetailCreationDto.SectionStatus;
                         vSec.SectionScore = z;
                         _context.SectionTracks.Update(vSec);
                     }
@@ -93,7 +92,7 @@ namespace Cleansiness.Services
                             AuditMasterID = pAuditDetailCreationDto.MasterId,
                             SectionID = pAuditDetailCreationDto.SectionId,
                             SectionScore = z,
-                            SectionStatus = pAuditDetailCreationDto.SectionStatus,
+                            SectionStatus = 1,
                             UpdateDate = DateTime.Now
                         };
                         _context.SectionTracks.Add(vSectionTrack);
@@ -104,10 +103,10 @@ namespace Cleansiness.Services
                     //UPDATE AUDIT MASTER SCORE/STATUS
                     var vAuditMaster
                         = _context.AuditMasters.FirstOrDefault(x => x.AuditMasterID == pAuditDetailCreationDto.MasterId);
-                    
+
                     if (vAuditMaster != null)
                     {
-                        var SectionTracks = _context.SectionTracks.Where(x => 
+                        var SectionTracks = _context.SectionTracks.Where(x =>
                             x.AuditMasterID == pAuditDetailCreationDto.MasterId).ToList();
                         var vSections = _context.Sections.ToList();
                         if (SectionTracks != null)
@@ -169,16 +168,55 @@ namespace Cleansiness.Services
 
         public AuditMaster GetAuditMasterById(int pAuditId)
         {
-            throw new NotImplementedException();
+            AuditMaster vAuditMaster = new();
+
+            vAuditMaster = _context.AuditMasters
+                .Include(x=>x.AppUser).Include(x=>x.Area).Include(x=>x.Area.Division)
+                .FirstOrDefault(x => x.AuditMasterID == pAuditId);
+
+            return vAuditMaster;
         }
 
-        public List<AuditMaster> GetAuditMasters()
+        public List<AuditMaster> GetAuditMasters(AuditMasterSearchDto pAuditMasterSearchDto)
         {
             List<AuditMaster> vModelList = new();
             try
             {
-                vModelList = _context.AuditMasters.Include(x => x.Area)
-                    .Include(x => x.AppUser).ToList();
+                if (pAuditMasterSearchDto.IsCompleted)
+                {
+                    if (pAuditMasterSearchDto.FromDate != default(DateTime) && pAuditMasterSearchDto.ToDate != default(DateTime)
+                        && pAuditMasterSearchDto.SearchText != null)
+                    {
+                        vModelList = _context.AuditMasters
+                            .Where(x => x.AuditDate >= pAuditMasterSearchDto.FromDate
+                            && x.AuditDate <= pAuditMasterSearchDto.ToDate && x.Area.AreaName
+                            .Contains(pAuditMasterSearchDto.SearchText)
+                            && (x.AuditStatus == 1 || x.AuditStatus == 2))
+                            .Include(x => x.Area).Include(x => x.AppUser).ToList();
+                    }
+                    else if (pAuditMasterSearchDto.FromDate != default(DateTime) 
+                        && pAuditMasterSearchDto.ToDate != default(DateTime))
+                    {
+                        vModelList = _context.AuditMasters
+                            .Where(x => x.AuditDate >= pAuditMasterSearchDto.FromDate
+                            && x.AuditDate <= pAuditMasterSearchDto.ToDate
+                            && (x.AuditStatus == 1 || x.AuditStatus == 2))
+                            .Include(x => x.Area).Include(x => x.AppUser).ToList();
+                    }
+                    else
+                    {
+                        vModelList = _context.AuditMasters.Where(x => x.AuditStatus == 1 || x.AuditStatus == 2)
+                            .Include(x => x.Area).Include(x => x.AppUser).ToList();
+                    }
+
+                    //vModelList = vModelList.Count > 0 ? vModelList : _context.AuditMasters.Where(x => x.AuditStatus == 1 || x.AuditStatus == 2)
+                    //        .Include(x => x.Area).Include(x => x.AppUser).ToList();
+                }
+                else
+                {
+                    vModelList = _context.AuditMasters.Where(x => x.AuditStatus == 0)
+                        .Include(x => x.Area).Include(x => x.AppUser).ToList();
+                }
             }
             catch (Exception ex)
             {
@@ -191,7 +229,7 @@ namespace Cleansiness.Services
         {
             SectionTrack vModel = new();
 
-            if(pMasterId!=0 && pSectionId != 0)
+            if (pMasterId != 0 && pSectionId != 0)
             {
                 vModel = _context.SectionTracks.FirstOrDefault(x => x.AuditMasterID == pMasterId && x.SectionID == pSectionId);
                 return vModel;
@@ -201,13 +239,13 @@ namespace Cleansiness.Services
                 vModel = _context.SectionTracks.FirstOrDefault(x => x.AuditMasterID == pMasterId);
                 return vModel;
             }
-                
+
             if (pMasterId != 0)
             {
                 vModel = _context.SectionTracks.FirstOrDefault(x => x.SectionTrackID == pSectionId);
                 return vModel;
             }
-                
+
             return vModel;
         }
 
@@ -220,6 +258,46 @@ namespace Cleansiness.Services
             }
 
             return vModel;
+        }
+
+        public List<SectionTrack> GetSectionTracks(int pMasterId)
+        {
+            return _context.SectionTracks.Where(x => x.AuditMasterID == pMasterId).ToList();
+        }
+
+        public List<AuditDetail> GetAuditDetailsReport(int pMasterId, int pSectionId)
+        {
+            List<AuditDetail> vAuditDetails = new();
+            vAuditDetails = 
+                _context.AuditDetails.Include(x=>x.Question).Where(x => x.AuditMasterID == pMasterId && x.SectionID == pSectionId).ToList();
+            return vAuditDetails;
+        }
+
+        public bool VerifyAudit(VerifyAuditDto pVerifyAuditDto)
+        {
+            string vOut = "";
+            bool vIsSaved = false;
+            try
+            {
+                AuditMaster vAuditMaster = _context.AuditMasters
+                    .FirstOrDefault(x => x.AuditMasterID == pVerifyAuditDto.MasterId);
+                if(vAuditMaster!=null)
+                {
+                    vAuditMaster.UpdateDt = DateTime.Now;
+                    vAuditMaster.VerifyComments = pVerifyAuditDto.VerifyComments;
+                    vAuditMaster.VerifiedBy = pVerifyAuditDto.VerifiedBy;
+
+                    _context.AuditMasters.Update(vAuditMaster);
+                    vIsSaved = _context.SaveChanges() > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                vOut = ex.Message;
+                throw;
+            }
+
+            return vIsSaved;
         }
     }
 }

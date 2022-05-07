@@ -10,5 +10,7 @@ namespace Cleansiness.Shared.DTO
     public class AuditSectionDto : ModelBase
     {
         public List<Section> SectionList { get; set; }
+        public int SectionCompletedCount { get; set; }
+        public decimal TotalScore { get; set; }
     }
 }

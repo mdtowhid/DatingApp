@@ -8,6 +8,7 @@
     <!-- Favicons -->
     <link href="~/images/favicon.png" rel="icon">
 
+    <script src="~/jquery/jquery.min.js"></script>
     <!-- Vendor CSS Files -->
     <link href="~/cssjs/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css">
@@ -45,8 +46,10 @@
                     <i class="fas fa-hospital-alt color-mygreen pl-4 pr-2"></i>The Wirral Teaching Hospital
                 </div>
                 <div class="col-md-6 text-lg-right">
-                    <a href="auditactivity.html"><i class="fas fa-user color-mygreen pl-4 pr-2"></i>Activity Log</a>
-                    <a href="login.html"><i class="fas fa-sign-out-alt color-mygreen pl-4 pr-2"></i>Logout</a>
+                    <a asp-controller="admin" asp-action="ActivityLogs">
+                        <i class="fas fa-user color-mygreen pl-4 pr-2"></i>Activity Log</a>
+                    <a asp-controller="Auth" asp-action="Logout">
+                        <i class="fas fa-sign-out-alt color-mygreen pl-4 pr-2"></i>Logout</a>
                 </div>
             </div>
         </div>

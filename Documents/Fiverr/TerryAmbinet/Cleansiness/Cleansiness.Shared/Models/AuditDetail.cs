@@ -15,7 +15,9 @@ namespace Cleansiness.Shared.Models
         public int AuditDetailsID { get; set; }
         public int AuditMasterID { get; set; }
         public int SectionID { get; set; }
+        [ForeignKey("Question")]
         public int QuestID { get; set; }
+        public virtual Question? Question { get; set; }
         public int Result { get; set; }
         public string? Comment { get; set; }
         public DateTime UpdateDt { get; set; }
