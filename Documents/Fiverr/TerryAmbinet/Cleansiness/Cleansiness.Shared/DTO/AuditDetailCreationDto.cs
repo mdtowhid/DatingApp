@@ -9,6 +9,7 @@ namespace Cleansiness.Shared.DTO
 {
     public class AuditDetailCreationDto : ModelBase
     {
+        public int AuditDetailsID { get; set; }
         public List<Question> QuestionList { get; set; }
         public string SectionName { get; set; }
         public int MasterId { get; set; }

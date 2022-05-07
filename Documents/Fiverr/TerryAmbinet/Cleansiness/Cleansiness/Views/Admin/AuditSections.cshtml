@@ -33,11 +33,22 @@
             <div class="col-sm-12">
                 @foreach (var sec in Model.SectionList)
                 {
-                    <a asp-controller="admin" asp-action="AuditQuestions"
-                        asp-route-pSectionId="@sec.SectionID"
-                       class="btn btn-lg btn-block bg-mygreen p-3 border-bottom text-uppercase">
-                        @sec.SectionName
-                    </a>
+                    if(sec.IsCompleted)
+                    {
+                        <a asp-controller="admin" asp-action="AuditQuestions"
+                            asp-route-pSectionId="@sec.SectionID"
+                           class="btn btn-lg btn-block bg-mygreen p-3 border-bottom text-uppercase">
+                            @sec.SectionName
+                        </a>
+                    }
+                    else
+                    {
+                        <a asp-controller="admin" asp-action="AuditQuestions"
+                            asp-route-pSectionId="@sec.SectionID"
+                           class="btn btn-lg btn-block bg-lightgrey2 p-3 border-bottom text-uppercase">
+                            @sec.SectionName
+                        </a>
+                    }
                 }
 
 

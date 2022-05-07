@@ -15,7 +15,7 @@ namespace Cleansiness.Shared.Interfaces
         List<Division> GetDivisions();
         List<Aspect> GetAspects();
         List<Risk> GetRisks();
-        List<Section> GetSections();
+        List<Section> GetSections(int pMasterId);
         Section GetSectionNameById(int pSectionId);
         List<Site> GetSites();
         List<AppUser> GetAppUsers();

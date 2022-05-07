@@ -68,9 +68,19 @@ namespace Cleansiness.Services
             return _context.Sections.FirstOrDefault(x => x.SectionID == pSectionId);
         }
 
-        public List<Section> GetSections()
+        public List<Section> GetSections(int pMasterId)
         {
-            return _context.Sections.ToList();
+            List<Section> vSections = _context.Sections.ToList();
+            var vSectionTracks = _context.SectionTracks.Where(x => x.AuditMasterID == pMasterId).ToList();
+            for (int i = 0; i < vSectionTracks.Count; i++)
+            {
+                var vSection = vSections.FirstOrDefault(x => x.SectionID == vSectionTracks[i].SectionID);
+                if (vSection != null)
+                {
+                    vSection.IsCompleted = true;
+                }
+            }
+            return vSections;
         }
 
         public List<Site> GetSites()

@@ -29,7 +29,8 @@ namespace Cleansiness.Shared.Models
         public int ResultDropdownId { get; set; }
         [NotMapped]
         public List<ResultDropdown> ResultDropdowns { get; set; }
-
+        [NotMapped]
+        public int AuditDetailsID { get; set; }
         public Question()
         {
             ResultDropdowns = new List<ResultDropdown>()

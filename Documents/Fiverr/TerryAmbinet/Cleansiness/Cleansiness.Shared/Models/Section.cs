@@ -17,6 +17,7 @@ namespace Cleansiness.Shared.Models
         public string SectionName { get; set; }
         public bool SectionActive { get; set; }
         public DateTime UpdateDt { get; set; }
-
+        [NotMapped]
+        public bool IsCompleted { get; set; }
     }
 }

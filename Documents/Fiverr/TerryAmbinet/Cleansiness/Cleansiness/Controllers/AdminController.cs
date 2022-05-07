@@ -61,7 +61,7 @@ namespace Cleansiness.Controllers
         {
             HttpContext.Session.SetString(SessionHelper.AuditMasterId, pAuditMasterId.ToString());
             AuditSectionDto vAuditSectionDto = new();
-            vAuditSectionDto.SectionList = _common.GetSections();
+            vAuditSectionDto.SectionList = _common.GetSections(pAuditMasterId);
             return View(vAuditSectionDto);
         }
         
@@ -82,6 +82,7 @@ namespace Cleansiness.Controllers
                 var vSavedAuditQuestions = _repo.GetAuditDetails(vAuditQuestionDto.MasterId, pSectionId);
                 for (int i = 0; i < vSavedAuditQuestions.Count; i++)
                 {
+                    vAuditQuestionDto.QuestionList[i].AuditDetailsID = vSavedAuditQuestions[i].AuditDetailsID;
                     vAuditQuestionDto.QuestionList[i].Comment = vSavedAuditQuestions[i].Comment;
                     vAuditQuestionDto.QuestionList[i].ResultDropdownId = vSavedAuditQuestions[i].Result;
                 }
