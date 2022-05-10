@@ -118,7 +118,15 @@ namespace Cleansiness.Services
                     //SCORE=(T-N-nA)/(T-nA) x 100%
                     decimal fp1 = (vAuditQuestionCount - vNoCount - vNACount);
                     decimal fp2 = (vAuditQuestionCount - vNACount);
-                    decimal fpRes = (fp1 == 0 && fp2 == 0) ? 0 : fp1 / fp2;
+                    decimal fpRes = 0;
+                    if (fp2==0)
+                    {
+                    }
+                    else
+                    {
+                        fpRes = (fp1 == 0 && fp2 == 0) ? 0 : fp1 / fp2;
+                    }
+                    
                     decimal vScore = Math.Round(fpRes * 100);
 
                     SectionTrack vSectionTrack = new SectionTrack();
