@@ -318,7 +318,7 @@
     <section class="container p-4">
         <hr />
         <h5 class="color-myblue text-center">
-                Verified by: @Model.AuditMaster.VerifiedBy - on @Model.AuditMaster.AuditDate.ToString().Split(' ')[0]
+                Verified by: @Model.AuditMaster.VerifiedBy - on @Model.AuditMaster.UpdateDt.ToString().Split(' ')[0]
         </h5>
         <h6 class="text-dark">@Model.AuditMaster.VerifyComments</h6>
         <hr />
@@ -352,7 +352,7 @@
             </div>
 
             <div class="modal-footer">
-                <button onclick="VerifyAudit(event)" type="button" data-dismiss="modal" class="btn btn-sm btn-info">SAVE</button>
+                <button onclick="VerifyAudit(event)" type="button" class="btn btn-sm btn-info">SAVE</button>
             </div>
         </div>
     </div>
@@ -398,8 +398,6 @@
             VerifiedBy: $('#VerifiedBy').val(),
         }
 
-        console.log(obj);
-
         $.ajax({
             url: "@Url.Action("VerifyAudit", "Admin")",//'/JobManagement/OnAddingScreeningQuestions',
             method: "POST",
@@ -415,7 +413,11 @@
                       focus: true
                     });
                 } else {
-                    location.reload();
+                    response.removeClass('text-danger').addClass('text-success').text(data.message);
+                    setTimeout(()=>{
+                        verifyaudit.modal('hide');
+                        location.reload();
+                    }, 2000);
                 }
             },
             error: function (data) {

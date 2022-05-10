@@ -138,7 +138,7 @@
     @if (vAuditMasterList != null && vAuditMasterList.Count > 0)
     {
         @Html.PagedListPager(vAuditMasterList,
-        page => Url.Action("Dashboard", "Admin", new { pPage = page }))
+        page => Url.Action("AuditList", "Admin", new { pPage = page }))
     }
     <!-- End of pagination -->
 

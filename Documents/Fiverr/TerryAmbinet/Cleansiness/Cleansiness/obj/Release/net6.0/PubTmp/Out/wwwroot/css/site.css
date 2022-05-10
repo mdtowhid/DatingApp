@@ -1,0 +1,76 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.field-validation-valid {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+    .pagination-container .pagination li {
+        padding: 0.35rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        border-right: 1px solid #ccc;
+    }
+
+        .pagination-container .pagination li:last-child {
+            border-right: transparent;
+        }
+
+    .pagination-container .pagination {
+        background: white;
+        border: 1px solid #ccc;
+    }
+
+        .pagination-container .pagination li.active {
+            z-index: 3;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+.field-validation-valid {
+    width: 100%;
+    font-size: 12px;
+    padding-left: 5px;
+    font-weight: normal;
+    padding-bottom: 3px;
+    display: block;
+    margin-top: -5px !important;
+}
+
+.pointer-events {
+    pointer-events: none;
+}
+
+.page-break-before {
+    page-break-before: always;
+}
+
+.print-btn {
+}

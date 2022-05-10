@@ -58,9 +58,14 @@ namespace Cleansiness.Controllers
                 return View(new AppUser { IsLoggedIn = false });
             }
         }
+
+        [HttpGet]
         public IActionResult Logout()
         {
-            return RedirectToAction("Login");
+            var vAppUser = JsonConvert.DeserializeObject<AppUser>(HttpContext.Session.GetString(SessionHelper.AppUser));
+            _common.LogUserActivity(vAppUser, 2);
+            SessionHelper.DestroySession(HttpContext);
+            return RedirectToAction("login", "auth");
         }
     }
 }

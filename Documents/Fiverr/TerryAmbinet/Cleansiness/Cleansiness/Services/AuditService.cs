@@ -20,6 +20,39 @@ namespace Cleansiness.Services
             _mapper = mapper;
             _common = common;
         }
+
+        private decimal CalculateGrandAuditTotal(int pAuditMasterId)
+        {
+            var vAuditDetails = GetAuditDetails(pAuditMasterId, 0);
+            int vNACount = 0;
+            int vNoCount = 0;
+            int vYesCount = 0;
+            int vAuditDetailsCount = vAuditDetails.Count;
+
+            foreach (var auditDetail in vAuditDetails)
+            {
+                if (auditDetail.Result == 1)
+                {
+                    vYesCount += 1;
+                }
+                if (auditDetail.Result == 2)
+                {
+                    vNoCount += 1;
+                }
+                if (auditDetail.Result == 3)
+                {
+                    vNACount += 1;
+                }
+            }
+
+            //SCORE=(T-N-nA)/(T-nA) x 100%
+            decimal fp1 = (vAuditDetailsCount - vNoCount - vNACount);
+            decimal fp2 = (vAuditDetailsCount - vNACount);
+            decimal fpRes = (fp1 == 0 && fp2 == 0) ? 0 : fp1 / fp2;
+            decimal vTotalScore = Math.Round(fpRes * 100);
+            return vTotalScore;
+        }
+
         public AuditDetailCreationDto AddOrUpdateAuditDetail(AuditDetailCreationDto pAuditDetailCreationDto)
         {
             AuditDetailCreationDto vModel = new();
@@ -28,16 +61,23 @@ namespace Cleansiness.Services
             try
             {
                 bool vIsSaved = false;
-                int vNotApplicableCount = 0;
-                int vAudutQuestionCount = pAuditDetailCreationDto.QuestionList.Count;
+                int vNACount = 0;
+                int vNoCount = 0;
+                int vAuditQuestionCount = pAuditDetailCreationDto.QuestionList.Count;
                 int vTotalQuestions = _common.GetQuestions().Count;
                 foreach (var question in pAuditDetailCreationDto.QuestionList)
                 {
                     if (question.ResultDropdownId == 3)
                     {
-                        vNotApplicableCount += 1;
+                        vNACount += 1;
+                    }
+                    if (question.ResultDropdownId == 2)
+                    {
+                        vNoCount += 1;
                     }
 
+                    #region SaveAuditDetails
+                    
                     if (pAuditDetailCreationDto.IsCreateForm)
                     {
                         AuditDetail vAuditDetail = new AuditDetail
@@ -66,6 +106,8 @@ namespace Cleansiness.Services
                         }
 
                     }
+
+                    #endregion
                 }
 
                 vIsSaved = _context.SaveChanges() > 0;
@@ -73,8 +115,12 @@ namespace Cleansiness.Services
                 //Save SectionTrack info here
                 if (vIsSaved)
                 {
-                    decimal y = Decimal.Divide(vAudutQuestionCount, vTotalQuestions - vNotApplicableCount);
-                    decimal z = y * 100;
+                    //SCORE=(T-N-nA)/(T-nA) x 100%
+                    decimal fp1 = (vAuditQuestionCount - vNoCount - vNACount);
+                    decimal fp2 = (vAuditQuestionCount - vNACount);
+                    decimal fpRes = (fp1 == 0 && fp2 == 0) ? 0 : fp1 / fp2;
+                    decimal vScore = Math.Round(fpRes * 100);
+
                     SectionTrack vSectionTrack = new SectionTrack();
                     var vSec = _context.SectionTracks.FirstOrDefault(x => x.AuditMasterID == pAuditDetailCreationDto.MasterId
                             && x.SectionID == pAuditDetailCreationDto.SectionId);
@@ -82,7 +128,7 @@ namespace Cleansiness.Services
                     if (vSec != null)
                     {
                         vSec.UpdateDate = DateTime.Now;
-                        vSec.SectionScore = z;
+                        vSec.SectionScore = vScore;
                         _context.SectionTracks.Update(vSec);
                     }
                     else
@@ -91,7 +137,7 @@ namespace Cleansiness.Services
                         {
                             AuditMasterID = pAuditDetailCreationDto.MasterId,
                             SectionID = pAuditDetailCreationDto.SectionId,
-                            SectionScore = z,
+                            SectionScore = vScore,
                             SectionStatus = 1,
                             UpdateDate = DateTime.Now
                         };
@@ -111,7 +157,7 @@ namespace Cleansiness.Services
                         var vSections = _context.Sections.ToList();
                         if (SectionTracks != null)
                         {
-                            vAuditMaster.AuditScore = SectionTracks.Sum(x => x.SectionScore);
+                            vAuditMaster.AuditScore = CalculateGrandAuditTotal(pAuditDetailCreationDto.MasterId);
                             vAuditMaster.AuditStatus = SectionTracks.Count == vSections.Count ? 1 : 0;
                             vAuditMaster.UpdateDt = DateTime.Now;
                             _context.AuditMasters.Update(vAuditMaster);
@@ -168,9 +214,7 @@ namespace Cleansiness.Services
 
         public AuditMaster GetAuditMasterById(int pAuditId)
         {
-            AuditMaster vAuditMaster = new();
-
-            vAuditMaster = _context.AuditMasters
+            var vAuditMaster = _context.AuditMasters
                 .Include(x=>x.AppUser).Include(x=>x.Area).Include(x=>x.Area.Division)
                 .FirstOrDefault(x => x.AuditMasterID == pAuditId);
 
@@ -255,6 +299,12 @@ namespace Cleansiness.Services
             if (pMasterId != 0 && pSectionId != 0)
             {
                 vModel = _context.AuditDetails.Where(x => x.AuditMasterID == pMasterId && x.SectionID == pSectionId).ToList();
+                return vModel;
+            }
+            if (pMasterId != 0)
+            {
+                vModel = _context.AuditDetails.Where(x => x.AuditMasterID == pMasterId).ToList();
+                return vModel;
             }
 
             return vModel;
@@ -279,11 +329,13 @@ namespace Cleansiness.Services
             bool vIsSaved = false;
             try
             {
-                AuditMaster vAuditMaster = _context.AuditMasters
+                var vAuditMaster = _context.AuditMasters
                     .FirstOrDefault(x => x.AuditMasterID == pVerifyAuditDto.MasterId);
                 if(vAuditMaster!=null)
                 {
+                    vAuditMaster.AuditStatus = 2;
                     vAuditMaster.UpdateDt = DateTime.Now;
+                    vAuditMaster.VerifyDate = DateTime.Now;
                     vAuditMaster.VerifyComments = pVerifyAuditDto.VerifyComments;
                     vAuditMaster.VerifiedBy = pVerifyAuditDto.VerifiedBy;
 

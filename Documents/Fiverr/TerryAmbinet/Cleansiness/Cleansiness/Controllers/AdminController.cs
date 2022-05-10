@@ -34,10 +34,10 @@ namespace Cleansiness.Controllers
             int vPageCount = Convert.ToInt32(_config.GetSection("AuditPageCount").Value);
             ViewBag.AuditMasterList = _repo.GetAuditMasters(new AuditMasterSearchDto()
             {
-                IsCompleted=false
+                IsCompleted = false
             }).ToPagedList(pPage ?? 1, vPageCount);
             vDashboardDto.AuditMasterCreationDto = vDto;
-            if(pResp!=null && pMesg!=null)
+            if (pResp != null && pMesg != null)
             {
                 vDashboardDto.ResponseType = ResponseType.Error;
                 vDashboardDto.Message = pMesg;
@@ -50,29 +50,30 @@ namespace Cleansiness.Controllers
         {
             pDashboardDto.AuditMasterCreationDto.AuditDate = DateTime.Now;
             AuditMaster vAuditMaster = _repo.AddOrUpdateAuditMaster(pDashboardDto.AuditMasterCreationDto);
-            if(vAuditMaster!=null)
+            if (vAuditMaster != null)
             {
-                if(vAuditMaster.ResponseType == ResponseType.Error)
+                if (vAuditMaster.ResponseType == ResponseType.Error)
                 {
                     return RedirectToAction("Dashboard", "Admin",
-                        new { pResp = (int) vAuditMaster.ResponseType, pMesg= vAuditMaster.Message});
+                        new { pResp = (int)vAuditMaster.ResponseType, pMesg = vAuditMaster.Message });
                 }
             }
             return RedirectToAction("AuditSections", "Admin"
-                , new { pAuditMasterId = vAuditMaster.AuditMasterID});
+                , new { pAuditMasterId = vAuditMaster.AuditMasterID });
         }
-        
+
         [HttpGet("AuditSections/{pAuditMasterId}")]
         public IActionResult AuditSections(int pAuditMasterId)
         {
             HttpContext.Session.SetString(SessionHelper.AuditMasterId, pAuditMasterId.ToString());
             AuditSectionDto vAuditSectionDto = new();
+            vAuditSectionDto.AuditMaster = _repo.GetAuditMasterById(pAuditMasterId);
             vAuditSectionDto.SectionList = _common.GetSections(pAuditMasterId);
             vAuditSectionDto.SectionCompletedCount = vAuditSectionDto.SectionList.Count(x => x.IsCompleted);
             vAuditSectionDto.TotalScore = _repo.GetSectionTracks(pAuditMasterId).Sum(x => x.SectionScore);
             return View(vAuditSectionDto);
         }
-        
+
         public IActionResult AuditQuestions(int pSectionId)
         {
             HttpContext.Session.SetString(SessionHelper.AuditSectionId, pSectionId.ToString());
@@ -98,12 +99,12 @@ namespace Cleansiness.Controllers
 
             return View(vAuditQuestionDto);
         }
-        
+
         [HttpPost]
         public IActionResult SaveAuditing(AuditDetailCreationDto pAuditQuestionDto)
         {
             var vSectionTrack = _repo.GetSectionTrack(pAuditQuestionDto.MasterId, pAuditQuestionDto.SectionId);
-            if(vSectionTrack != null)
+            if (vSectionTrack != null)
             {
                 pAuditQuestionDto.IsCreateForm = false;
             }
@@ -111,26 +112,28 @@ namespace Cleansiness.Controllers
             {
                 pAuditQuestionDto.IsCreateForm = true;
             }
+            int vAuditMasterId = Convert.ToInt32(HttpContext.Session.GetString(SessionHelper.AuditMasterId));
 
-            AuditDetailCreationDto vAuditDetailCreationDto =_repo.AddOrUpdateAuditDetail(pAuditQuestionDto);
-            return RedirectToAction("AuditQuestions", "Admin"
-                , new { pSectionId = SessionHelper.GetCurrentSectionId(HttpContext) });
+
+            AuditDetailCreationDto vAuditDetailCreationDto = _repo.AddOrUpdateAuditDetail(pAuditQuestionDto);
+            return RedirectToAction("AuditSections", "Admin"
+                , new { pAuditMasterId = vAuditMasterId });
         }
-        
+
         public IActionResult AuditList(DateTime fromDate, DateTime toDate, string pSearchKey, int? pPage)
         {
             int vPageCount = Convert.ToInt32(_config.GetSection("AuditPageCount").Value);
             var vAuditMasterList = _repo.GetAuditMasters(new AuditMasterSearchDto()
             {
                 IsCompleted = true,
-                FromDate=fromDate,
-                ToDate=toDate,
-                SearchText=pSearchKey
+                FromDate = fromDate,
+                ToDate = toDate,
+                SearchText = pSearchKey
             });
-            
+
             DashboardDto vDashboardDto = new DashboardDto();
             vDashboardDto.IsSearched = vAuditMasterList.Count == 0;
-            if(vDashboardDto.IsSearched)
+            if (vDashboardDto.IsSearched)
             {
                 vAuditMasterList = _repo.GetAuditMasters(new AuditMasterSearchDto()
                 {
@@ -169,7 +172,7 @@ namespace Cleansiness.Controllers
 
         public JsonResult VerifyAudit(VerifyAuditDto pVerifyAuditDto)
         {
-            if(string.IsNullOrEmpty(pVerifyAuditDto.VerifyComments))
+            if (string.IsNullOrEmpty(pVerifyAuditDto.VerifyComments))
             {
                 return Json(new { Message = "Verification Comment is required", HasError = true });
             }

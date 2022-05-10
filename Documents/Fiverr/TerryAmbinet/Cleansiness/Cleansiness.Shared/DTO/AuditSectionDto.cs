@@ -12,5 +12,6 @@ namespace Cleansiness.Shared.DTO
         public List<Section> SectionList { get; set; }
         public int SectionCompletedCount { get; set; }
         public decimal TotalScore { get; set; }
+        public AuditMaster AuditMaster { get; set; }
     }
 }
