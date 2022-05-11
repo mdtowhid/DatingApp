@@ -19,7 +19,9 @@ namespace Cleansiness.Shared.Interfaces
         Section GetSectionNameById(int pSectionId);
         List<Site> GetSites();
         List<AppUser> GetAppUsers();
+        List<AppUser> GetAppUsers(int pSiteId);
         List<Area> GetAreas();
+        List<Area> GetAreas(int pSiteId);
         List<ActivityLog> GetActivityLogs();
         List<ResultDto> GetResultDtos();
         void LogUserActivity(AppUser pAppUser, int pActivityType);

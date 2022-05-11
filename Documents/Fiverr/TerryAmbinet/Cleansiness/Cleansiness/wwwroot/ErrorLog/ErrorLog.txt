@@ -128,3 +128,33 @@ Error: Value cannot be null. (Parameter 'value')
 =================Error At: 11/05/2022 01:03:36 +06:00=================
 
 
+=================Error At: 11/05/2022 11:33:47 +06:00=================
+Error Occured In AuthController, Action: Login
+Error: The model item passed into the ViewDataDictionary is of type 'Cleansiness.Shared.Models.AppUser', but this ViewDataDictionary instance requires a model item of type 'Cleansiness.Shared.DTO.UserForLoginDto'.
+=================Error At: 11/05/2022 11:33:47 +06:00=================
+
+
+=================Error At: 11/05/2022 11:35:24 +06:00=================
+Error Occured In AuthController, Action: Login
+Error: The model item passed into the ViewDataDictionary is of type 'Cleansiness.Shared.Models.AppUser', but this ViewDataDictionary instance requires a model item of type 'Cleansiness.Shared.DTO.UserForLoginDto'.
+=================Error At: 11/05/2022 11:35:24 +06:00=================
+
+
+=================Error At: 11/05/2022 11:37:18 +06:00=================
+Error Occured In AuthController, Action: Login
+Error: The model item passed into the ViewDataDictionary is of type 'Cleansiness.Shared.Models.AppUser', but this ViewDataDictionary instance requires a model item of type 'Cleansiness.Shared.DTO.UserForLoginDto'.
+=================Error At: 11/05/2022 11:37:18 +06:00=================
+
+
+=================Error At: 11/05/2022 12:11:08 +06:00=================
+Error Occured In AdminController, Action: AuditReport
+Error: Object reference not set to an instance of an object.
+=================Error At: 11/05/2022 12:11:08 +06:00=================
+
+
+=================Error At: 11/05/2022 12:31:29 +06:00=================
+Error Occured In AdminController, Action: Dashboard
+Error: 'System.Dynamic.DynamicObject' does not contain a definition for 'AuditMasterList'
+=================Error At: 11/05/2022 12:31:29 +06:00=================
+
+

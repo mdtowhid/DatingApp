@@ -12,5 +12,6 @@ namespace Cleansiness.Shared.DTO
         public DateTime FromDate { get; set; }
         public DateTime ToDate { get; set; }
         public string SearchText { get; set; }
+        public int SiteId { get; set; }
     }
 }

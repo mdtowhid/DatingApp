@@ -1,0 +1,26 @@
+﻿@model List<AppUser>
+@{
+    ViewData["Title"] = "All Users";
+}
+@await Html.PartialAsync("~/Views/Shared/_topbar.cshtml")
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h4>All Users</h4>
+            </div>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="card">
+              <div class="card-header">
+                @item.UserName
+              </div>
+            </div>
+        }
+    </div>
+    <div class="col-md-4"></div>
+</div>
+

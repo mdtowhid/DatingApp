@@ -24,7 +24,15 @@
                     <option value="#" selected disabled hidden>Select Site</option>
                     @foreach (var site in Model.AuditMasterCreationDto.Sites)
                     {
-                        <option value="@site.SiteID">@site.SiteName</option>
+                        if(site.SiteID == Model.AppUser.SiteId)
+                        {
+                            <option value="@site.SiteID" selected disabled>@site.SiteName</option>
+                        }
+                        @*else
+                        {
+                            <option value="@site.SiteID">@site.SiteName</option>
+                        }*@
+                        
                     }
                 </select>
             </div>
@@ -122,7 +130,7 @@
                         <td>@auditMaster.AuditDate</td>
                         @*<td><a href="auditsections.html" class="text-primary">ED EDRU</a></td>*@
                         <td>@auditMaster.Area.AreaName</td>
-                        <td>FR1</td>
+                        <td>@auditMaster.Area.Risk.Riskname</td>
                         <td>@auditMaster.AppUser.Name</td>
                         <td class="text-center">
                             <a asp-controller="admin" 

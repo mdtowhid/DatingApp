@@ -14,7 +14,9 @@ namespace Cleansiness.Shared.Models
     {
         [Key]
         public int QuestsID { get; set; }
+        [ForeignKey("Aspect")]
         public int AspectID { get; set; }
+        public virtual Aspect? Aspect { get; set; }
         public int SectionID { get; set; }
         public int QuestNo { get; set; }
         public string QuestText { get; set; }

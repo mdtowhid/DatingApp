@@ -26,7 +26,7 @@ namespace Cleansiness.Controllers
         public IActionResult Login()
         {
             ViewBag.Users = _common.GetAppUsers();
-            return View();
+            return View(new UserForLoginDto { IsTriedForLogin = false });
         }
 
         [HttpPost]
@@ -50,18 +50,20 @@ namespace Cleansiness.Controllers
                 }
                 else
                 {
-                    return View(new AppUser { IsLoggedIn = false });
+                    return View(new UserForLoginDto { IsTriedForLogin = true });
                 }
             }
             else
             {
-                return View(new AppUser { IsLoggedIn = false });
+                return View(new UserForLoginDto { IsTriedForLogin = true });
             }
         }
 
         [HttpGet]
         public IActionResult Logout()
         {
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
             var vAppUser = JsonConvert.DeserializeObject<AppUser>(HttpContext.Session.GetString(SessionHelper.AppUser));
             _common.LogUserActivity(vAppUser, 2);
             SessionHelper.DestroySession(HttpContext);

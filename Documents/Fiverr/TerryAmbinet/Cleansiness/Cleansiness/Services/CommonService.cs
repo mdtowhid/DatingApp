@@ -24,9 +24,20 @@ namespace Cleansiness.Services
             return _context.AppUsers.OrderByDescending(x => x.UserName).ToList();
         }
 
+        public List<AppUser> GetAppUsers(int pSiteId)
+        {
+            return _context.AppUsers.Include(x=>x.Site)
+                .Where(x=>x.SiteId == pSiteId).OrderByDescending(x => x.UserName).ToList();
+        }
+
         public List<Area> GetAreas()
         {
             return _context.Areas.ToList();
+        }
+
+        public List<Area> GetAreas(int pSiteId)
+        {
+            return _context.Areas.Where(x=>x.SiteID == pSiteId).ToList();
         }
 
         public List<Aspect> GetAspects()

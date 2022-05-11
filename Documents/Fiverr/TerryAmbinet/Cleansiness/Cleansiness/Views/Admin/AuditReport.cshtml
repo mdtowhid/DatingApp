@@ -23,7 +23,7 @@
 
     <div class="row p-2 color-myblue text-center">
         <div class="col-md-6 border-right">
-            <h6 class="mt-2">WARD 30/HAEMATOLOGY DAY WARD - FR1</h6>
+            <h6 class="mt-2"> @Model.AuditMaster.Area.AreaName -  @Model.AuditMaster.Area.Risk.Riskname</h6>
         </div>
 
         <div class="col-md-3 border-right">
@@ -107,7 +107,7 @@
                     }
                     <tr>
                         <td class="gcol5">@count</td>
-                        <td class="gcol10">Specification</td>
+                        <td class="gcol10">@item.Question.Aspect.AspectName</td>
                         <td class="gcol50">@item.Question.QuestText</td>
                         <td class="gcol5">@result</td>
                         <td class="gcol30">@item.Comment</td>
@@ -145,7 +145,7 @@
                     }
                     <tr>
                         <td class="gcol5">@count</td>
-                        <td class="gcol10">Specification</td>
+                        <td class="gcol10">@item.Question.Aspect.AspectName</td>
                         <td class="gcol50">@item.Question.QuestText</td>
                         <td class="gcol5">@result</td>
                         <td class="gcol30">@item.Comment</td>
@@ -183,7 +183,7 @@
                     }
                     <tr>
                         <td class="gcol5">@count</td>
-                        <td class="gcol10">Specification</td>
+                        <td class="gcol10">@item.Question.Aspect.AspectName</td>
                         <td class="gcol50">@item.Question.QuestText</td>
                         <td class="gcol5">@result</td>
                         <td class="gcol30">@item.Comment</td>
@@ -221,7 +221,7 @@
                     }
                     <tr>
                         <td class="gcol5">@count</td>
-                        <td class="gcol10">Specification</td>
+                        <td class="gcol10">@item.Question.Aspect.AspectName</td>
                         <td class="gcol50">@item.Question.QuestText</td>
                         <td class="gcol5">@result</td>
                         <td class="gcol30">@item.Comment</td>
@@ -259,7 +259,7 @@
                     }
                     <tr>
                         <td class="gcol5">@count</td>
-                        <td class="gcol10">Specification</td>
+                        <td class="gcol10">@item.Question.Aspect.AspectName</td>
                         <td class="gcol50">@item.Question.QuestText</td>
                         <td class="gcol5">@result</td>
                         <td class="gcol30">@item.Comment</td>
@@ -297,7 +297,7 @@
                     }
                     <tr>
                         <td class="gcol5">@count</td>
-                        <td class="gcol10">Specification</td>
+                        <td class="gcol10">@item.Question.Aspect.AspectName</td>
                         <td class="gcol50">@item.Question.QuestText</td>
                         <td class="gcol5">@result</td>
                         <td class="gcol30">@item.Comment</td>
@@ -362,7 +362,7 @@
 <section class="container">
     <div class="row p-2 d-print-none">
         <div class="col-md-4 mb-sm-2">
-            <a asp-controller="admin" asp-action="dashboard" class="btn btn-block btn-lg btn-dark">BACK</a>
+            <a asp-controller="admin" asp-action="AuditList" class="btn btn-block btn-lg btn-dark">BACK</a>
         </div>
 
         <div class="col-md-4 mb-sm-2">

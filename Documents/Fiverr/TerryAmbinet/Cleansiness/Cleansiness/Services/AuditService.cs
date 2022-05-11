@@ -224,7 +224,7 @@ namespace Cleansiness.Services
         {
             var vAuditMaster = _context.AuditMasters
                 .Include(x=>x.AppUser).Include(x=>x.Area).Include(x=>x.Area.Division)
-                .FirstOrDefault(x => x.AuditMasterID == pAuditId);
+                .Include(x => x.Area.Risk).FirstOrDefault(x => x.AuditMasterID == pAuditId);
 
             return vAuditMaster;
         }
@@ -244,7 +244,7 @@ namespace Cleansiness.Services
                             && x.AuditDate <= pAuditMasterSearchDto.ToDate && x.Area.AreaName
                             .Contains(pAuditMasterSearchDto.SearchText)
                             && (x.AuditStatus == 1 || x.AuditStatus == 2))
-                            .Include(x => x.Area).Include(x => x.AppUser).ToList();
+                            .Include(x => x.Area).Include(x => x.AppUser).Include(x => x.Area.Risk).ToList();
                     }
                     else if (pAuditMasterSearchDto.FromDate != default(DateTime) 
                         && pAuditMasterSearchDto.ToDate != default(DateTime))
@@ -253,12 +253,21 @@ namespace Cleansiness.Services
                             .Where(x => x.AuditDate >= pAuditMasterSearchDto.FromDate
                             && x.AuditDate <= pAuditMasterSearchDto.ToDate
                             && (x.AuditStatus == 1 || x.AuditStatus == 2))
-                            .Include(x => x.Area).Include(x => x.AppUser).ToList();
+                            .Include(x => x.Area).Include(x => x.AppUser).Include(x => x.Area.Risk).ToList();
+                    }
+                    else if(pAuditMasterSearchDto.SearchText != null)
+                    {
+                        vModelList = _context.AuditMasters
+                            .Where(x => x.Area.AreaName.Contains(pAuditMasterSearchDto.SearchText)
+                                && (x.AuditStatus == 1 || x.AuditStatus == 2))
+                                .Include(x => x.Area).Include(x => x.AppUser)
+                                .Include(x => x.Area.Risk).ToList();
                     }
                     else
                     {
                         vModelList = _context.AuditMasters.Where(x => x.AuditStatus == 1 || x.AuditStatus == 2)
-                            .Include(x => x.Area).Include(x => x.AppUser).ToList();
+                            .Include(x => x.Area).Include(x => x.AppUser)
+                            .Include(x => x.Area.Risk).ToList();
                     }
 
                     //vModelList = vModelList.Count > 0 ? vModelList : _context.AuditMasters.Where(x => x.AuditStatus == 1 || x.AuditStatus == 2)
@@ -267,7 +276,7 @@ namespace Cleansiness.Services
                 else
                 {
                     vModelList = _context.AuditMasters.Where(x => x.AuditStatus == 0)
-                        .Include(x => x.Area).Include(x => x.AppUser).ToList();
+                        .Include(x => x.Area).Include(x => x.AppUser).Include(x => x.Area.Risk).ToList();
                 }
             }
             catch (Exception ex)
@@ -275,6 +284,18 @@ namespace Cleansiness.Services
             }
 
             return vModelList;
+        }
+
+
+
+        public List<AuditDetail> GetAuditDetailsReport(int pMasterId, int pSectionId)
+        {
+            List<AuditDetail> vAuditDetails = new();
+            vAuditDetails =
+                _context.AuditDetails.Include(x => x.Question)
+                .Include(x=>x.Question.Aspect)
+                .Where(x => x.AuditMasterID == pMasterId && x.SectionID == pSectionId).ToList();
+            return vAuditDetails;
         }
 
         public SectionTrack GetSectionTrack(int pMasterId, int pSectionId)
@@ -306,12 +327,12 @@ namespace Cleansiness.Services
             List<AuditDetail> vModel = new();
             if (pMasterId != 0 && pSectionId != 0)
             {
-                vModel = _context.AuditDetails.Where(x => x.AuditMasterID == pMasterId && x.SectionID == pSectionId).ToList();
+                vModel = _context.AuditDetails.Include(x=>x.Question.Aspect).Where(x => x.AuditMasterID == pMasterId && x.SectionID == pSectionId).ToList();
                 return vModel;
             }
             if (pMasterId != 0)
             {
-                vModel = _context.AuditDetails.Where(x => x.AuditMasterID == pMasterId).ToList();
+                vModel = _context.AuditDetails.Include(x => x.Question.Aspect).Where(x => x.AuditMasterID == pMasterId).ToList();
                 return vModel;
             }
 
@@ -321,14 +342,6 @@ namespace Cleansiness.Services
         public List<SectionTrack> GetSectionTracks(int pMasterId)
         {
             return _context.SectionTracks.Where(x => x.AuditMasterID == pMasterId).ToList();
-        }
-
-        public List<AuditDetail> GetAuditDetailsReport(int pMasterId, int pSectionId)
-        {
-            List<AuditDetail> vAuditDetails = new();
-            vAuditDetails = 
-                _context.AuditDetails.Include(x=>x.Question).Where(x => x.AuditMasterID == pMasterId && x.SectionID == pSectionId).ToList();
-            return vAuditDetails;
         }
 
         public bool VerifyAudit(VerifyAuditDto pVerifyAuditDto)

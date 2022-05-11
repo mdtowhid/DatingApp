@@ -4,6 +4,7 @@ using Cleansiness.Shared.Enums;
 using Cleansiness.Shared.Interfaces;
 using Cleansiness.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using X.PagedList;
 
 namespace Cleansiness.Controllers
@@ -22,16 +23,21 @@ namespace Cleansiness.Controllers
         }
         public IActionResult Dashboard(int? pResp, string? pMesg, int? pPage)
         {
-            AuditMasterCreationDto vDto = new AuditMasterCreationDto()
-            {
-                Areas = _common.GetAreas(),
-                Sites = _common.GetSites()
-            };
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
+            AuditMasterCreationDto vDto = new();
+            
+            var vAppUser = JsonConvert.DeserializeObject<AppUser>(HttpContext.Session.GetString(SessionHelper.AppUser));
             vDto.AppUserID = SessionHelper.GetUserId(HttpContext);
+            vDto.Areas = _common.GetAreas(vAppUser.SiteId);
+            vDto.Sites = _common.GetSites();
+            
             DashboardDto vDashboardDto = new();
+            vDashboardDto.AppUser = vAppUser;
             vDashboardDto.AppUserList = _common.GetAppUsers();
             vDashboardDto.UserName = HttpContext.Session.GetString(SessionHelper.UserName);
             int vPageCount = Convert.ToInt32(_config.GetSection("AuditPageCount").Value);
+            
             ViewBag.AuditMasterList = _repo.GetAuditMasters(new AuditMasterSearchDto()
             {
                 IsCompleted = false
@@ -48,6 +54,8 @@ namespace Cleansiness.Controllers
         [HttpPost]
         public IActionResult StartAudit(DashboardDto pDashboardDto)
         {
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
             pDashboardDto.AuditMasterCreationDto.AuditDate = DateTime.Now;
             AuditMaster vAuditMaster = _repo.AddOrUpdateAuditMaster(pDashboardDto.AuditMasterCreationDto);
             if (vAuditMaster != null)
@@ -65,6 +73,8 @@ namespace Cleansiness.Controllers
         [HttpGet("AuditSections/{pAuditMasterId}")]
         public IActionResult AuditSections(int pAuditMasterId)
         {
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
             HttpContext.Session.SetString(SessionHelper.AuditMasterId, pAuditMasterId.ToString());
             AuditSectionDto vAuditSectionDto = new();
             vAuditSectionDto.AuditMaster = _repo.GetAuditMasterById(pAuditMasterId);
@@ -76,6 +86,8 @@ namespace Cleansiness.Controllers
 
         public IActionResult AuditQuestions(int pSectionId)
         {
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
             HttpContext.Session.SetString(SessionHelper.AuditSectionId, pSectionId.ToString());
             AuditDetailCreationDto vAuditQuestionDto = new();
             vAuditQuestionDto.QuestionList = _common.GetQuestionsBySectionId(pSectionId);
@@ -103,6 +115,8 @@ namespace Cleansiness.Controllers
         [HttpPost]
         public IActionResult SaveAuditing(AuditDetailCreationDto pAuditQuestionDto)
         {
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
             var vSectionTrack = _repo.GetSectionTrack(pAuditQuestionDto.MasterId, pAuditQuestionDto.SectionId);
             if (vSectionTrack != null)
             {
@@ -122,6 +136,8 @@ namespace Cleansiness.Controllers
 
         public IActionResult AuditList(DateTime fromDate, DateTime toDate, string pSearchKey, int? pPage)
         {
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
             int vPageCount = Convert.ToInt32(_config.GetSection("AuditPageCount").Value);
             var vAuditMasterList = _repo.GetAuditMasters(new AuditMasterSearchDto()
             {
@@ -148,8 +164,8 @@ namespace Cleansiness.Controllers
         [HttpGet]
         public IActionResult ActivityLogs(int? pPage)
         {
-            //if (!SessionHelper.IsLoggedIn(HttpContext))
-            //    return RedirectToAction("login", "auth");
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
             DashboardDto vDashboardDto = new();
             ViewBag.Activities = _common.GetActivityLogs().ToPagedList(pPage ?? 1, 100);
             return View(vDashboardDto);
@@ -157,6 +173,8 @@ namespace Cleansiness.Controllers
 
         public IActionResult AuditReport(int pAuditMasterID)
         {
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
             ViewBag.AssuranceQuality = _repo.GetAuditDetailsReport(pAuditMasterID, 1);
             ViewBag.ControlAssurance = _repo.GetAuditDetailsReport(pAuditMasterID, 2);
             ViewBag.Consumables = _repo.GetAuditDetailsReport(pAuditMasterID, 3);
@@ -172,24 +190,38 @@ namespace Cleansiness.Controllers
 
         public JsonResult VerifyAudit(VerifyAuditDto pVerifyAuditDto)
         {
-            if (string.IsNullOrEmpty(pVerifyAuditDto.VerifyComments))
+            if (SessionHelper.IsLoggedIn(HttpContext))
             {
-                return Json(new { Message = "Verification Comment is required", HasError = true });
-            }
-            else if (string.IsNullOrEmpty(pVerifyAuditDto.VerifiedBy))
-            {
-                return Json(new { Message = "Name is required", HasError = true });
-            }
-            else
-            {
-                bool vIsSaved = _repo.VerifyAudit(pVerifyAuditDto);
-                return Json(new
+                if (string.IsNullOrEmpty(pVerifyAuditDto.VerifyComments))
                 {
-                    Message = vIsSaved ? "Audit successfully verified" : "Error occurs while audit verifying",
-                    HasError = false
-                });
+                    return Json(new { Message = "Verification Comment is required", HasError = true });
+                }
+                else if (string.IsNullOrEmpty(pVerifyAuditDto.VerifiedBy))
+                {
+                    return Json(new { Message = "Name is required", HasError = true });
+                }
+                else
+                {
+                    bool vIsSaved = _repo.VerifyAudit(pVerifyAuditDto);
+                    return Json(new
+                    {
+                        Message = vIsSaved ? "Audit successfully verified" : "Error occurs while audit verifying",
+                        HasError = false
+                    });
+                }
             }
+            return Json(new { Message = "Your session was expired please login again.", HasError = true });
         }
 
+        public IActionResult AllUsers()
+        {
+            if (!SessionHelper.IsLoggedIn(HttpContext))
+                return RedirectToAction("login", "auth");
+
+            var vAppUser = JsonConvert.DeserializeObject<AppUser>(HttpContext.Session.GetString(SessionHelper.AppUser));
+            var vAppUsers = _common.GetAppUsers(vAppUser.SiteId);
+
+            return View(vAppUsers);
+        }
     }
 }

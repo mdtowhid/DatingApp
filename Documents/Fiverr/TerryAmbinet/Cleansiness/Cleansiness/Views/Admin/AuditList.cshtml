@@ -42,7 +42,7 @@
               method="post">
         <div class="row">
             <div class="col-md-3 input-group mb-3 d-print-none">
-                <input name="fromDate" class="form-control formstextstyle docs-date"
+                <input onkeydown="return false" name="fromDate" class="form-control formstextstyle docs-date"
                        placeholder="From" autocomplete="off" data-toggle="tooltip" data-placement="top"
                        title="From Date">
                 <div class="input-group-append">
@@ -53,7 +53,7 @@
             </div>
 
             <div class="col-md-3 input-group mb-3 d-print-none">
-                <input name="toDate" class="form-control formstextstyle docs-date"
+                <input onkeydown="return false" name="toDate" class="form-control formstextstyle docs-date"
                        placeholder="To" autocomplete="off" data-toggle="tooltip" data-placement="top"
                        title="To Date">
                 <div class="input-group-append">
@@ -96,7 +96,7 @@
                     <tr>
                         <td>@auditMaster.AuditDate</td>
                         <td>@auditMaster.Area.AreaName</td>
-                        <td>FR1</td>
+                        <td>@auditMaster.Area.Risk.Riskname</td>
                         <td>@auditMaster.AppUser.Name</td>
                         <td>@auditMaster.AuditScore%</td>
                         @if (auditMaster.AuditStatus == 1)

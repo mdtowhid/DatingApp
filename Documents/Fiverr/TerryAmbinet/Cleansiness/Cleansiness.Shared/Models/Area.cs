@@ -18,7 +18,9 @@ namespace Cleansiness.Shared.Models
         [ForeignKey("Division")]
         public int DivID { get; set; }
         public virtual Division? Division { get; set; }
+        [ForeignKey("Risk")]
         public int RiskID { get; set; }
+        public virtual Risk? Risk { get; set; }
         public string AreaName { get; set; }
         public bool AreaStatus { get; set; }
         public DateTime UpdateDt { get; set; }

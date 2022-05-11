@@ -10,6 +10,7 @@ namespace Cleansiness.Shared.Models
         [Key]
         public int UserId { get; set; }
         public int SiteId { get; set; }
+        public virtual Site? Site { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string UserName { get; set; }
