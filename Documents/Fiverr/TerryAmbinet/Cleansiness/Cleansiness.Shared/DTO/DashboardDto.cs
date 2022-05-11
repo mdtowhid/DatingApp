@@ -17,5 +17,7 @@ namespace Cleansiness.Shared.DTO
         public string UserName { get; set; }
         public bool IsSearched { get; set; }
         public AuditMasterSearchDto AuditMasterSearchDto { get; set; }
+
+        public bool IsAllSiteUserLoggedIn { get; set; }
     }
 }

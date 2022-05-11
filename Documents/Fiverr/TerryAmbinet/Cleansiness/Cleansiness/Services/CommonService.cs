@@ -21,13 +21,13 @@ namespace Cleansiness.Services
 
         public List<AppUser> GetAppUsers()
         {
-            return _context.AppUsers.OrderByDescending(x => x.UserName).ToList();
+            return _context.AppUsers.Where(x=>x.UserStatus).OrderByDescending(x => x.UserName).ToList();
         }
 
         public List<AppUser> GetAppUsers(int pSiteId)
         {
             return _context.AppUsers.Include(x=>x.Site)
-                .Where(x=>x.SiteId == pSiteId).OrderByDescending(x => x.UserName).ToList();
+                .Where(x=>x.SiteId == pSiteId && x.UserStatus).OrderByDescending(x => x.UserName).ToList();
         }
 
         public List<Area> GetAreas()
@@ -37,7 +37,12 @@ namespace Cleansiness.Services
 
         public List<Area> GetAreas(int pSiteId)
         {
-            return _context.Areas.Where(x=>x.SiteID == pSiteId).ToList();
+            if(pSiteId == 1)
+            {
+                return _context.Areas.ToList();
+            }
+            else
+                return _context.Areas.Where(x=>x.SiteID == pSiteId).ToList();
         }
 
         public List<Aspect> GetAspects()

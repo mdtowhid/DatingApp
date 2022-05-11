@@ -33,6 +33,7 @@ namespace Cleansiness.Controllers
             vDto.Sites = _common.GetSites();
             
             DashboardDto vDashboardDto = new();
+            vDashboardDto.IsAllSiteUserLoggedIn = vAppUser.SiteId == 1;
             vDashboardDto.AppUser = vAppUser;
             vDashboardDto.AppUserList = _common.GetAppUsers();
             vDashboardDto.UserName = HttpContext.Session.GetString(SessionHelper.UserName);

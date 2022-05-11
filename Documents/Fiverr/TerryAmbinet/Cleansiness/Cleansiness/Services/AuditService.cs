@@ -223,7 +223,7 @@ namespace Cleansiness.Services
         public AuditMaster GetAuditMasterById(int pAuditId)
         {
             var vAuditMaster = _context.AuditMasters
-                .Include(x=>x.AppUser).Include(x=>x.Area).Include(x=>x.Area.Division)
+                .Include(x => x.Area).Include(x => x.Area.Division).Include(x=>x.AppUser).ThenInclude(x=>x.Site)
                 .Include(x => x.Area.Risk).FirstOrDefault(x => x.AuditMasterID == pAuditId);
 
             return vAuditMaster;
@@ -236,7 +236,8 @@ namespace Cleansiness.Services
             {
                 if (pAuditMasterSearchDto.IsCompleted)
                 {
-                    if (pAuditMasterSearchDto.FromDate != default(DateTime) && pAuditMasterSearchDto.ToDate != default(DateTime)
+                    if (pAuditMasterSearchDto.FromDate != default(DateTime) 
+                        && pAuditMasterSearchDto.ToDate != default(DateTime)
                         && pAuditMasterSearchDto.SearchText != null)
                     {
                         vModelList = _context.AuditMasters
@@ -244,30 +245,43 @@ namespace Cleansiness.Services
                             && x.AuditDate <= pAuditMasterSearchDto.ToDate && x.Area.AreaName
                             .Contains(pAuditMasterSearchDto.SearchText)
                             && (x.AuditStatus == 1 || x.AuditStatus == 2))
-                            .Include(x => x.Area).Include(x => x.AppUser).Include(x => x.Area.Risk).ToList();
+                            .Include(x => x.Area).Include(x => x.AppUser).ThenInclude(x=>x.Site).Include(x => x.Area.Risk)
+                            .OrderBy(x=>x.AuditDate).ThenBy(x=>x.AuditStatus).ToList();
                     }
                     else if (pAuditMasterSearchDto.FromDate != default(DateTime) 
                         && pAuditMasterSearchDto.ToDate != default(DateTime))
                     {
-                        vModelList = _context.AuditMasters
-                            .Where(x => x.AuditDate >= pAuditMasterSearchDto.FromDate
-                            && x.AuditDate <= pAuditMasterSearchDto.ToDate
-                            && (x.AuditStatus == 1 || x.AuditStatus == 2))
-                            .Include(x => x.Area).Include(x => x.AppUser).Include(x => x.Area.Risk).ToList();
+                        if(pAuditMasterSearchDto.FromDate == pAuditMasterSearchDto.ToDate)
+                        {
+                            vModelList = _context.AuditMasters
+                                .Where(x => x.AuditDate.Date == pAuditMasterSearchDto.FromDate.Date
+                                && (x.AuditStatus == 1 || x.AuditStatus == 2))
+                                .Include(x => x.Area).Include(x => x.AppUser).ThenInclude(x => x.Site).Include(x => x.Area.Risk)
+                                .OrderBy(x => x.AuditDate).OrderBy(x => x.AuditStatus).ToList();
+                        }
+                        else
+                        {
+                            vModelList = _context.AuditMasters
+                                .Where(x => x.AuditDate >= pAuditMasterSearchDto.FromDate
+                                && x.AuditDate <= pAuditMasterSearchDto.ToDate
+                                && (x.AuditStatus == 1 || x.AuditStatus == 2))
+                                .Include(x => x.Area).Include(x => x.AppUser).ThenInclude(x => x.Site).Include(x => x.Area.Risk)
+                                .OrderBy(x => x.AuditDate).OrderBy(x => x.AuditStatus).ToList();
+                        }
                     }
                     else if(pAuditMasterSearchDto.SearchText != null)
                     {
                         vModelList = _context.AuditMasters
                             .Where(x => x.Area.AreaName.Contains(pAuditMasterSearchDto.SearchText)
                                 && (x.AuditStatus == 1 || x.AuditStatus == 2))
-                                .Include(x => x.Area).Include(x => x.AppUser)
-                                .Include(x => x.Area.Risk).ToList();
+                                .Include(x => x.Area).Include(x => x.AppUser).ThenInclude(x => x.Site)
+                                .Include(x => x.Area.Risk).OrderBy(x => x.AuditDate).OrderBy(x => x.AuditStatus).ToList();
                     }
                     else
                     {
                         vModelList = _context.AuditMasters.Where(x => x.AuditStatus == 1 || x.AuditStatus == 2)
-                            .Include(x => x.Area).Include(x => x.AppUser)
-                            .Include(x => x.Area.Risk).ToList();
+                            .Include(x => x.Area).Include(x => x.AppUser).ThenInclude(x => x.Site)
+                            .Include(x => x.Area.Risk).OrderBy(x => x.AuditDate).OrderBy(x => x.AuditStatus).ToList();
                     }
 
                     //vModelList = vModelList.Count > 0 ? vModelList : _context.AuditMasters.Where(x => x.AuditStatus == 1 || x.AuditStatus == 2)
@@ -276,7 +290,8 @@ namespace Cleansiness.Services
                 else
                 {
                     vModelList = _context.AuditMasters.Where(x => x.AuditStatus == 0)
-                        .Include(x => x.Area).Include(x => x.AppUser).Include(x => x.Area.Risk).ToList();
+                        .Include(x => x.Area).Include(x => x.AppUser).Include(x => x.Area.Risk)
+                        .OrderBy(x => x.AuditDate).ToList();
                 }
             }
             catch (Exception ex)

@@ -22,17 +22,22 @@
             <div class="col-sm-12">
                 <select class="form-control formstextstyle-lg" id="area">
                     <option value="#" selected disabled hidden>Select Site</option>
-                    @foreach (var site in Model.AuditMasterCreationDto.Sites)
+                    @if(Model.IsAllSiteUserLoggedIn)
                     {
-                        if(site.SiteID == Model.AppUser.SiteId)
-                        {
-                            <option value="@site.SiteID" selected disabled>@site.SiteName</option>
-                        }
-                        @*else
+                        foreach (var site in Model.AuditMasterCreationDto.Sites)
                         {
                             <option value="@site.SiteID">@site.SiteName</option>
-                        }*@
-                        
+                        }
+                    }
+                    else
+                    {
+                        @foreach (var site in Model.AuditMasterCreationDto.Sites)
+                        {
+                            if(site.SiteID == Model.AppUser.SiteId)
+                            {
+                                <option value="@site.SiteID" selected disabled>@site.SiteName</option>
+                            }
+                        }
                     }
                 </select>
             </div>
@@ -129,7 +134,9 @@
                     <tr>
                         <td>@auditMaster.AuditDate</td>
                         @*<td><a href="auditsections.html" class="text-primary">ED EDRU</a></td>*@
-                        <td>@auditMaster.Area.AreaName</td>
+                        <td data-toggle="tooltip"
+                            data-placement="right"
+                            title="@auditMaster.AppUser.Site.SiteName">@auditMaster.Area.AreaName</td>
                         <td>@auditMaster.Area.Risk.Riskname</td>
                         <td>@auditMaster.AppUser.Name</td>
                         <td class="text-center">

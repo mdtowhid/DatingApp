@@ -29,5 +29,9 @@ namespace Cleansiness.Shared.Models
         public string? VerifiedBy { get; set; }
         public string? VerifyComments { get; set; }
         public DateTime VerifyDate{ get; set; }
+        [NotMapped]
+        public int SiteId { get; set; }
+        [NotMapped]
+        public virtual Site? Site { get; set; }
     }
 }

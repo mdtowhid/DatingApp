@@ -158,3 +158,21 @@ Error: 'System.Dynamic.DynamicObject' does not contain a definition for 'AuditMa
 =================Error At: 11/05/2022 12:31:29 +06:00=================
 
 
+=================Error At: 12/05/2022 02:05:23 +06:00=================
+Error Occured In AdminController, Action: Dashboard
+Error: Object reference not set to an instance of an object.
+=================Error At: 12/05/2022 02:05:23 +06:00=================
+
+
+=================Error At: 12/05/2022 02:17:03 +06:00=================
+Error Occured In AdminController, Action: AuditSections
+Error: Object reference not set to an instance of an object.
+=================Error At: 12/05/2022 02:17:03 +06:00=================
+
+
+=================Error At: 12/05/2022 02:26:01 +06:00=================
+Error Occured In AdminController, Action: AuditList
+Error: Object reference not set to an instance of an object.
+=================Error At: 12/05/2022 02:26:01 +06:00=================
+
+
