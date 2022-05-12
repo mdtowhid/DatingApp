@@ -46,15 +46,15 @@
                 <div class="col-md-2 bg-lightergrey px-3 py-3 rounded">
                     <div>
                         <kbd>@Model.QuestionList[i].QuestNo</kbd>
-                        <select asp-for="QuestionList[i].ResultDropdownId" 
+                        <select asp-for="QuestionList[i].ResultDropdownId"
                             asp-items="@(new SelectList(Model.QuestionList[i].ResultDropdowns, nameof(ResultDropdown.Value),
                                         nameof(ResultDropdown.Text)))"
                             class="form-control formstextstyle mt-2"
                             id="answere__@Model.QuestionList[i].QuestsID">
                             <option value="#" selected disabled hidden></option>
                             @*<option value="1">YES</option>
-                            <option value="2">NO</option>
-                            <option value="3">NA</option>*@
+                                <option value="2">NO</option>
+                                <option value="3">NA</option>*@
                         </select>
                     </div>
                     <span asp-validation-for="QuestionList[i].ResultDropdownId" class="text-danger"></span>
@@ -74,3 +74,32 @@
         </div>
     </form>
 </section>
+
+
+<script>
+    window.thisPage = window.thisPage || {};
+    window.thisPage.isDirty = false;
+
+    window.thisPage.closeEditorWarning = function (event) {
+        if (window.thisPage.isDirty)
+            return 'It looks like you have been editing something' +
+                   ' - if you leave before saving, then your changes will be lost.'
+        else
+            return undefined;
+    };
+
+    $("form").on('keyup', 'input[type=text]',
+        function () {
+            window.thisPage.isDirty = true;
+    });
+
+    $("form").on('change', 'select',
+        function () {
+            window.thisPage.isDirty = true;
+    });
+
+    $("form").submit(function () {
+        QC.thisPage.isDirty = false;
+    });
+    window.onbeforeunload = window.thisPage.closeEditorWarning;
+</script>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0GcOqbao/59kPLdj7oP6sG/xC3GU4bLcRBH8Id5xDpM=",
+  "Hash": "iiIe7U4vO3njb9Aun67fdJTzCompGiWodd285sui2ho=",
   "Source": "Cleansiness",
   "BasePath": "_content/Cleansiness",
   "Mode": "Default",
@@ -28796,6 +28796,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Documents\\Fiverr\\TerryAmbinet\\Cleansiness\\Cleansiness\\wwwroot\\NonAssets\\CleansDb",
+      "SourceId": "Cleansiness",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Documents\\Fiverr\\TerryAmbinet\\Cleansiness\\Cleansiness\\wwwroot\\",
+      "BasePath": "_content/Cleansiness",
+      "RelativePath": "NonAssets/CleansDb",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NonAssets\\CleansDb"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Documents\\Fiverr\\TerryAmbinet\\Cleansiness\\Cleansiness\\wwwroot\\NonAssets\\CLEANS-DB.bak",
+      "SourceId": "Cleansiness",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Documents\\Fiverr\\TerryAmbinet\\Cleansiness\\Cleansiness\\wwwroot\\",
+      "BasePath": "_content/Cleansiness",
+      "RelativePath": "NonAssets/CLEANS-DB.bak",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NonAssets\\CLEANS-DB.bak"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Documents\\Fiverr\\TerryAmbinet\\Cleansiness\\Cleansiness\\wwwroot\\NonAssets\\jquery-3.6.0.tgz",
+      "SourceId": "Cleansiness",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Documents\\Fiverr\\TerryAmbinet\\Cleansiness\\Cleansiness\\wwwroot\\",
+      "BasePath": "_content/Cleansiness",
+      "RelativePath": "NonAssets/jquery-3.6.0.tgz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NonAssets\\jquery-3.6.0.tgz"
     }
   ]
 }
